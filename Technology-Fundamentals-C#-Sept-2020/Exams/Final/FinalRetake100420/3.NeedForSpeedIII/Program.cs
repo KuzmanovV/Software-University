@@ -57,7 +57,7 @@ namespace _3.NeedForSpeedIII
                         int oldFuelQty = cars[car][1];
                         cars[car][1] += refieled;
                         cars[car][1] = cars[car][1] > 75 ? 75 : cars[car][1];
-                        Console.WriteLine($"{car} refueled with {75-oldFuelQty} liters");
+                        Console.WriteLine($"{car} refueled with {cars[car][1] - oldFuelQty} liters");
                         break;
                     case "Revert":
                         int km = int.Parse(cmd[2]);

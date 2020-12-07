@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30611.23
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1.SecretChat", "FinalRetake100420\1.SecretChat.csproj", "{1E253EB1-CFF6-4FA7-AFC9-95FA6F8B0988}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2.MirrorWords", "2.MirrorWords\2.MirrorWords.csproj", "{8CBEA4CF-1AEB-444B-8819-FD111C5658D1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.MirrorWords", "2.MirrorWords\2.MirrorWords.csproj", "{8CBEA4CF-1AEB-444B-8819-FD111C5658D1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "3.NeedForSpeedIII", "3.NeedForSpeedIII\3.NeedForSpeedIII.csproj", "{FAA010CC-22D3-44F7-A3EA-933CDA4A11D4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.NeedForSpeedIII", "3.NeedForSpeedIII\3.NeedForSpeedIII.csproj", "{FAA010CC-22D3-44F7-A3EA-933CDA4A11D4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1.SecretChat", "1.SecretChat\1.SecretChat.csproj", "{E45E5B33-39DC-431B-8476-41D1F21A50EE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,10 +15,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{1E253EB1-CFF6-4FA7-AFC9-95FA6F8B0988}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1E253EB1-CFF6-4FA7-AFC9-95FA6F8B0988}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1E253EB1-CFF6-4FA7-AFC9-95FA6F8B0988}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1E253EB1-CFF6-4FA7-AFC9-95FA6F8B0988}.Release|Any CPU.Build.0 = Release|Any CPU
 		{8CBEA4CF-1AEB-444B-8819-FD111C5658D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{8CBEA4CF-1AEB-444B-8819-FD111C5658D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8CBEA4CF-1AEB-444B-8819-FD111C5658D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -27,6 +23,10 @@ Global
 		{FAA010CC-22D3-44F7-A3EA-933CDA4A11D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FAA010CC-22D3-44F7-A3EA-933CDA4A11D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FAA010CC-22D3-44F7-A3EA-933CDA4A11D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E45E5B33-39DC-431B-8476-41D1F21A50EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E45E5B33-39DC-431B-8476-41D1F21A50EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E45E5B33-39DC-431B-8476-41D1F21A50EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E45E5B33-39DC-431B-8476-41D1F21A50EE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
