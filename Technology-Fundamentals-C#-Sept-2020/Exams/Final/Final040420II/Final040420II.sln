@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30611.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1.PasswordReset", "1.PasswordReset\1.PasswordReset.csproj", "{D74C1B4C-12A3-4947-BBE1-E46B1AD0A1BD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.FancyBarcodes", "2\2.FancyBarcodes.csproj", "{06530607-8C12-4CD9-A3CB-5864A665F59D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3", "3\3.csproj", "{7CE26E33-31F4-4330-98E5-68F112B40938}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D74C1B4C-12A3-4947-BBE1-E46B1AD0A1BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D74C1B4C-12A3-4947-BBE1-E46B1AD0A1BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D74C1B4C-12A3-4947-BBE1-E46B1AD0A1BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D74C1B4C-12A3-4947-BBE1-E46B1AD0A1BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06530607-8C12-4CD9-A3CB-5864A665F59D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06530607-8C12-4CD9-A3CB-5864A665F59D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06530607-8C12-4CD9-A3CB-5864A665F59D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06530607-8C12-4CD9-A3CB-5864A665F59D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7CE26E33-31F4-4330-98E5-68F112B40938}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CE26E33-31F4-4330-98E5-68F112B40938}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CE26E33-31F4-4330-98E5-68F112B40938}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7CE26E33-31F4-4330-98E5-68F112B40938}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1BAEEEED-EB7E-4C21-A65F-CFA14B859FC8}
+	EndGlobalSection
+EndGlobal
