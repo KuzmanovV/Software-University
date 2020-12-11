@@ -5,7 +5,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 
 
-namespace _3
+namespace _3.HeroesOfCodeAndLogic
 {
     class Program
     {
