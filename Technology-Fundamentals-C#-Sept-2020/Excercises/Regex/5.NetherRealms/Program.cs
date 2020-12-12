@@ -9,14 +9,14 @@ namespace _5.NetherRealms
     {
         static void Main(string[] args)
         {
-            string[] input = Console.ReadLine().Split(", ", StringSplitOptions.RemoveEmptyEntries);
+            string[] input = Console.ReadLine().Split(new[] {',',' ' }, StringSplitOptions.RemoveEmptyEntries);
 
             //TD trim empty spaces!
 
 
             Dictionary<string, List<double>> demons = new Dictionary<string, List<double>>();
 
-            string pattern = @"[^0-9+-\/\*\.]";
+            string pattern = @"[^0-9+\-\/\*\.]";
             string patternDamage = @"[-+]?[0-9]+\.?[0-9]*";
 
             foreach (var demon in input)
