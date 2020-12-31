@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30611.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.Final", "MEPrep100319G2\3.Final.csproj", "{89197523-0196-480F-9733-C49E1C461AEF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1.Hunting", "2\1.Hunting.csproj", "{371E3D90-F90F-409B-9492-1FAFA7FEB978}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.SeizeFir", "3\2.SeizeFir.csproj", "{176864CC-790C-4CD9-AEB9-73EB7ADDF210}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{89197523-0196-480F-9733-C49E1C461AEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89197523-0196-480F-9733-C49E1C461AEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89197523-0196-480F-9733-C49E1C461AEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89197523-0196-480F-9733-C49E1C461AEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{371E3D90-F90F-409B-9492-1FAFA7FEB978}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{371E3D90-F90F-409B-9492-1FAFA7FEB978}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{371E3D90-F90F-409B-9492-1FAFA7FEB978}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{371E3D90-F90F-409B-9492-1FAFA7FEB978}.Release|Any CPU.Build.0 = Release|Any CPU
+		{176864CC-790C-4CD9-AEB9-73EB7ADDF210}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{176864CC-790C-4CD9-AEB9-73EB7ADDF210}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{176864CC-790C-4CD9-AEB9-73EB7ADDF210}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{176864CC-790C-4CD9-AEB9-73EB7ADDF210}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {11438405-E508-4A76-AF20-24E3F6DCA3CB}
+	EndGlobalSection
+EndGlobal
