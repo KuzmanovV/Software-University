@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace _7.HotPotato
+namespace _8.T
 {
     class Program
     {

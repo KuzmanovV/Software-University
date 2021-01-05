@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30611.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1.SumMatrixElements", "1.SumMatrixElements\1.SumMatrixElements.csproj", "{5CD75606-A2C4-4919-AA72-83EBDF6F3620}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{29B18347-E78D-492C-9CCF-CFAD045C6A7C}"
+	ProjectSection(SolutionItems) = preProject
+		02. CSharp-Advanced-Multidimensional-Arrays-Lab.docx = 02. CSharp-Advanced-Multidimensional-Arrays-Lab.docx
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.SumMatrixColumns", "2.SumMatrixColumns\2.SumMatrixColumns.csproj", "{D568D3C0-EC4A-41A8-96D9-1E752036B385}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.PrimariDiagonal", "3.PrimariDiagonal\3.PrimariDiagonal.csproj", "{F1CC7B90-FAD5-48DF-834F-2763C553F531}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5CD75606-A2C4-4919-AA72-83EBDF6F3620}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CD75606-A2C4-4919-AA72-83EBDF6F3620}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CD75606-A2C4-4919-AA72-83EBDF6F3620}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CD75606-A2C4-4919-AA72-83EBDF6F3620}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D568D3C0-EC4A-41A8-96D9-1E752036B385}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D568D3C0-EC4A-41A8-96D9-1E752036B385}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D568D3C0-EC4A-41A8-96D9-1E752036B385}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D568D3C0-EC4A-41A8-96D9-1E752036B385}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1CC7B90-FAD5-48DF-834F-2763C553F531}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1CC7B90-FAD5-48DF-834F-2763C553F531}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1CC7B90-FAD5-48DF-834F-2763C553F531}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1CC7B90-FAD5-48DF-834F-2763C553F531}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D81E0232-CDB1-449A-971F-1B5DE6E35DA9}
+	EndGlobalSection
+EndGlobal
