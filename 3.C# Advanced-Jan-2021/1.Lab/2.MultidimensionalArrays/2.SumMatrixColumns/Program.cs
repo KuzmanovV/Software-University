@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Linq;
 
-namespace _2.SumMatrixColumns
+namespace SumMatrixColumns
 {
-    class Program
+    public class Program
     {
         static public int[,] MatrixInp(int[] sizes)
         {

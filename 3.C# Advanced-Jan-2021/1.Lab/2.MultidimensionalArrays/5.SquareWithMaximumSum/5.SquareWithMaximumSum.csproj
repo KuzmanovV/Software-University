@@ -6,4 +6,9 @@
     <RootNamespace>_5.SquareWithMaximumSum</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\2.SumMatrixColumns\2.SumMatrixColumns.csproj" />
+    <ProjectReference Include="..\Common\Common.csproj" />
+  </ItemGroup>
+
 </Project>
