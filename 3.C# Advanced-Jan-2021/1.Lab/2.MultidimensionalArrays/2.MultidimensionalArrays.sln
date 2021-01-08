@@ -3,22 +3,24 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30611.23
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1.SumMatrixElements", "1.SumMatrixElements\1.SumMatrixElements.csproj", "{5CD75606-A2C4-4919-AA72-83EBDF6F3620}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1.SumMatrixElements", "1.SumMatrixElements\1.SumMatrixElements.csproj", "{5CD75606-A2C4-4919-AA72-83EBDF6F3620}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{29B18347-E78D-492C-9CCF-CFAD045C6A7C}"
 	ProjectSection(SolutionItems) = preProject
 		02. CSharp-Advanced-Multidimensional-Arrays-Lab.docx = 02. CSharp-Advanced-Multidimensional-Arrays-Lab.docx
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.SumMatrixColumns", "2.SumMatrixColumns\2.SumMatrixColumns.csproj", "{D568D3C0-EC4A-41A8-96D9-1E752036B385}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2.SumMatrixColumns", "2.SumMatrixColumns\2.SumMatrixColumns.csproj", "{D568D3C0-EC4A-41A8-96D9-1E752036B385}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.PrimariDiagonal", "3.PrimariDiagonal\3.PrimariDiagonal.csproj", "{F1CC7B90-FAD5-48DF-834F-2763C553F531}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "3.PrimariDiagonal", "3.PrimariDiagonal\3.PrimariDiagonal.csproj", "{F1CC7B90-FAD5-48DF-834F-2763C553F531}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4.SymbolInMatrix", "4.SymbolInMatrix\4.SymbolInMatrix.csproj", "{4EAABE3A-853A-4456-8369-E02755CD379E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "4.SymbolInMatrix", "4.SymbolInMatrix\4.SymbolInMatrix.csproj", "{4EAABE3A-853A-4456-8369-E02755CD379E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5.SquareWithMaximumSum", "5.SquareWithMaximumSum\5.SquareWithMaximumSum.csproj", "{BE91FC35-EE9D-4296-8CCA-2B4113316E76}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "5.SquareWithMaximumSum", "5.SquareWithMaximumSum\5.SquareWithMaximumSum.csproj", "{BE91FC35-EE9D-4296-8CCA-2B4113316E76}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{74E0A555-5897-4EA1-8DE7-A2E6C9C84DD5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Common", "Common\Common.csproj", "{74E0A555-5897-4EA1-8DE7-A2E6C9C84DD5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "6.JaggedArrayModification", "6.JaggedArrayModification\6.JaggedArrayModification.csproj", "{1F5D8868-AAC0-44AE-A5BF-8557F3F9DAF4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -50,6 +52,10 @@ Global
 		{74E0A555-5897-4EA1-8DE7-A2E6C9C84DD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{74E0A555-5897-4EA1-8DE7-A2E6C9C84DD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{74E0A555-5897-4EA1-8DE7-A2E6C9C84DD5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F5D8868-AAC0-44AE-A5BF-8557F3F9DAF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F5D8868-AAC0-44AE-A5BF-8557F3F9DAF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F5D8868-AAC0-44AE-A5BF-8557F3F9DAF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F5D8868-AAC0-44AE-A5BF-8557F3F9DAF4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
