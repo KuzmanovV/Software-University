@@ -10,6 +10,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		03. CSharp-Advanced-Sets-and-Dictionaries-Advanced-Lab.docx = 03. CSharp-Advanced-Sets-and-Dictionaries-Advanced-Lab.docx
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.AverageStudentGrade", "2.AverageStudentGrade\2.AverageStudentGrade.csproj", "{8E75D5C9-C2DB-42A1-91E3-108A63787480}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.ProductShop", "3.ProductShop\3.ProductShop.csproj", "{1B1B303F-0D30-4EBC-8181-522A31FD3A09}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -20,6 +24,14 @@ Global
 		{C3D1BF39-CA51-44F3-AC35-C11F1584E513}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C3D1BF39-CA51-44F3-AC35-C11F1584E513}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C3D1BF39-CA51-44F3-AC35-C11F1584E513}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E75D5C9-C2DB-42A1-91E3-108A63787480}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E75D5C9-C2DB-42A1-91E3-108A63787480}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E75D5C9-C2DB-42A1-91E3-108A63787480}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E75D5C9-C2DB-42A1-91E3-108A63787480}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B1B303F-0D30-4EBC-8181-522A31FD3A09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B1B303F-0D30-4EBC-8181-522A31FD3A09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B1B303F-0D30-4EBC-8181-522A31FD3A09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B1B303F-0D30-4EBC-8181-522A31FD3A09}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
