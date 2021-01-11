@@ -3,16 +3,20 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30611.23
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1.CountSameValuesInArray", "1.CountSameValuesInArray\1.CountSameValuesInArray.csproj", "{C3D1BF39-CA51-44F3-AC35-C11F1584E513}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1.CountSameValuesInArray", "1.CountSameValuesInArray\1.CountSameValuesInArray.csproj", "{C3D1BF39-CA51-44F3-AC35-C11F1584E513}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{AC387331-0B6F-4538-8B6C-64894BB986E1}"
 	ProjectSection(SolutionItems) = preProject
 		03. CSharp-Advanced-Sets-and-Dictionaries-Advanced-Lab.docx = 03. CSharp-Advanced-Sets-and-Dictionaries-Advanced-Lab.docx
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.AverageStudentGrade", "2.AverageStudentGrade\2.AverageStudentGrade.csproj", "{8E75D5C9-C2DB-42A1-91E3-108A63787480}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2.AverageStudentGrade", "2.AverageStudentGrade\2.AverageStudentGrade.csproj", "{8E75D5C9-C2DB-42A1-91E3-108A63787480}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.ProductShop", "3.ProductShop\3.ProductShop.csproj", "{1B1B303F-0D30-4EBC-8181-522A31FD3A09}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "3.ProductShop", "3.ProductShop\3.ProductShop.csproj", "{1B1B303F-0D30-4EBC-8181-522A31FD3A09}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "4.CitiesByContinentAndCountry", "4.CitiesByContinentAndCountry\4.CitiesByContinentAndCountry.csproj", "{6A5FB05E-2834-4988-BFEC-CF667086A226}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5.RecordUniqueNames", "5.RecordUniqueNames\5.RecordUniqueNames.csproj", "{2014D4DA-B329-4161-ABB7-472ED6C7261A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -32,6 +36,14 @@ Global
 		{1B1B303F-0D30-4EBC-8181-522A31FD3A09}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1B1B303F-0D30-4EBC-8181-522A31FD3A09}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1B1B303F-0D30-4EBC-8181-522A31FD3A09}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A5FB05E-2834-4988-BFEC-CF667086A226}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A5FB05E-2834-4988-BFEC-CF667086A226}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A5FB05E-2834-4988-BFEC-CF667086A226}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A5FB05E-2834-4988-BFEC-CF667086A226}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2014D4DA-B329-4161-ABB7-472ED6C7261A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2014D4DA-B329-4161-ABB7-472ED6C7261A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2014D4DA-B329-4161-ABB7-472ED6C7261A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2014D4DA-B329-4161-ABB7-472ED6C7261A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
