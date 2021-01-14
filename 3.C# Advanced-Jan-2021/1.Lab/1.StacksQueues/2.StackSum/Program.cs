@@ -9,12 +9,7 @@ namespace _2.StackSum
         static void Main(string[] args)
         {
             int[] input = Console.ReadLine().Split().Select(int.Parse).ToArray();
-            Stack<int> stack = new Stack<int>();
-
-            foreach (var item in input)
-            {
-                stack.Push(item);
-            }
+            Stack<int> stack = new Stack<int>(input);
 
             string command;
             while ((command = Console.ReadLine().ToUpper()) != "END")

@@ -8,21 +8,14 @@ namespace _1.ReverseStrings
     {
         static void Main(string[] args)
         {
-            char[] input = Console.ReadLine().ToCharArray();
-            Stack<string> stack = new Stack<string>();
+            string input = Console.ReadLine();
+            Stack<char> stack = new Stack<char>(input);
             string output="";
 
-            for (int i = 0; i < input.Length; i++)
+            while(stack.Count!=0)
             {
-                stack.Push(input[i].ToString());
+                Console.Write(stack.Pop());
             }
-
-            for (int i = 0; i < input.Length; i++)
-            {
-                output += stack.Pop();
-            }
-
-            Console.WriteLine(output);
         }
     }
 }

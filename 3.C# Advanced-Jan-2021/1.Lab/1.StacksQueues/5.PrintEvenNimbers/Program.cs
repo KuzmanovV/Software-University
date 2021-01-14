@@ -20,20 +20,7 @@ namespace _5.PrintEvenNimbers
                 }
             }
 
-            string output = "";
-            int qCount = queue.Count;
-
-            for (int i = 0; i < qCount; i++)
-            {
-                output += queue.Dequeue();
-
-                if (queue.Count > 0)
-                {
-                    output += ", ";
-                }
-            }
-
-            Console.WriteLine(output);
+            Console.WriteLine(string.Join(", ", queue.ToList()));
         }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using System.Collections.Generic;
 
 namespace _3.SimpleCalculator
@@ -9,12 +10,7 @@ namespace _3.SimpleCalculator
         {
             string[] input = Console.ReadLine().Split();
 
-            Stack<string> stack = new Stack<string>();
-
-            for (int i = input.Length - 1; i >= 0; i--)
-            {
-                stack.Push(input[i]);
-            }
+            Stack<string> stack = new Stack<string>(input.Reverse());
 
             int output = int.Parse(stack.Pop());
 
