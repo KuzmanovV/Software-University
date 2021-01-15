@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace _1.BasicStackOperations
@@ -10,50 +11,31 @@ namespace _1.BasicStackOperations
         {
             int[] inputCommands = Console.ReadLine().Split().Select(int.Parse).ToArray();
             int[] inputData = Console.ReadLine().Split().Select(int.Parse).ToArray();
+            int N = inputCommands[0];
+            int S = inputCommands[1];
+            int X = inputCommands[2];
 
-            Stack stack = new Stack();
+            Stack<int> stack = new Stack<int>(inputData);
 
-            for (int i = 0; i < inputData.Length; i++)
-            {
-                stack.Push(inputData[i]);
-            }
-
-            for (int i = 0; i < inputCommands[1]; i++)
+            for (int i = 0; i < S; i++)
             {
                 stack.Pop();
             }
 
-            int smallest = int.MaxValue;
-            bool isFound = false;
-
-            if (inputCommands[0] - inputCommands[1] > 0)
+            if (!stack.Any())
             {
-                for (int i = 0; i < inputCommands[0] - inputCommands[1]; i++)
-                {
-                    int element = (int)stack.Pop();
-
-                    if (inputCommands[2]==element)
-                    {
-                        Console.WriteLine("true");
-                        isFound = true;
-                        break;
-                    }
-
-                    if (element<smallest)
-                    {
-                        smallest = element;
-                    }
-                }
+                Console.WriteLine("0");
             }
             else
             {
-                Console.WriteLine("0");
-                isFound = true;
-            }
-
-            if (!isFound)
-            {
-                Console.WriteLine(smallest);
+                if (stack.Contains(X))
+                {
+                    Console.WriteLine("true");
+                }
+                else
+                {
+                    Console.WriteLine(stack.Min());
+                }
             }
         }
     }
