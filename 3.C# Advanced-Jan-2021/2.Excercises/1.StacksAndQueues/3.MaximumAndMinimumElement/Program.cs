@@ -27,57 +27,15 @@ namespace _3.MaximumAndMinimumElement
                         }
                         break;
                     case "3"://print max
-                        if (stack.Count > 0)
+                        if (stack.Any())
                         {
-                            int max = int.MinValue;
-
-                            int forCounter = stack.Count;
-                            for (int j = 0; j < forCounter; j++)
-                            {
-                                int current = stack.Peek();
-
-                                if (max < current)
-                                {
-                                    max = current;
-                                }
-
-                                stackContainer.Push(stack.Pop());
-                            }
-
-                            int backForCounter = stackContainer.Count;
-                            for (int j = 0; j < backForCounter; j++)
-                            {
-                                stack.Push(stackContainer.Pop());
-                            }
-
-                            Console.WriteLine(max);
+                            Console.WriteLine(stack.Max());
                         }
                         break;
                     case "4": //print min
-                        if (stack.Count > 0)
+                        if (stack.Any())
                         {
-                            int min = int.MaxValue;
-
-                            int forCounter = stack.Count;
-                            for (int j = 0; j < forCounter; j++)
-                            {
-                                int current = stack.Peek();
-
-                                if (min > current)
-                                {
-                                    min = current;
-                                }
-
-                                stackContainer.Push(stack.Pop());
-                            }
-
-                            int backForCounter = stackContainer.Count;
-                            for (int j = 0; j < backForCounter; j++)
-                            {
-                                stack.Push(stackContainer.Pop());
-                            }
-
-                            Console.WriteLine(min);
+                            Console.WriteLine(stack.Min());
                         }
                         break;
                     default:
@@ -87,13 +45,7 @@ namespace _3.MaximumAndMinimumElement
                 }
             }
 
-            int forCounterLast = stack.Count;
-            for (int i = 0; i < forCounterLast-1; i++)
-            {
-                Console.Write(stack.Pop());
-                Console.Write(", ");
-            }
-            Console.Write(stack.Pop());
+            Console.WriteLine(string.Join(", ", stack));
         }
     }
 }

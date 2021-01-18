@@ -10,25 +10,14 @@ namespace _4.FastFood
         {
             int foodQty = int.Parse(Console.ReadLine());
 
-            int[] orders = Console.ReadLine().Split().Select(int.Parse).ToArray();
             int forService = 0;
-            int max = int.MinValue;
             
-            Queue<int> queue = new Queue<int>();
+            Queue<int> queue = new Queue<int>(Console.ReadLine().Split().Select(int.Parse).ToArray());
 
-            for (int i = 0; i < orders.Length; i++)
-            {
-                queue.Enqueue(orders[i]);
+            Console.WriteLine(queue.Max());
 
-                if (orders[i]>max)
-                {
-                    max = orders[i];
-                }
-            }
-
-            Console.WriteLine(max);
-
-            for (int i = 0; i < orders.Length; i++)
+            int forCount = queue.Count;
+            for (int i = 0; i < forCount; i++)
             {
                 forService = queue.Peek();
 
@@ -42,19 +31,13 @@ namespace _4.FastFood
                 }
             }
 
-            if (foodQty >= 0 && queue.Count == 0)
+            if (foodQty >= 0 && !queue.Any())
             {
                 Console.WriteLine("Orders complete");
             }
             else
             {
-                Console.Write($"Orders left: ");
-
-                int forCount = queue.Count;
-                for (int i = 0; i < forCount; i++)
-                {
-                    Console.Write(queue.Dequeue());
-                }
+                Console.Write($"Orders left: {string.Join(" ", queue)}");
             }
         }
     }
