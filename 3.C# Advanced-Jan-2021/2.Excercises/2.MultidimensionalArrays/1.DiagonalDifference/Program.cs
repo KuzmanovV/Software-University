@@ -27,10 +27,6 @@ namespace _1.DiagonalDifference
             for (int i = 0; i < N; i++)
             {
                 sumPrim += matrix[i, i];
-            }
-
-            for (int i = 0; i < N; i++)
-            {
                 sumSec += matrix[i, N - i-1];
             }
 

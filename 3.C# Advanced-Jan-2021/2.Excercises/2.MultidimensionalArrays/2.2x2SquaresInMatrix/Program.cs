@@ -11,24 +11,16 @@ namespace _2._2x2SquaresInMatrix
 
             int rows = sizes[0];
             int cols = sizes[1];
-            char[,] matrix = new char[rows, cols];
+            string[,] matrix = new string[rows, cols];
 
             for (int row = 0; row < rows; row++)
             {
 
-                char[] input = Console.ReadLine().Split().Select(char.Parse).ToArray();
+                string[] input = Console.ReadLine().Split();
 
-                if (cols == input.Length)
+                for (int col = 0; col < cols; col++)
                 {
-                    for (int col = 0; col < cols; col++)
-                    {
-                        matrix[row, col] = input[col];
-                    }
-                }
-                else
-                {
-                    Console.WriteLine(0);
-                    Environment.Exit(0);
+                    matrix[row, col] = input[col];
                 }
             }
 
@@ -40,8 +32,9 @@ namespace _2._2x2SquaresInMatrix
                 {
                     for (int col = 0; col < cols - 1; col++)
                     {
-                        char comparer = matrix[row, col];
-                        if (comparer == matrix[row, col + 1] && comparer == matrix[row + 1, col] && comparer == matrix[row + 1, col + 1])
+                        string comparer = matrix[row, col];
+                        if (comparer == matrix[row, col + 1] && comparer == matrix[row + 1, col] 
+                            && comparer == matrix[row + 1, col + 1])
                         {
                             counter++;
                         }

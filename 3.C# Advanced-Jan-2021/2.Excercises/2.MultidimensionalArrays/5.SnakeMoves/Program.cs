@@ -13,13 +13,13 @@ namespace _5.SnakeMoves
             int rows = sizes[0];
             int cols = sizes[1];
 
-            int[,] matrix = new int[rows, cols];
-            Queue<char> snakeQueue = new Queue<char>();
-            char[] snake = Console.ReadLine().ToCharArray();
+            string[,] matrix = new string[rows, cols];
+            Queue<string> snakeQueue = new Queue<string>();
+            string snake = Console.ReadLine();
 
             foreach (var item in snake)
             {
-                snakeQueue.Enqueue(item);
+                snakeQueue.Enqueue(item.ToString());
             }
            
             int counter = 0;
@@ -32,7 +32,7 @@ namespace _5.SnakeMoves
                     {
                         matrix[row, col] = snakeQueue.Peek();
                         snakeQueue.Enqueue(snakeQueue.Dequeue());
-                        Console.Write(matrix[row,col]+" ");
+                        Console.Write(matrix[row,col]);
                     }
                 }
                 else
@@ -41,7 +41,11 @@ namespace _5.SnakeMoves
                     {
                         matrix[row, col] = snakeQueue.Peek();
                         snakeQueue.Enqueue(snakeQueue.Dequeue());
-                        Console.Write(matrix[row, col] + " ");
+                    }
+
+                    for (int col = 0; col < cols; col++)
+                    {
+                        Console.Write(matrix[row,col]);
                     }
                 }
 

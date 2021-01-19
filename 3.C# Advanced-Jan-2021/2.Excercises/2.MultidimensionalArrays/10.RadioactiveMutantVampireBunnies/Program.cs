@@ -65,8 +65,6 @@ namespace _10.RadioactiveMutantVampireBunnies
                         break;
                 }
 
-                int currentBunnyRow = 0;
-                int currentBunnyCol = 0;
                 //win
                 if (currentRow < 0 || currentRow > rows - 1 || currentCol < 0 || currentCol > cols - 1)
                 {
@@ -84,12 +82,12 @@ namespace _10.RadioactiveMutantVampireBunnies
 
                     if (currentCol < 0)
                     {
-                        currentBunnyCol += 1;
+                        currentCol += 1;
                     }
 
-                    if (currentBunnyCol > cols - 1)
+                    if (currentCol > cols - 1)
                     {
-                        currentBunnyCol -= 1;
+                        currentCol -= 1;
                     }
                 }
                 else
@@ -102,6 +100,8 @@ namespace _10.RadioactiveMutantVampireBunnies
                 }
 
                 //Bunny spreading
+                int currentBunnyRow = 0;
+                int currentBunnyCol = 0;
                 int forCounter = bunnyCols.Count;
                 for (int j = 0; j < forCounter; j++)
                 {
@@ -110,85 +110,34 @@ namespace _10.RadioactiveMutantVampireBunnies
                     bunnyRows.Enqueue(currentBunnyRow);
                     bunnyCols.Enqueue(currentBunnyCol);
 
-                    if (currentBunnyRow > 0 && currentBunnyCol > 0)
+                    if (currentBunnyRow > 0 && currentBunnyRow < rows - 1 && currentBunnyCol > 0 && currentBunnyCol < cols - 1)
                     {
-                        if (lair[currentBunnyRow - 1, currentBunnyCol - 1] != "B")
-                        {
-                            lair[currentBunnyRow - 1, currentBunnyCol - 1] = "B";
-                            bunnyRows.Enqueue(currentBunnyRow - 1);
-                            bunnyCols.Enqueue(currentBunnyCol - 1);
-                        }
+                        lair[currentBunnyRow - 1, currentBunnyCol - 1] = "B";
+                        bunnyRows.Enqueue(currentBunnyRow - 1);
+                        bunnyCols.Enqueue(currentBunnyCol - 1);
+                        lair[currentBunnyRow - 1, currentBunnyCol] = "B";
+                        bunnyRows.Enqueue(currentBunnyRow - 1);
+                        bunnyCols.Enqueue(currentBunnyCol);
+                        lair[currentBunnyRow - 1, currentBunnyCol + 1] = "B";
+                        bunnyRows.Enqueue(currentBunnyRow - 1);
+                        bunnyCols.Enqueue(currentBunnyCol + 1);
+                        lair[currentBunnyRow, currentBunnyCol - 1] = "B";
+                        bunnyRows.Enqueue(currentBunnyRow);
+                        bunnyCols.Enqueue(currentBunnyCol - 1);
+                        lair[currentBunnyRow, currentBunnyCol + 1] = "B";
+                        bunnyRows.Enqueue(currentBunnyRow);
+                        bunnyCols.Enqueue(currentBunnyCol + 1);
+                        lair[currentBunnyRow + 1, currentBunnyCol - 1] = "B";
+                        bunnyRows.Enqueue(currentBunnyRow + 1);
+                        bunnyCols.Enqueue(currentBunnyCol - 1);
+                        lair[currentBunnyRow + 1, currentBunnyCol] = "B";
+                        bunnyRows.Enqueue(currentBunnyRow + 1);
+                        bunnyCols.Enqueue(currentBunnyCol);
+                        lair[currentBunnyRow + 1, currentBunnyCol + 1] = "B";
+                        bunnyRows.Enqueue(currentBunnyRow + 1);
+                        bunnyCols.Enqueue(currentBunnyCol + 1);
                     }
 
-                    if (currentBunnyRow > 0)
-                    {
-                        if (lair[currentBunnyRow - 1, currentBunnyCol] != "B")
-                        {
-                            lair[currentBunnyRow - 1, currentBunnyCol] = "B";
-                            bunnyRows.Enqueue(currentBunnyRow - 1);
-                            bunnyCols.Enqueue(currentBunnyCol);
-                        }
-                    }
-
-                    if (currentBunnyRow > 0 && currentBunnyCol < cols - 1)
-                    {
-                        if (lair[currentBunnyRow - 1, currentBunnyCol + 1] != "B")
-                        {
-                            lair[currentBunnyRow - 1, currentBunnyCol + 1] = "B";
-                            bunnyRows.Enqueue(currentBunnyRow - 1);
-                            bunnyCols.Enqueue(currentBunnyCol + 1);
-                        }
-                    }
-
-                    if (currentBunnyCol > 0)
-                    {
-                        if (lair[currentBunnyRow, currentBunnyCol - 1] != "B")
-                        {
-                            lair[currentBunnyRow, currentBunnyCol - 1] = "B";
-                            bunnyRows.Enqueue(currentBunnyRow - 1);
-                            bunnyCols.Enqueue(currentBunnyCol + 1);
-                        }
-                    }
-
-                    if (currentBunnyCol < cols - 1)
-                    {
-                        if (lair[currentBunnyRow, currentBunnyCol + 1] != "B")
-                        {
-                            lair[currentBunnyRow, currentBunnyCol + 1] = "B";
-                            bunnyRows.Enqueue(currentBunnyRow - 1);
-                            bunnyCols.Enqueue(currentBunnyCol + 1);
-                        }
-                    }
-
-                    if (currentBunnyRow < rows-1 && currentBunnyCol > 0)
-                    {
-                        if (lair[currentBunnyRow + 1, currentBunnyCol - 1] != "B")
-                        {
-                            lair[currentBunnyRow + 1, currentBunnyCol - 1] = "B";
-                            bunnyRows.Enqueue(currentBunnyRow + 1);
-                            bunnyCols.Enqueue(currentBunnyCol - 1);
-                        }
-                    }
-
-                    if (currentBunnyRow > 0)
-                    {
-                        if (lair[currentBunnyRow + 1, currentBunnyCol] != "B")
-                        {
-                            lair[currentBunnyRow + 1, currentBunnyCol] = "B";
-                            bunnyRows.Enqueue(currentBunnyRow - 1);
-                            bunnyCols.Enqueue(currentBunnyCol + 1);
-                        }
-                    }
-
-                    if (currentBunnyRow > 0 && currentBunnyCol < cols - 1)
-                    {
-                        if (lair[currentBunnyRow + 1, currentBunnyCol + 1] != "B")
-                        {
-                            lair[currentBunnyRow + 1, currentBunnyCol + 1] = "B";
-                            bunnyRows.Enqueue(currentBunnyRow - 1);
-                            bunnyCols.Enqueue(currentBunnyCol + 1);
-                        }
-                    }
                 }
 
                 //final

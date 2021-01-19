@@ -7,7 +7,7 @@ namespace _3.MaximalSum
     {
         static void Main(string[] args)
         {
-            int[] sizes = Console.ReadLine().Split().Select(int.Parse).ToArray();
+            int[] sizes = Console.ReadLine().Split(" ", StringSplitOptions.RemoveEmptyEntries).Select(int.Parse).ToArray();
 
             int rows = sizes[0];
             int cols = sizes[1];
@@ -19,7 +19,7 @@ namespace _3.MaximalSum
 
                 for (int row = 0; row < rows; row++)
                 {
-                    int[] input = Console.ReadLine().Split().Select(int.Parse).ToArray();
+                    int[] input = Console.ReadLine().Split(" ", StringSplitOptions.RemoveEmptyEntries).Select(int.Parse).ToArray();
 
                     for (int col = 0; col < cols; col++)
                     {

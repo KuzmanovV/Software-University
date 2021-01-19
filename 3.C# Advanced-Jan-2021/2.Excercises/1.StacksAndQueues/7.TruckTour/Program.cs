@@ -9,53 +9,50 @@ namespace _7.TruckTour
         static void Main(string[] args)
         {
             int N = int.Parse(Console.ReadLine());
-            Queue<int> queue = new Queue<int>();
+            Queue<string> queue = new Queue<string>();
 
             for (int i = 0; i < N; i++)
             {
-                int[] input = Console.ReadLine().Split().Select(int.Parse).ToArray();
-                queue.Enqueue(input[0] - input[1]);
+                string input = Console.ReadLine();
+                queue.Enqueue(input);
             }
 
-            int counter = -1;
-            int sum = 0;
-            bool found = true;
-
-            for (int i = 0; i < queue.Count; i++)
+            int counter = 0;
+            int[] start = new int[2];
+            int tank = 0;
+            for (int i = 0; i < N; i++)
             {
-                if (queue.Peek() >= 0)
+                start = queue.Dequeue().Split().Select(int.Parse).ToArray();
+                tank += start[0] - start[1];
+                queue.Enqueue(string.Join(" ", start));
+                if (tank < 0)
                 {
                     counter++;
-                    int circulating = 0;
-                    
-                    for (int j = 0; j < queue.Count; j++)
+                    tank = 0;
+                    continue;
+                }
+
+                bool optimalFound = true;
+                int[] next = new int[2];
+                for (int j = 0; j < N - 1; j++)
+                {
+                    next = queue.Dequeue().Split().Select(int.Parse).ToArray();
+                    tank += next[0] - next[1];
+                    queue.Enqueue(string.Join(" ", next));
+                    if (tank < 0)
                     {
-                        circulating = queue.Dequeue();
-                        queue.Enqueue(circulating);
-                        sum += circulating;
-
-                        if (sum < 0)
-                        {
-                            found = false;
-                            break;
-                        }
-
-                        if (found)
-                        {
-                            Console.WriteLine(counter);
-                            System.Environment.Exit(0);
-                        }
-
-                        circulating = queue.Dequeue();
-                        queue.Enqueue(circulating);
+                        optimalFound = false;
+                        continue;
                     }
                 }
-                else
+
+                if (optimalFound)
                 {
-                    counter++;
-                    queue.Dequeue();
+                    Console.WriteLine(counter);
+                    Environment.Exit(0);
                 }
             }
+
         }
     }
 }
