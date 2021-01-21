@@ -15,21 +15,30 @@ namespace _2.AverageStudentGrade
             for (int i = 0; i < numOfStudents; i++)
             {
                 string[] input = Console.ReadLine().Split(" ", StringSplitOptions.RemoveEmptyEntries);
+                string name = input[0];
+                decimal grade = decimal.Parse(input[1]);
 
-                if (!students.ContainsKey(input[0]))
+                if (!students.ContainsKey(name))
                 {
-                    students.Add(input[0], new List<decimal> { decimal.Parse(input[1])});
+                    students.Add(name, new List<decimal> { grade});
                     //students[input[0]] = new List<decimal> { decimal.Parse(input[1]) };
                 }
                 else
                 {
-                    students[input[0]].Add(decimal.Parse(input[1]));
+                    students[name].Add(grade);
                 }
             }
 
-            foreach (var item in students)
+            foreach (var student in students)
             {
-                Console.WriteLine($"{item.Key} -> {string.Join(' ', item.Value)} (avg: {item.Value.Average():f2})");
+                Console.Write($"{student.Key} -> ");
+
+                foreach (var grade in student.Value)
+                {
+                    Console.Write($"{grade:f2} ");
+                }
+
+                Console.WriteLine($"(avg: {student.Value.Average():f2})");
             }
         }
     }
