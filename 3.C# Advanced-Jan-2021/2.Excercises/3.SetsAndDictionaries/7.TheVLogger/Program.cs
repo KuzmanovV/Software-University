@@ -8,59 +8,55 @@ namespace _7.TheVLogger
     {
         static void Main(string[] args)
         {
-            Dictionary<string, List<string>> logger = new Dictionary<string, List<string>>();
-            Dictionary<string, int> followings = new Dictionary<string, int>();
+            Dictionary<string, List<HashSet<string>>> vloggers = new Dictionary<string, List<HashSet<string>>>();
 
             string command;
-            while ((command = Console.ReadLine()) != "Statistics")
-            {
-                string[] cmd = command.Split();
-                string vlogger = cmd[0];
-                string action = cmd[1];
-                string target = cmd[2];
 
-                if (action == "joined")
+            while ((command = Console.ReadLine())!= "Statistics")
+            {
+                string[] cmd = command.Split(" ", StringSplitOptions.RemoveEmptyEntries);
+                string vlogger = cmd[0];
+                string followed = cmd[2];
+
+                if (cmd.Length>3)   //joined
                 {
-                    if (!logger.ContainsKey(vlogger))
+                    if (!vloggers.ContainsKey(vlogger))
                     {
-                        logger[vlogger] = new List<string>();
-                        followings[vlogger] = 0;
+                        vloggers[vlogger] = new List<HashSet<string>>();
+                    }
+
+                    vloggers[vlogger].Add(new HashSet<string>());
+                    vloggers[vlogger].Add(new HashSet<string>());
+                }
+                else
+                {
+                    if (vloggers.ContainsKey(vlogger) && vloggers.ContainsKey(followed) && vlogger!=followed)
+                    {
+                        vloggers[followed][0].Add(vlogger);
+                        vloggers[vlogger][1].Add(followed);
+                    }
+                }
+            }
+
+            int counter = 0;
+            foreach (var item in vloggers.OrderByDescending(x=>x.Value[0].Count).ThenBy(y=>y.Value[1].Count))
+            {
+                counter++;
+                if (counter==1)
+                {
+                    Console.WriteLine($"The V-Logger has a total of {vloggers.Count} vloggers in its logs.");
+                    Console.WriteLine($"{counter}. {item.Key} : {item.Value[0].Count} followers, " +
+                    $"{item.Value[1].Count} following");
+
+                    foreach (var follower in item.Value[0].OrderBy(x=>x))
+                    {
+                        Console.WriteLine($"* {follower}");
                     }
                 }
                 else
                 {
-                    if (logger.ContainsKey(vlogger) && logger.ContainsKey(target))
-                    {
-                        if (vlogger != target && !logger[target].Contains(vlogger))
-                        {
-                            logger[target].Add(vlogger);
-                            followings[vlogger]++;
-                        }
-                    }
-                }
-            }
-
-            Console.WriteLine($"The V-Logger has a total of {logger.Keys.Count} vloggers in its logs.");
-
-            int maxFollowers = 0;
-            string mostFamous = "";
-            foreach (var item in logger)
-            {
-                if (item.Value.Count > maxFollowers
-                    || (item.Value.Count == maxFollowers && followings[item.Key] < followings[mostFamous]))
-                {
-                    maxFollowers = item.Value.Count;
-                    mostFamous = item.Key;
-                }
-            }
-
-            Console.WriteLine($"1. {mostFamous} : {logger[mostFamous].Count} followers, {followings[mostFamous]} following");
-
-            if (logger[mostFamous].Count != 0) //in case the vlogger has no followers, print just the first line
-            {
-                foreach (var item in logger[mostFamous].OrderBy(x=>x))
-                {
-                    Console.WriteLine($"* {item}");
+                Console.WriteLine($"{counter}. {item.Key} : {item.Value[0].Count} followers, " +
+                    $"{item.Value[1].Count} following");
                 }
             }
         }

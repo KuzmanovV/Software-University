@@ -67,7 +67,7 @@ namespace _8.Ranking
 
                 foreach (var contest in results[intern.Key].OrderByDescending(x=>x.Value))
                 {
-                    Console.WriteLine($"# {contest.Key} -> {contest.Value}");
+                    Console.WriteLine($"#  {contest.Key} -> {contest.Value}");
                 }
             }
         }
