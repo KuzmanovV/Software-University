@@ -50,7 +50,7 @@ namespace _7.TheVLogger
 
                     foreach (var follower in item.Value[0].OrderBy(x=>x))
                     {
-                        Console.WriteLine($"* {follower}");
+                        Console.WriteLine($"*  {follower}");
                     }
                 }
                 else

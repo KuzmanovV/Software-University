@@ -14,13 +14,7 @@ namespace _6.JaggedArrayManipulator
             //Input
             for (int row = 0; row < rows; row++)
             {
-                int[] input = Console.ReadLine().Split(" ", StringSplitOptions.RemoveEmptyEntries).Select(int.Parse).ToArray();
-                jagged[row] = new double[input.Length];
-
-                for (int col = 0; col < input.Length; col++)
-                {
-                    jagged[row][col] = input[col];
-                }
+                jagged[row] = Console.ReadLine().Split(" ", StringSplitOptions.RemoveEmptyEntries).Select(double.Parse).ToArray();
             }
 
             //Analyze
@@ -28,39 +22,28 @@ namespace _6.JaggedArrayManipulator
             {
                 if (jagged[row].Length == jagged[row + 1].Length)
                 {
-                    for (int i = 0; i < jagged[row].Length; i++)
-                    {
-                        jagged[row][i] *= 2;
-                        jagged[row + 1][i] *= 2;
-                    }
+                    jagged[row] = jagged[row].Select(e => e * 2).ToArray();
+                    jagged[row+1] = jagged[row+1].Select(e => e * 2).ToArray();
                 }
-                else
+                else if (jagged[row].Length != jagged[row + 1].Length)
                 {
-                    for (int i = 0; i < jagged[row].Length; i++)
-                    {
-                        jagged[row][i] /= 2.0;
-                    }
-
-                    for (int i = 0; i < jagged[row + 1].Length; i++)
-                    {
-                        jagged[row + 1][i] /= 2.0;
-                    }
+                    jagged[row] = jagged[row].Select(e => e / 2).ToArray();
+                    jagged[row + 1] = jagged[row + 1].Select(e => e / 2).ToArray();
                 }
             }
 
-            string command;
-
             //Commands
+            string command;
             while ((command = Console.ReadLine()) != "End")
             {
-                string[] cmd = Console.ReadLine().Split();
+                string[] cmd = command.Split(" ", StringSplitOptions.RemoveEmptyEntries);
 
                 int targetRow = int.Parse(cmd[1]);
                 int targetCol = int.Parse(cmd[2]);
-                int value = int.Parse(cmd[3]);
+                double value = double.Parse(cmd[3]);
 
                 if (cmd.Length == 4 && targetRow >= 0 && targetCol >= 0 
-                    && targetRow < rows && targetCol<jagged[targetRow].Length)
+                    && targetRow < jagged.GetLength(0) && targetCol<jagged[targetRow].Length)
                 {
                     if (cmd[0] == "Add")
                     {
@@ -73,14 +56,9 @@ namespace _6.JaggedArrayManipulator
                 }
             }
 
-            for (int row = 0; row < rows; row++)
+            foreach (var row in jagged)
             {
-                for (int col = 0; col < jagged[row].Length; col++)
-                {
-                    Console.Write(jagged[row][col] + " ");
-                }
-
-                Console.WriteLine();
+                Console.WriteLine(string.Join(" ", row));
             }
         }
     }
