@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace _7.KnightGame
@@ -9,117 +10,89 @@ namespace _7.KnightGame
         {
             int size = int.Parse(Console.ReadLine());
 
-
-            string[,] board = new string[size, size];
-
-            //Input
-            for (int row = 0; row < size; row++)
+            if (size <= 2)
             {
-                string input = Console.ReadLine();
-
-                for (int col = 0; col < size; col++)
-                {
-                    board[row, col] = input[col].ToString();
-                }
+                Console.WriteLine(0);
             }
-            
-            if (size > 2)
+            else
             {
-                //Finding the knights
-                int removeCounter = 0;
-                int maxRow = -1;
-                int maxCol = -1;
-                while (maxRow == -1 && maxCol == -1)
-                {
-                    int maxKnightsAttacks = 0;
+                List<int[]> knights = new List<int[]>();
+                string[,] board = new string[size, size];
 
+                //Input
+                for (int row = 0; row < size; row++)
+                {
+                    string input = Console.ReadLine();
+
+                    for (int col = 0; col < size; col++)
+                    {
+                        board[row, col] = input[col].ToString();
+                    }
+                }
+
+                int maxAttackCounter = 0;
+                int deletedKnightsCounter = 0;
+                do
+                {
+                    //Collecting all knights
                     for (int row = 0; row < size; row++)
                     {
                         for (int col = 0; col < size; col++)
                         {
-                            int knightsAttacks = 0;
-
                             if (board[row, col] == "K")
                             {
-                                if (AttackIsValid(row - 2, col - 1, size) && board[row - 2, col - 1] == "K")
-                                {
-                                    knightsAttacks++;
-                                }
-
-                                if (AttackIsValid(row - 2, col + 1, size) && board[row - 2, col + 1] == "K")
-                                {
-                                    knightsAttacks++;
-                                }
-
-                                if (AttackIsValid(row - 1, col - 2, size) && board[row - 1, col - 2] == "K")
-                                {
-                                    knightsAttacks++;
-                                }
-
-                                if (AttackIsValid(row - 1, col + 2, size) && board[row - 1, col + 2] == "K")
-                                {
-                                    knightsAttacks++;
-                                }
-
-                                if (AttackIsValid(row + 1, col - 2, size) && board[row + 1, col - 2] == "K")
-                                {
-                                    knightsAttacks++;
-                                }
-
-                                if (AttackIsValid(row + 2, col - 1, size) && board[row + 2, col - 1] == "K")
-                                {
-                                    knightsAttacks++;
-                                }
-
-                                if (AttackIsValid(row + 2, col + 1, size) && board[row + 2, col + 1] == "K")
-                                {
-                                    knightsAttacks++;
-                                }
-
-                                if (AttackIsValid(row + 1, col + 2, size) && board[row + 1, col + 2] == "K")
-                                {
-                                    knightsAttacks++;
-                                }
-                            }
-
-                            if (knightsAttacks > maxKnightsAttacks)
-                            {
-                                maxKnightsAttacks = knightsAttacks;
-                                maxRow = row;
-                                maxCol = col;
+                                knights.Add(new int[] { row, col });
                             }
                         }
                     }
+                    
+                    int maxKnightRow = -1;
+                    int maxKnightCol = -1;
 
-                    if (maxRow > -1 && maxCol > -1)
+                    foreach (int[] knight in knights)
                     {
-                        board[maxRow, maxCol] = "0";
-                        removeCounter++;
-                        maxRow = -1;
-                        maxCol = -1;
+                        int knightRow = knight[0];
+                        int knightCol = knight[1];
+                        int attackCounter = 0;
+
+                        attackCounter = CountingAttacks(knightRow - 2, knightCol - 1, board, attackCounter);
+                        attackCounter = CountingAttacks(knightRow - 2, knightCol + 1, board, attackCounter);
+                        attackCounter = CountingAttacks(knightRow - 1, knightCol - 2, board, attackCounter);
+                        attackCounter = CountingAttacks(knightRow - 1, knightCol + 2, board, attackCounter);
+                        attackCounter = CountingAttacks(knightRow + 1, knightCol - 2, board, attackCounter);
+                        attackCounter = CountingAttacks(knightRow + 1, knightCol + 2, board, attackCounter);
+                        attackCounter = CountingAttacks(knightRow + 2, knightCol - 1, board, attackCounter);
+                        attackCounter = CountingAttacks(knightRow + 2, knightCol + 1, board, attackCounter);
+
+                        if (attackCounter > maxAttackCounter)
+                        {
+                            maxAttackCounter = attackCounter;
+                            maxKnightRow = knightRow;
+                            maxKnightCol = knightCol;
+                        }
                     }
-                }
 
-                //Print
+                    if (maxAttackCounter != 0)
+                    {
+                        board[maxKnightRow, maxKnightCol] = "O";
+                        deletedKnightsCounter++;
+                    }
 
-                Console.WriteLine(removeCounter);
+                } while (maxAttackCounter == 0);
 
-            }
-            else
-            {
-                Console.WriteLine(0);
+                Console.WriteLine(deletedKnightsCounter);
             }
         }
 
-        private static bool AttackIsValid(int x, int y, int size)
+        private static int CountingAttacks(int row, int col, string[,] board, int attackCounter)
         {
-            if (x >= 0 && y >= 0 && x < size && y < size)
+            if (row >= 0 && col >= 0 && row < board.GetLongLength(0) && col < board.GetLongLength(1) && board[row, col] == "K")
             {
-                return true;
+                return attackCounter++;
             }
             else
             {
-                return false;
+                return attackCounter;
             }
         }
     }
