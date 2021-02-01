@@ -4,8 +4,16 @@ using System.Text;
 
 namespace CarManufacturer
 {
-    class Car
+    public class Car
     {
+        private Engine engine;
+        private Tire[] tires;
+        public Car(string make,string model,int year,double fuelQuantity,double fuelConsumption, Engine engine, Tire[] tires)
+            :this(make, model, year, fuelQuantity, fuelConsumption)
+        {
+            Engine = engine;
+            Tires = tires;
+        }
         public Car()
         {
             Make = "VW";
@@ -36,6 +44,8 @@ namespace CarManufacturer
         public double FuelQuantity { get; set; }
         public double FuelConsumption { get; set; }
 
+        public Engine Engine { get; set; }
+        public Tire[] Tires { get; set; }
 
         public void Drive(double distance)
         {
