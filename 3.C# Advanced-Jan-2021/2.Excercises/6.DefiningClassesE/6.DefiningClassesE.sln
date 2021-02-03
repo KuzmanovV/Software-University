@@ -3,7 +3,18 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30611.23
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1.DefineAClassPerson", "1.DefineAClassPerson\1.DefineAClassPerson.csproj", "{2109E01F-C967-48FC-B560-30D2C880402F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1.DefineAClassPerson", "1.DefineAClassPerson\1.DefineAClassPerson.csproj", "{2109E01F-C967-48FC-B560-30D2C880402F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "6.SpeedRacing", "6.SpeedRacing\6.SpeedRacing.csproj", "{361EEA1C-8C36-454A-A8C8-2666470CEC88}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "7.RawData", "7.RawData\7.RawData.csproj", "{C1019C20-2D88-4474-BAB1-1082EA3B943F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{7DB5C35A-9642-4CE0-9FC6-144AD93A72DF}"
+	ProjectSection(SolutionItems) = preProject
+		06. CSharp-Advanced-Defining-Classes-Exercises.docx = 06. CSharp-Advanced-Defining-Classes-Exercises.docx
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "8.CarSalesman", "8.CarSalesman\8.CarSalesman.csproj", "{86B53F6B-ED6B-4673-B068-6C23241DC8DB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +26,18 @@ Global
 		{2109E01F-C967-48FC-B560-30D2C880402F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2109E01F-C967-48FC-B560-30D2C880402F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2109E01F-C967-48FC-B560-30D2C880402F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{361EEA1C-8C36-454A-A8C8-2666470CEC88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{361EEA1C-8C36-454A-A8C8-2666470CEC88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{361EEA1C-8C36-454A-A8C8-2666470CEC88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{361EEA1C-8C36-454A-A8C8-2666470CEC88}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1019C20-2D88-4474-BAB1-1082EA3B943F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1019C20-2D88-4474-BAB1-1082EA3B943F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1019C20-2D88-4474-BAB1-1082EA3B943F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1019C20-2D88-4474-BAB1-1082EA3B943F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86B53F6B-ED6B-4673-B068-6C23241DC8DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86B53F6B-ED6B-4673-B068-6C23241DC8DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86B53F6B-ED6B-4673-B068-6C23241DC8DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86B53F6B-ED6B-4673-B068-6C23241DC8DB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

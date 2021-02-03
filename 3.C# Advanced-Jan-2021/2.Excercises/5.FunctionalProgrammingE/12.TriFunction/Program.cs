@@ -13,7 +13,7 @@ namespace _12.TriFunction
 
             Func<string, int, bool> func = (name, n) =>
             {
-                if (name.Sum(ch=>(int)ch)>=n)
+                if (name.Sum(ch => (int)ch) >= n)
                 {
                     return true;
                 }
@@ -22,6 +22,9 @@ namespace _12.TriFunction
                     return false;
                 }
             };
+
+            Func<Func<string, int, bool>, List<string>, string> firstValid = (name, n) =>
+            name = names.FirstOrDefault(name => func(name));
         }
     }
 

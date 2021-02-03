@@ -7,23 +7,21 @@ namespace DefiningClasses
 {
     public class Family
     {
-        Dictionary<int, string> family = new Dictionary<int, string>();
-
-        public void AddMember()
+        public Family()
         {
-            int n = int.Parse(Console.ReadLine());
-
-            for (int i = 0; i < n; i++)
-            {
-                string[] input = Console.ReadLine().Split();
-                Person p = new Person(input[0], int.Parse(input[1]));
-                family[p.Age] = p.Name;
-            }
+            this.Members = new List<Person>();
+        }
+        public List<Person> Members { get; set; }
+        public void AddMember(Person member)
+        {
+            this.Members.Add(member);
         }
 
-        public void GetOldestMember()
+        public Person GetOldestMember()
         {
-            Console.WriteLine($"{family.Keys.Max()} { family[family.Keys.Max()]}");
+            Person oldest = this.Members.OrderByDescending(p=>p.Age).First();
+
+            return oldest;
         }
     }
 }
