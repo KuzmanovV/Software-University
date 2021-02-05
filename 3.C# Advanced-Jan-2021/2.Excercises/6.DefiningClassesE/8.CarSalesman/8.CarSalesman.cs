@@ -81,8 +81,8 @@ namespace _8.CarSalesman
 
             foreach (var item in cars)
             {
-                Console.WriteLine(item.Model);
-                Console.WriteLine($"  {item.EngineModel.EngineModel}");
+                Console.WriteLine($"{item.Model}:");
+                Console.WriteLine($"  {item.EngineModel.EngineModel}:");
                 Console.WriteLine($"    Power: {item.EngineModel.Power}");
                 
                 if (item.EngineModel.Displacement == 0)
@@ -102,10 +102,10 @@ namespace _8.CarSalesman
                 }
                 else
                 {
-                    Console.WriteLine($"  Weight:{item.Weight}");
+                    Console.WriteLine($"  Weight: {item.Weight}");
                 }
                 
-                Console.WriteLine($"  Color:{item.Color}");
+                Console.WriteLine($"  Color: {item.Color}");
             }
         }
     }
