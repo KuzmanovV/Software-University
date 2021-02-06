@@ -23,23 +23,33 @@ namespace _9.PockemonTrainer
                     Health = int.Parse(input[3])
                 };
 
-                if (!trainers.Contains(Trainer))
-                {
+                Trainer trainer = trainers.FirstOrDefault(t => t.Name == input[0]);
 
-                }
-                Trainer currentTrainer = new Trainer
+                if (trainer == null)
                 {
-                    Name = input[0],
-                    Pockemons = new List<Pockemon>() { currentPockemon }
-                };
+                    Trainer currentTrainer = new Trainer()
+                    {
+                        Name = input[0],
+                        Pockemons = new List<Pockemon>() { currentPockemon }
+                    };
+
+                    trainers.Add(currentTrainer);
+                }
+                else
+                {
+                    trainers[trainers.IndexOf(trainer)].Pockemons.Add(currentPockemon);
+                }
             }
 
             while ((command = Console.ReadLine()) != "End")
             {
-                CheckElementFromCommand(Pockemons, command);
+                foreach (var item in trainers)
+                {
+                    item.CheckElementFromCommand(command);
+                }
             }
 
-            foreach (var player in trainers.OrderByDescending(t=>t.NumberOfBadges))
+            foreach (var player in trainers.OrderByDescending(t => t.NumberOfBadges))
             {
                 Console.WriteLine($"{player.Name} {player.NumberOfBadges} {player.Pockemons.Count}");
             }

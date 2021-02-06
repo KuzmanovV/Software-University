@@ -1,0 +1,3 @@
+﻿1>------ Build started: Project: 9.PockemonTrainer, Configuration: Debug Any CPU ------
+1>9.PockemonTrainer -> C:\Users\N4CYI\source\repos\Software-University\3.C# Advanced-Jan-2021\2.Excercises\6.DefiningClassesE\9.PockemonTrainer\bin\Debug\netcoreapp3.1\9.PockemonTrainer.dll
+========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
