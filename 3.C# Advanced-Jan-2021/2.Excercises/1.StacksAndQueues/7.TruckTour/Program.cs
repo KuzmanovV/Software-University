@@ -8,48 +8,50 @@ namespace _7.TruckTour
     {
         static void Main(string[] args)
         {
-            int N = int.Parse(Console.ReadLine());
-            Queue<string> queue = new Queue<string>();
+            int n = int.Parse(Console.ReadLine());
+            Queue<string> commandsQueue = new Queue<string>();
+            Stack<string> undoState = new Stack<string>();
+            string target = " ";
+            string previousCommand = " ";
 
-            for (int i = 0; i < N; i++)
+            for (int i = 0; i < n; i++)
             {
-                string input = Console.ReadLine();
-                queue.Enqueue(input);
-            }
+                string[] cmd = Console.ReadLine().Split();
 
-            int counter = 0;
-            int[] start = new int[2];
-            int tank = 0;
-            for (int i = 0; i < N; i++)
-            {
-                start = queue.Dequeue().Split().Select(int.Parse).ToArray();
-                tank += start[0] - start[1];
-                queue.Enqueue(string.Join(" ", start));
-                if (tank < 0)
+                switch (cmd[0])
                 {
-                    counter++;
-                    tank = 0;
-                    continue;
-                }
+                    case "1":
+                        target += cmd[1];
+                        undoState.Push(target);
+                        break;
+                    case "2":
+                        if (target.Length != 0 && int.Parse(cmd[1])!=0)
+                        {
+                            target = target.Substring(0, target.Length-int.Parse(cmd[1]));
+                            undoState.Push(target);
+                        }
+                        break;
+                    case "3":
+                        if (target.Length != 0)
+                        {
+                            Console.WriteLine(target[int.Parse(cmd[1])]);
+                        }
+                        break;
+                    case "4":
+                        if (undoState.Count >0)
+                        {
+                            undoState.Pop();
 
-                bool optimalFound = true;
-                int[] next = new int[2];
-                for (int j = 0; j < N - 1; j++)
-                {
-                    next = queue.Dequeue().Split().Select(int.Parse).ToArray();
-                    tank += next[0] - next[1];
-                    queue.Enqueue(string.Join(" ", next));
-                    if (tank < 0)
-                    {
-                        optimalFound = false;
-                        continue;
-                    }
-                }
-
-                if (optimalFound)
-                {
-                    Console.WriteLine(counter);
-                    Environment.Exit(0);
+                            previousCommand = "4";
+                            target = undoState.Peek();
+                        }
+                        else
+                        {
+                            target = string.Empty;
+                        }
+                        break;
+                    default:
+                        break;
                 }
             }
 
