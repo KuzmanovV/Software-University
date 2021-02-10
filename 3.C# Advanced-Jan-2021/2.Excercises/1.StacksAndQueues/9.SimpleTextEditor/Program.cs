@@ -9,62 +9,57 @@ namespace _9.SimpleTextEditor
         static void Main(string[] args)
         {
             int n = int.Parse(Console.ReadLine());
-
-            Stack<char> stack = new Stack<char>();
-            Stack<char> container = new Stack<char>();
-
-            int stringForRemoval1 = 0;
-            Stack<int> forUndo = new Stack<int>();
+            Queue<string> commandsQueue = new Queue<string>();
+            Stack<string> undoState = new Stack<string>();
+            string target = " ";
 
             for (int i = 0; i < n; i++)
             {
                 string[] cmd = Console.ReadLine().Split();
 
-                if (int.Parse(cmd[0])==1||int.Parse(cmd[0])==2)
-                {
-                forUndo.Push(int.Parse(cmd[0]));
-                }
-
                 switch (cmd[0])
                 {
                     case "1":
-                        foreach (var item in cmd[1])
-                        {
-                            stack.Push(item);
-                        }
-                        stringForRemoval1 = cmd[1].Length;
+                        target += cmd[1];
+                        undoState.Push(target);
                         break;
                     case "2":
-                        for (int j = 0; j < int.Parse(cmd[1]); j++)
+                        if (target.Length != 0 && int.Parse(cmd[1]) != 0)
                         {
-                            container.Push(stack.Pop());
+                            target = target.Substring(0, target.Length - int.Parse(cmd[1]));
+                            undoState.Push(target);
                         }
                         break;
                     case "3":
-                        char[] forPrint = stack.ToArray();
-                        Array.Reverse(forPrint);
-                        Console.WriteLine(forPrint[int.Parse(cmd[1]) - 1]);
+                        if (target.Length != 0)
+                        {
+                            Console.WriteLine(target[int.Parse(cmd[1])]);
+                        }
                         break;
                     case "4":
-                        switch (forUndo.Pop())
+                        if (undoState.Count > 0)
                         {
-                            case 1:
-                                for (int k = 0; k < stringForRemoval1; k++)
-                                {
-                                    stack.Pop();
-                                }
-                                break;
-                            case 2:
-                                stack.Push(container.Pop());
-                                break;
-                            default:
-                                break;
+                            undoState.Pop();
+
+                            if (undoState.Count > 0)
+                            {
+                                target = undoState.Peek();
+                            }
+                            else
+                            {
+                                target = string.Empty;
+                            }
+                        }
+                        else
+                        {
+                            target = string.Empty;
                         }
                         break;
                     default:
                         break;
                 }
             }
+
         }
     }
 }

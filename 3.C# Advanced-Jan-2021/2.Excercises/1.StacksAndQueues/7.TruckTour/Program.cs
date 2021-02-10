@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace _7.TruckTour
+namespace NewTruck
 {
     class Program
     {
@@ -10,51 +10,50 @@ namespace _7.TruckTour
         {
             int n = int.Parse(Console.ReadLine());
             Queue<string> commandsQueue = new Queue<string>();
-            Stack<string> undoState = new Stack<string>();
-            string target = " ";
-            string previousCommand = " ";
 
+            //filling of commands
             for (int i = 0; i < n; i++)
             {
-                string[] cmd = Console.ReadLine().Split();
-
-                switch (cmd[0])
-                {
-                    case "1":
-                        target += cmd[1];
-                        undoState.Push(target);
-                        break;
-                    case "2":
-                        if (target.Length != 0 && int.Parse(cmd[1])!=0)
-                        {
-                            target = target.Substring(0, target.Length-int.Parse(cmd[1]));
-                            undoState.Push(target);
-                        }
-                        break;
-                    case "3":
-                        if (target.Length != 0)
-                        {
-                            Console.WriteLine(target[int.Parse(cmd[1])]);
-                        }
-                        break;
-                    case "4":
-                        if (undoState.Count >0)
-                        {
-                            undoState.Pop();
-
-                            previousCommand = "4";
-                            target = undoState.Peek();
-                        }
-                        else
-                        {
-                            target = string.Empty;
-                        }
-                        break;
-                    default:
-                        break;
-                }
+                string input = Console.ReadLine();
+                commandsQueue.Enqueue(input);
             }
 
+            //circuling the commands
+            for (int i = 0; i < n; i++)
+            {
+                int tank = 0;
+                bool isSuccessful = true;
+
+                for (int j = 0; j < n; j++)
+                {
+                    string container = commandsQueue.Dequeue();
+                    int[] firstStation = container.Split().Select(int.Parse).ToArray();
+                    commandsQueue.Enqueue(container);
+
+                    tank += firstStation[0] - firstStation[1];
+                
+                    if (tank < 0)
+                    {
+                        isSuccessful = false;
+
+                        for (int k = j+1; k < n; k++)
+                        {
+                            commandsQueue.Enqueue(commandsQueue.Dequeue());
+                        }
+                        break;
+                    }
+                }
+
+                if (isSuccessful)
+                {
+                    Console.WriteLine(i);
+                    break;
+                }
+                else
+                {
+                    commandsQueue.Enqueue(commandsQueue.Dequeue());
+                }
+            }
         }
     }
 }
