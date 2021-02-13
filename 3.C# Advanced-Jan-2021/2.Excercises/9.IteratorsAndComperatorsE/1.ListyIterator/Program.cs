@@ -32,7 +32,8 @@ namespace _1.ListyIterator
                     case "HasNext":
                         Console.WriteLine(list.HasNext());
                         break;
-                    default:
+                    case "PrintAll":
+                        Console.WriteLine(string.Join(" ", list));
                         break;
                 }
             }

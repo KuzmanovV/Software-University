@@ -1,10 +1,11 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Text;
 
 namespace _1.ListyIterator
 {
-    public class ListyIterator<T>
+    public class ListyIterator<T>: IEnumerable<T>
     {
         private List<T> Items;
         private int index;
@@ -34,6 +35,19 @@ namespace _1.ListyIterator
             }
 
             Console.WriteLine(Items[index]);
+        }
+
+        public IEnumerator<T> GetEnumerator()
+        {
+            foreach (T item in Items)
+            {
+                yield return item;
+            }
+        }
+
+        IEnumerator IEnumerable.GetEnumerator()
+        {
+          return GetEnumerator();
         }
     }
 }

@@ -3,12 +3,18 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1.ListyIterator", "1.ListyIterator\1.ListyIterator.csproj", "{4CE28080-46FE-4C4E-8F2D-683797939ACD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1.2.ListyIterator", "1.ListyIterator\1.2.ListyIterator.csproj", "{4CE28080-46FE-4C4E-8F2D-683797939ACD}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{DD644E68-BFCC-48E0-9FE8-4EC09E5B231F}"
 	ProjectSection(SolutionItems) = preProject
 		09. CSharp-Advanced-Iterators-and-Comparators-Exercises.docx = 09. CSharp-Advanced-Iterators-and-Comparators-Exercises.docx
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.Stack", "3.Stack\3.Stack.csproj", "{C29EDAB7-48AB-4859-A310-BBF646F5EE96}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4.Froggy", "4.Froggy\4.Froggy.csproj", "{BA877820-41C7-4DC7-A14A-910A3379FB40}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5.ComparingObjects", "5.ComparingObjects\5.ComparingObjects.csproj", "{3A247967-D906-4AE8-89BC-8AEE1CE4CE00}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,6 +26,18 @@ Global
 		{4CE28080-46FE-4C4E-8F2D-683797939ACD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4CE28080-46FE-4C4E-8F2D-683797939ACD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4CE28080-46FE-4C4E-8F2D-683797939ACD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C29EDAB7-48AB-4859-A310-BBF646F5EE96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C29EDAB7-48AB-4859-A310-BBF646F5EE96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C29EDAB7-48AB-4859-A310-BBF646F5EE96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C29EDAB7-48AB-4859-A310-BBF646F5EE96}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA877820-41C7-4DC7-A14A-910A3379FB40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA877820-41C7-4DC7-A14A-910A3379FB40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA877820-41C7-4DC7-A14A-910A3379FB40}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA877820-41C7-4DC7-A14A-910A3379FB40}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A247967-D906-4AE8-89BC-8AEE1CE4CE00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A247967-D906-4AE8-89BC-8AEE1CE4CE00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A247967-D906-4AE8-89BC-8AEE1CE4CE00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A247967-D906-4AE8-89BC-8AEE1CE4CE00}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
