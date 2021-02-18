@@ -40,7 +40,6 @@ namespace Guild
 
             //Promote player
             guild.PromotePlayer("Lizzy");
-            guild.DemotePlayer("Lizzy");
 
             //RemovePlayer
             Console.WriteLine(guild.RemovePlayer("Pep")); //True

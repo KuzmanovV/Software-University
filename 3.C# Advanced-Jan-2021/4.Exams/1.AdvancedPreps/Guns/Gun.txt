@@ -67,3 +67,16 @@ public static bool IsPositionValid(int row, int col, int rows, int cols)
 
 	return true;
 }
+
+public string GetStatistics()
+        {
+            StringBuilder result = new StringBuilder();
+            result.AppendLine("The clinic has the following patients:");
+
+            foreach (var pet in data)
+            {
+                result.AppendLine($"Pet {pet.Name} with owner: {pet.Owner}");
+            }
+
+            return result.ToString();
+        }

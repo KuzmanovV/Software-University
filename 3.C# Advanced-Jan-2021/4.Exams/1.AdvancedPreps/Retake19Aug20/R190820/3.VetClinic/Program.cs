@@ -7,7 +7,7 @@ namespace VetClinic
         static void Main(string[] args)
         {
             // Initialize the repository
-            Clinic clinic = new Clinic(20);
+            Clinic clinic = new Clinic(3);
 
             // Initialize entity
             Pet dog = new Pet("Ellias", 5, "Tim");

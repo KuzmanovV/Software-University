@@ -6,10 +6,10 @@ namespace Guild
 {
     public class Player
     {
-        public Player(string name, string Class)
+        public Player(string name, string playerClass)
         {
             Name = name;
-            this.Class = Class;
+            Class = playerClass;
             Rank = "Trial";
             Description = "n/a";
         }
