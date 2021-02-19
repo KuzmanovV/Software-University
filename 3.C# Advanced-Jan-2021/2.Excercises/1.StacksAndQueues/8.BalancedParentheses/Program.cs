@@ -10,45 +10,67 @@ namespace _8.BalancedParentheses
         {
             string input = Console.ReadLine();
 
-            Stack<char> stack = new Stack<char>(input.Substring(0,input.Length/2));
-            Queue<char> queue = new Queue<char>(input.Substring(input.Length/2));
-            bool isBalanced = true;
+            Stack<char> stack = new Stack<char>();
 
-            while (stack.Count!=0)
+            bool negative = false;
+            foreach (char c in input)
             {
-                switch (stack.Pop())
+                if (c != '(' && c != '[' && c != '{')
                 {
-                    case '(':
-                        if (queue.Dequeue()!=')')
-                        {
-                            isBalanced = false;
-                        }
+                    if (stack.Count>0)
+                    {
+                    switch (c)
+                    {
+                        case ')':
+                            if (stack.Pop()!='(')
+                            {
+                                Console.WriteLine("NO");
+                                negative = true;
+                                break;
+                            }
+                            break;
+                        case ']':
+                            if (stack.Pop() != '[')
+                            {
+                                Console.WriteLine("NO");
+                                negative = true;
+                                break;
+                            }
+                            break;
+                        case '}':
+                            if (stack.Pop() != '{')
+                            {
+                                Console.WriteLine("NO");
+                                negative = true;
+                                break;
+                            }
+                            break;
+                        default:
+                            break;
+                    }
+                    }
+                    else
+                    {
+                        Console.WriteLine("NO");
+                        negative = true;
                         break;
-                    case '[':
-                        if (queue.Dequeue()!=']')
-                        {
-                            isBalanced = false;
-                        }
+                    }
+
+                    if (negative)
+                    {
                         break;
-                    case '{':
-                        if (queue.Dequeue()!='}')
-                        {
-                            isBalanced = false;
-                        }
-                        break;
-                    
-                    default:
-                        break;
+                    }
+                }
+                else
+                {
+                    stack.Push(c);
                 }
             }
 
-            if (isBalanced)
+
+            if (!negative)
             {
                 Console.WriteLine("YES");
-            }
-            else
-            {
-                Console.WriteLine("NO");
             }
         }
     }

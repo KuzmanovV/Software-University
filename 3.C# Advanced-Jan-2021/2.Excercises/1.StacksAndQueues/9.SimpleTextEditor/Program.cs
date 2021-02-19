@@ -9,9 +9,8 @@ namespace _9.SimpleTextEditor
         static void Main(string[] args)
         {
             int n = int.Parse(Console.ReadLine());
-            Queue<string> commandsQueue = new Queue<string>();
             Stack<string> undoState = new Stack<string>();
-            string target = " ";
+            string target = String.Empty;
 
             for (int i = 0; i < n; i++)
             {
@@ -20,39 +19,30 @@ namespace _9.SimpleTextEditor
                 switch (cmd[0])
                 {
                     case "1":
-                        target += cmd[1];
                         undoState.Push(target);
+                        target += cmd[1];
                         break;
                     case "2":
-                        if (target.Length != 0 && int.Parse(cmd[1]) != 0)
+                        if (target.Length >= int.Parse(cmd[1]))
                         {
-                            target = target.Substring(0, target.Length - int.Parse(cmd[1]));
                             undoState.Push(target);
+                            target = target.Substring(0, target.Length - int.Parse(cmd[1]));
                         }
                         break;
                     case "3":
                         if (target.Length != 0)
                         {
-                            Console.WriteLine(target[int.Parse(cmd[1])]);
+                            Console.WriteLine(target[int.Parse(cmd[1])-1]);
                         }
                         break;
                     case "4":
                         if (undoState.Count > 0)
                         {
-                            undoState.Pop();
-
-                            if (undoState.Count > 0)
-                            {
-                                target = undoState.Peek();
-                            }
-                            else
-                            {
-                                target = string.Empty;
-                            }
+                                target = undoState.Pop();
                         }
                         else
                         {
-                            target = string.Empty;
+                            target = "";
                         }
                         break;
                     default:

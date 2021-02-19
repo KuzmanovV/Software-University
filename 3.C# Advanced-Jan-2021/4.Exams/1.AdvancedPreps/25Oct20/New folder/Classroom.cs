@@ -17,7 +17,7 @@ namespace ClassroomProject
         public int Count => students.Count();
         public string RegisterStudent(Student student)
         {
-            if (students.Count == Capacity)
+            if (students.Count >= Capacity)
             {
                 return "No seats in the classroom";
             }
@@ -35,11 +35,9 @@ namespace ClassroomProject
             {
                 return "Student not found";
             }
-            else
-            {
+            
                 students.Remove(student);
                 return $"Dismissed student {firstName} {lastName}";
-            }
         }
         public string GetSubjectInfo(string subject)
         {
@@ -55,7 +53,7 @@ namespace ClassroomProject
             {
                 foreach (var item in students.Where(s => s.Subject == subject))
                 {
-                    result.Append($"\n{item.FirstName} {item.LastName}");
+                    result.Append($"{Environment.NewLine}{item.FirstName} {item.LastName}");
                 }
             }
 
