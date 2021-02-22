@@ -23,7 +23,7 @@ namespace _9.PockemonTrainer
                 {
                     Pockemons[i].Health -= 10;
 
-                    if (Pockemons[i].Health<0)
+                    if (Pockemons[i].Health<=0)
                     {
                         Pockemons.Remove(Pockemons[i]);
                     }
