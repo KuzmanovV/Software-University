@@ -8,12 +8,8 @@ namespace Person
     {
         public Person(string name, int age)
         {
-            if (age >= 0)
-            {
-                Age = age;
-            }
-
             Name = name;
+            Age = age;
         }
         public string Name { get; set; }
         public int Age { get; set; }
