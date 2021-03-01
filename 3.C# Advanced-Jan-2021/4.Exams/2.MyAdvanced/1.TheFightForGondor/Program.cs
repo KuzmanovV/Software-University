@@ -39,6 +39,7 @@ namespace _1.TheFightForGondor
                         {
                             fightingPlate = plates.Dequeue();
                         }
+
                         int fight = fightingPlate - wave.Pop();
 
                         if (fight >= 0)
@@ -77,7 +78,12 @@ namespace _1.TheFightForGondor
             else
             {
                 Console.WriteLine("The people successfully repulsed the orc's attack.");
+
                 Console.Write($"Plates left: ");
+                if (fightingPlate > 0)
+                {
+                    Console.Write($"{fightingPlate} ");
+                }
                 for (int i = 0; i < plates.Count - 1; i++)
                 {
                     Console.Write($"{plates.Dequeue()}, ");

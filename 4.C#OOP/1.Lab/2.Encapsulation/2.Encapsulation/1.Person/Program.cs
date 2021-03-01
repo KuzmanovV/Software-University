@@ -20,9 +20,13 @@ namespace PersonsInfo
 
                 persons.Add(person);
             }
-            var parcentage = decimal.Parse(Console.ReadLine());
-            persons.ForEach(p => p.IncreaseSalary(parcentage));
-            persons.ForEach(p => Console.WriteLine(p.ToString()));
+
+            Team team = new Team("Dreamteam");
+
+            persons.ForEach(p=>team.AddPlayer(p));
+
+            Console.WriteLine($"First team: {team.FirstTeam.Count}");
+            Console.WriteLine($"Reserve team: {team.ReserveTeam.Count}");
         }
     }
 }
