@@ -7,7 +7,7 @@ namespace _1.ClassBoxData
         private double length;
         private double width;
         private double height;
-        public Box(double length,double width, double height)
+        public Box(double length, double width, double height)
         {
             Length = length;
             Width = width;
@@ -16,28 +16,19 @@ namespace _1.ClassBoxData
 
         public double Length
         {
-            get=>length;
-            set
+            get => length;
+            private set
             {
-                if (value<=0)
-                {
-                    throw new ArgumentException("Invalid side measure!");
-                }
-
+                ThroughIfInvalidSide(value, nameof(Length));
                 length = value;
             }
         }
-
         public double Width
         {
             get => width;
-            set
+            private set
             {
-                if (value<=0)
-                {
-                    throw new ArgumentException("Invalid side measure!");
-                }
-
+                ThroughIfInvalidSide(value, nameof(Width));
                 width = value;
             }
         }
@@ -45,28 +36,31 @@ namespace _1.ClassBoxData
         public double Height
         {
             get => height;
-            set
+            private set
             {
-                if (value<=0)
-                {
-                    throw new ArgumentException("Invalid side measure!");
-                }
-
+                ThroughIfInvalidSide(value,nameof(Height));
                 height = value;
             }
         }
 
-        public double SurfaceArea(Box box)
+        public double SurfaceArea()
         {
             return 2 * (Length * Width + Length * Height + Height * Width);
         }
-        public double LateralSurfaceArea(Box box)
+        public double LateralSurfaceArea()
         {
             return 2 * (Length * Height + Height * Width);
         }
-        public double Volume(Box box)
+        public double Volume()
         {
-            return Length * Height* Width;
+            return Length * Height * Width;
+        }
+        private void ThroughIfInvalidSide(double value, string lengthName)
+        {
+            if (value <= 0)
+            {
+                throw new ArgumentException($"{lengthName} cannot be zero or negative.");
+            }
         }
     }
 }

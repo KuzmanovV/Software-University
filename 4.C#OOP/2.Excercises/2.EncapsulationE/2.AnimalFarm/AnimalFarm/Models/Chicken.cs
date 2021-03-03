@@ -10,7 +10,7 @@ namespace AnimalFarm.Models
         private string name;
         private int age;
 
-        internal Chicken(string name, int age)
+        public Chicken(string name, int age)
         {
             this.Name = name;
             this.Age = age;
@@ -18,14 +18,10 @@ namespace AnimalFarm.Models
 
         public string Name
         {
-            get
-            {
-                return this.name;
-            }
-
+            get => name;
             private set
             {
-                if (value==null || name=="" || name==" ")
+                if (string.IsNullOrWhiteSpace(value))
                 {
                     throw new ArgumentException("Name cannot be empty.");
                 }
@@ -35,11 +31,7 @@ namespace AnimalFarm.Models
 
         public int Age
         {
-            get
-            {
-                return this.age;
-            }
-
+            get=>age;
             private set
             {
                 if (value >MaxAge||value<MinAge)
