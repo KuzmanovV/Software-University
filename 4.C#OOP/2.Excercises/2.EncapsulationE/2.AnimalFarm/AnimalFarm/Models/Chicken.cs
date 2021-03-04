@@ -31,12 +31,12 @@ namespace AnimalFarm.Models
 
         public int Age
         {
-            get=>age;
+            get => age;
             private set
             {
-                if (value >MaxAge||value<MinAge)
+                if (value > MaxAge || value < MinAge)
                 {
-                    throw new ArgumentException("Age should be between 0 and 15.");
+                    throw new ArgumentException($"Age should be between {MinAge} and {MaxAge}.");
                 }
                 this.age = value;
             }
@@ -44,32 +44,21 @@ namespace AnimalFarm.Models
 
         public double ProductPerDay
         {
-			get
-			{				
-				return this.CalculateProductPerDay();
-			}
-        }
-
-        private double CalculateProductPerDay()
-        {
-            switch (this.Age)
+            get
             {
-                case 0:
-                case 1:
-                case 2:
-                case 3:
+                if (this.Age >= 0 && Age <= 3)
+                {
                     return 1.5;
-                case 4:
-                case 5:
-                case 6:
-                case 7:
+                }
+                else if (this.Age >= 4 && Age <= 7)
+                {
                     return 2;
-                case 8:
-                case 9:
-                case 10:
-                case 11:
+                }
+                else if (this.Age >= 8 && Age <= 11)
+                {
                     return 1;
-                default:
+                }
+                else
                     return 0.75;
             }
         }

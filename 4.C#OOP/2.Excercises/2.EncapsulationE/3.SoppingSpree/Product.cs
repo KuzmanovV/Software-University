@@ -4,9 +4,9 @@ namespace _3.SoppingSpree
     public class Product
     {
         private string name;
-        private int cost;
+        private decimal cost;
 
-        public Product(string name, int cost)
+        public Product(string name, decimal cost)
         {
             Name = name;
             Cost = cost;
@@ -17,24 +17,16 @@ namespace _3.SoppingSpree
             get => name;
             set
             {
-                if (value == "")
-                {
-                    throw new ArgumentException("Name cannot be empty");
-                }
-
+                Validator.ThrowIfStringIsNullOrEmpty(value, "Name cannot be empty");
                 name = value;
             }
         }
-        public int Cost
+        public decimal Cost
         {
             get => cost;
             set
             {
-                if (value < 0)
-                {
-                    throw new ArgumentException("Money cannot be negative");
-                }
-
+                Validator.ThrowIfNumberIsNegative(value, "Money cannot be negative");
                 cost = value;
             }
         }
