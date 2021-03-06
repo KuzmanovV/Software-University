@@ -1,8 +1,8 @@
 ﻿namespace PersonInfo
 {
-    public interface IPerson
+    public interface IPerson: IBirthable, IIdentifiable
     {
-        public string Name { get; set; }
-        public int Age { get; set; }
+        public string Name { get; }
+        public int Age { get; }
     }
 }
