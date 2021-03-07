@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace PersonInfo
 {
@@ -6,14 +8,42 @@ namespace PersonInfo
     {
         static void Main(string[] args)
         {
-            string name = Console.ReadLine();
-            int age = int.Parse(Console.ReadLine());
-            string id = Console.ReadLine();
-            string birthdate = Console.ReadLine();
-            IIdentifiable identifiable = new Citizen(name,age,id,birthdate);
-            IBirthable birthable = new Citizen(name,age,id,birthdate);
-            Console.WriteLine(identifiable.Id);
-            Console.WriteLine(birthable.Birthdate);
+            List<IBirthable> birthdatables = new List<IBirthable>();
+
+            while (true)
+            {
+                string line = Console.ReadLine();
+                if (line == "End")
+                {
+                    break;
+                }
+
+                var parts = line.Split();
+                if (parts[0] == "Citizen")
+                {
+                    var name = parts[1];
+                    var age = int.Parse(parts[2]);
+                    var id = parts[3];
+                    var birthdate = parts[4];
+
+                    birthdatables.Add(new Citizen(name, age, id,birthdate));
+                }
+                else if(parts[0] == "Pet")
+                {
+                    var name = parts[1];
+                    var birthdate = parts[2];
+
+                    birthdatables.Add(new Pet(name, birthdate));
+                }
+            }
+
+            var filter = Console.ReadLine();
+            List<IBirthable> filteredbirtables = birthdatables.Where(i => i.Birthdate.EndsWith(filter)).ToList();
+
+            foreach (var filteredBirthable in filteredbirtables)
+            {
+                Console.WriteLine(filteredBirthable.Birthdate);
+            }
         }
     }
 }

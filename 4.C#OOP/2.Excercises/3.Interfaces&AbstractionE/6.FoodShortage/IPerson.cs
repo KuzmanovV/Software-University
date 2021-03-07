@@ -1,6 +1,6 @@
-﻿namespace PersonInfo
+﻿namespace _6.FoodShortage
 {
-    public interface IPerson: IIdentifiable, IBirthable
+    public interface IPerson: IBuyer
     {
         public string Name { get; }
         public int Age { get; }

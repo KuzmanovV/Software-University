@@ -7,9 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1.DefineAnInterfaceIPerson"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "3.Telefony", "3.Telefony\3.Telefony.csproj", "{2803A6B1-7513-45B0-AAF2-2CFDE4A08EB5}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "4.BorderControl", "4.BorderControl\4.BorderControl.csproj", "{A38426AD-CE69-4803-99FC-87447BDC83C0}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7.MilitaryElit", "7.MilitaryElit\7.MilitaryElit.csproj", "{D4C791E8-96FA-4EE7-953D-7E26DFFD5C95}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "7.MilitaryElit", "7.MilitaryElit\7.MilitaryElit.csproj", "{D4C791E8-96FA-4EE7-953D-7E26DFFD5C95}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,10 +23,6 @@ Global
 		{2803A6B1-7513-45B0-AAF2-2CFDE4A08EB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2803A6B1-7513-45B0-AAF2-2CFDE4A08EB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2803A6B1-7513-45B0-AAF2-2CFDE4A08EB5}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A38426AD-CE69-4803-99FC-87447BDC83C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A38426AD-CE69-4803-99FC-87447BDC83C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A38426AD-CE69-4803-99FC-87447BDC83C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A38426AD-CE69-4803-99FC-87447BDC83C0}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D4C791E8-96FA-4EE7-953D-7E26DFFD5C95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D4C791E8-96FA-4EE7-953D-7E26DFFD5C95}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D4C791E8-96FA-4EE7-953D-7E26DFFD5C95}.Release|Any CPU.ActiveCfg = Release|Any CPU
