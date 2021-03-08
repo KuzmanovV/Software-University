@@ -19,7 +19,7 @@ namespace _7.MilitatyElite.Models
 
         public override string ToString()
         {
-            return $"Code Name: {codeName} State: <state>";
+            return $"Code Name: {codeName} State: {state}";
         }
     }
 }

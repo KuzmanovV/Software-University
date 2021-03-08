@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace _7.MilitaryElit
+namespace _4.WildFarm
 {
-    class Program
+    public class StartUp
     {
         static void Main(string[] args)
         {

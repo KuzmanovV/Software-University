@@ -27,7 +27,8 @@ namespace _7.MilitatyElite.Models
 
         public override string ToString()
         {
-            StringBuilder sb = new StringBuilder(base.ToString());
+            StringBuilder sb = new StringBuilder();
+            sb.AppendLine(base.ToString());
             sb.AppendLine("Repairs:");
 
             foreach (var repair in Repairs)

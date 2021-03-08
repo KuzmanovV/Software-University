@@ -1,4 +1,5 @@
-﻿using _7.MilitatyElite.Contracts;
+﻿using System;
+using _7.MilitatyElite.Contracts;
 using _7.MilitatyElite.Enums;
 
 namespace _7.MilitatyElite.Models
@@ -20,6 +21,7 @@ namespace _7.MilitatyElite.Models
         public override string ToString()
         {
             return base.ToString()
+                +Environment.NewLine
                 +$"Corps: {Corps}";
         }
     }
