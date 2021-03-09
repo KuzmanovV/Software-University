@@ -1,4 +1,5 @@
-﻿using _4.WildFarm.Abstract;
+﻿using System;
+using _4.WildFarm.Abstract;
 
 namespace _4.WildFarm.Models
 {
@@ -7,6 +8,11 @@ namespace _4.WildFarm.Models
         public Hen(string name, double weight, int foodEaten, double wingSize) 
             : base(name, weight, foodEaten, wingSize)
         {
+        }
+
+        public override void Sound()
+        {
+            Console.WriteLine("Cluck");
         }
     }
 }

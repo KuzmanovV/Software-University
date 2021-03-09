@@ -7,7 +7,7 @@ namespace _1.Vehicles
         public Car(double quantity, double consumption)
         {
             Quantity = quantity;
-            Consumption = consumption;
+            Consumption = consumption*0.9;
         }
         public double Quantity { get; private set; }
         public double Consumption { get; private set; }
@@ -18,10 +18,11 @@ namespace _1.Vehicles
             if (planedExpence<=Quantity)
             {
                 Quantity -= planedExpence;
+                Console.WriteLine($"Car travelled {distance} km");
             }
             else
             {
-                Console.WriteLine();
+                Console.WriteLine("Car needs refueling");
             }
         }
 
