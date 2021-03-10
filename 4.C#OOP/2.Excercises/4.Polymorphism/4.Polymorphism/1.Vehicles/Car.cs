@@ -1,34 +1,12 @@
-﻿using System;
-
-namespace _1.Vehicles
+﻿namespace _1.Vehicles
 {
-    public class Car: IAutomobile
+    public class Car: Vehicle
     {
-        public Car(double quantity, double consumption)
+        private const double carAirconModifier = 0.9;
+        public Car(double quantity, double consumption) 
+            : base(quantity, consumption, carAirconModifier)
         {
-            Quantity = quantity;
-            Consumption = consumption*0.9;
-        }
-        public double Quantity { get; private set; }
-        public double Consumption { get; private set; }
-        public void Drive(int distance)
-        {
-            double planedExpence=distance*Consumption;
-
-            if (planedExpence<=Quantity)
-            {
-                Quantity -= planedExpence;
-                Console.WriteLine($"Car travelled {distance} km");
-            }
-            else
-            {
-                Console.WriteLine("Car needs refueling");
-            }
         }
 
-        public void Refuel(int fuel)
-        {
-            throw new System.NotImplementedException();
-        }
     }
 }
