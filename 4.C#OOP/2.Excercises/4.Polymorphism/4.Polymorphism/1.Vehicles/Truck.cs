@@ -1,16 +1,28 @@
-﻿namespace _1.Vehicles
+﻿using System;
+
+namespace _1.Vehicles
 {
     public class Truck: Vehicle
     {
         private const double truckAirconModifier = 1.6;
-        public Truck(double quantity, double consumption) 
-            : base(quantity, consumption, truckAirconModifier)
+        public Truck(double quantity, double consumption, double capacity) 
+            : base(quantity, consumption, capacity, truckAirconModifier)
         {
         }
 
         public override void Refuel(double fuel)
         {
-            base.Refuel(fuel*0.95);
+            if (fuel <= 0)
+            {
+                throw new ArgumentException("Fuel must be a positive number");
+            }
+
+            if (fuel + Quantity > Capacity)
+            {
+                throw new InvalidOperationException($"Cannot fit {fuel} fuel in the tank");
+            }
+
+            Quantity += fuel*0.95;
         }
     }
 }
