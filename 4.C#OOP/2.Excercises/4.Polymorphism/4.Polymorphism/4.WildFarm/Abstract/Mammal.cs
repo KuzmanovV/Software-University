@@ -1,11 +1,17 @@
-﻿using _4.WildFarm.Abstract;
+﻿using System.Collections.Generic;
+using _4.WildFarm.Abstract;
 
 namespace _4.WildFarm.Models
 {
     public abstract class Mammal: Animal
     {
-        protected Mammal(string name, double weight, int foodEaten, string livingRegion) 
-            : base(name, weight, foodEaten)
+        protected Mammal(
+            HashSet<string> allowedFoods, 
+            string name, 
+            double weight,
+            double weightModifier,
+            string livingRegion) 
+            : base(allowedFoods, name, weight, weightModifier)
         {
             LivingRegion = livingRegion;
         }

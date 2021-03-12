@@ -1,18 +1,31 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Xml;
 using _4.WildFarm.Abstract;
 
 namespace _4.WildFarm.Models
 {
-    public class Hen: Bird
+    public class Hen : Bird
     {
-        public Hen(string name, double weight, int foodEaten, double wingSize) 
-            : base(name, weight, foodEaten, wingSize)
+        private const double BaseWeightModifier = 0.35;
+
+        private static HashSet<string> baseAllowedFoods = new HashSet<string>()
+        {
+            nameof(Meat),
+            nameof(Fruit),
+            nameof(Seeds),
+            nameof(Vegetable)
+        };
+        public Hen(
+            string name, double weight,
+            double wingSize)
+            : base(baseAllowedFoods, name, weight, BaseWeightModifier, wingSize)
         {
         }
 
-        public override void Sound()
+        public override string Sound()
         {
-            Console.WriteLine("Cluck");
+            return "Cluck";
         }
     }
 }

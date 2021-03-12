@@ -58,6 +58,7 @@ namespace _1.Vehicles
                     ((Bus)vehicle).TurnOffAircon();
                     vehicle.Drive(parameter);
                     ((Bus)vehicle).TurnOnAircon();
+                    Console.WriteLine($"{vehicle.GetType().Name} travelled {parameter} km");
             }
             else
             {

@@ -1,17 +1,28 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace _4.WildFarm.Models
 {
     public class Mouse: Mammal
     {
-        public Mouse(string name, double weight, int foodEaten, string livingRegion) 
-            : base(name, weight, foodEaten, livingRegion)
+        private const double BaseWeightModifier = 0.1;
+
+        private static HashSet<string> BaseAllowedFoods = new HashSet<string>
+        {
+            nameof(Vegetable),
+            nameof(Fruit)
+        };
+        public Mouse(
+            string name, 
+            double weight, 
+            string livingRegion)
+            : base(BaseAllowedFoods, name, weight, BaseWeightModifier, livingRegion)
         {
         }
 
-        public override void Sound()
+        public override string Sound()
         {
-            Console.WriteLine("Squeak");
+            return "Squeak";
         }
     }
 }

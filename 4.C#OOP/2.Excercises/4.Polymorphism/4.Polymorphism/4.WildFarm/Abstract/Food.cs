@@ -6,6 +6,6 @@
         {
             Quantity = quantity;
         }
-        public int Quantity { get; }
+        public int Quantity { get; private set; }
     }
 }
