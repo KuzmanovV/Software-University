@@ -11,7 +11,7 @@ namespace _4.WildFarm.Models
             nameof(Meat)
         };
 
-        private const double BaseWeightModifier = 0.3;
+        private const double BaseWeightModifier = 1;
         public Tiger(
             string name, 
             double weight, 
@@ -25,5 +25,7 @@ namespace _4.WildFarm.Models
         {
             return "ROAR!!!";
         }
+
+        
     }
 }

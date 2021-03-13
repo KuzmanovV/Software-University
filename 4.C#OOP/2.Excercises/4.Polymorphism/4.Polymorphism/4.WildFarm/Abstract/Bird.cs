@@ -14,5 +14,9 @@ namespace _4.WildFarm.Abstract
             WingSize = wingSize;
         }
         public double WingSize { get; }
+        public override string ToString()
+        {
+            return $"{base.ToString()}{WingSize}, {Weight}, {FoodEaten}]";
+        }
     }
 }

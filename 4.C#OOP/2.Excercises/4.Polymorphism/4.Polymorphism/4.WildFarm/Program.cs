@@ -26,7 +26,14 @@ namespace _4.WildFarm
                 Animal animal = CreateAnimal(animalParts);
                 animals.Add(animal);
                 Console.WriteLine(animal.Sound());
-                animal.Eat(food);
+                try
+                {
+                    animal.Eat(food);
+                }
+                catch (InvalidOperationException ex)
+                {
+                    Console.WriteLine(ex.Message);
+                }
             }
 
             foreach (var animal in animals)
@@ -47,13 +54,13 @@ namespace _4.WildFarm
                     food = new Fruit(quantity);
                     break;
                 case nameof(Meat):
-                    food = new Fruit(quantity);
+                    food = new Meat(quantity);
                     break;
                 case nameof(Seeds):
-                    food = new Fruit(quantity);
+                    food = new Seeds(quantity);
                     break;
                 case nameof(Vegetable):
-                    food = new Fruit(quantity);
+                    food = new Vegetable(quantity);
                     break;
             }
          

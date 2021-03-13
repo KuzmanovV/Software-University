@@ -17,5 +17,10 @@ namespace _4.WildFarm.Abstract
         }
 
         public string Breed { get; }
+
+        public override string ToString()
+        {
+            return $"{GetType().Name} [{Name}, {Breed}, {Weight}, {LivingRegion}, {FoodEaten}]";
+        }
     }
 }

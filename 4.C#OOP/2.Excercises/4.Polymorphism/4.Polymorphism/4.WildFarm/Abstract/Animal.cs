@@ -30,5 +30,10 @@ namespace _4.WildFarm.Abstract
 
             Weight += food.Quantity * WeightModifier;
         }
+
+        public override string ToString()
+        {
+            return $"{GetType().Name} [{Name}, ";
+        }
     }
 }
