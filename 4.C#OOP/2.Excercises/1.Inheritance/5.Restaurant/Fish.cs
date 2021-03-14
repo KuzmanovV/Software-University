@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Restaurant
 {
-    public class Fish:MainDish
+    public class Fish: MainDish
     {
         private const double DefaultGrams = 22; 
         public Fish(string name, decimal price)
