@@ -59,16 +59,16 @@ namespace _4.PizzaCalories
         public double GetCalories()
         {
             var flourTypeModifier = GetFlourTypeModifier();
-            var bakingTechniqueModifier = GetbakingTechniqueModifier();
+            var bakingTechniqueModifier = GetBakingTechniqueModifier();
             return 2*weight * flourTypeModifier * bakingTechniqueModifier;
         }
 
-        private double GetbakingTechniqueModifier()
+        private double GetBakingTechniqueModifier()
         {
             switch (bakingTechnique.ToLower())
             {
-                case "crispy":return 0.9; break;
-                case "chewy": return 1.1; break;
+                case "crispy": return 0.9;
+                case "chewy": return 1.1;
                 default: return 1;
             }
         }

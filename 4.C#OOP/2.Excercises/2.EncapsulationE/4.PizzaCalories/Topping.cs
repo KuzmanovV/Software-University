@@ -6,10 +6,10 @@ namespace _4.PizzaCalories
     {
         private string typeOfTopping;
         private int toppingWeight;
-        private const int minWeight=1;
-        private const int maxWeight=50;
+        private const int minWeight = 1;
+        private const int maxWeight = 50;
 
-        public Topping(string typeOfTopping,int toppingWeight)
+        public Topping(string typeOfTopping, int toppingWeight)
         {
             TypeOfTopping = typeOfTopping;
             ToppingWeight = toppingWeight;
@@ -21,7 +21,7 @@ namespace _4.PizzaCalories
             private set
             {
                 string valueAsLower = value.ToLower();
-                if (valueAsLower!= "meat"&&valueAsLower!= "veggies"&& valueAsLower!= "cheese"&&valueAsLower!= "sauce")
+                if (valueAsLower != "meat" && valueAsLower != "veggies" && valueAsLower != "cheese" && valueAsLower != "sauce")
                 {
                     throw new ArgumentException($"Cannot place {value} on top of your pizza.");
                 }
@@ -35,7 +35,7 @@ namespace _4.PizzaCalories
             get => toppingWeight;
             set
             {
-                Validator.ThroughIfInvalidNumber(minWeight,maxWeight,value,$"{typeOfTopping} weight should be in the range[{minWeight}..{maxWeight}].");
+                Validator.ThroughIfInvalidNumber(minWeight, maxWeight, value, $"{typeOfTopping} weight should be in the range[{minWeight}..{maxWeight}].");
 
                 toppingWeight = value;
             }
@@ -51,13 +51,12 @@ namespace _4.PizzaCalories
         {
             switch (typeOfTopping.ToLower())
             {
-                case "meat": return 1.2;
-                    break; 
-                case "veggies": return 0.8;
-                    break;
+                case "meat":
+                    return 1.2;
+                case "veggies":
+                    return 0.8;
                 case "cheese":
                     return 1.1;
-                    break;
                 default:
                     return 0.9;
             }
