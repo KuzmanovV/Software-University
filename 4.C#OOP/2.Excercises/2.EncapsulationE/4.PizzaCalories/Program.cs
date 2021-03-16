@@ -27,7 +27,7 @@ namespace _4.PizzaCalories
                         break;
                     }
 
-                    var parts = line.Split();
+                    var parts = line.Split(" ", StringSplitOptions.RemoveEmptyEntries);
                     var topping = new Topping(parts[1], int.Parse(parts[2]));
 
                     pizza.AddTopping(topping);
