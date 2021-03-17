@@ -22,7 +22,7 @@ namespace _1.Vehicles
             {
                 if (value>Capacity)
                 {
-                    quantity = 10;
+                    quantity = 0;
                 }
                 else
                 {
