@@ -54,5 +54,23 @@ namespace Stealer
 
             return stringBuilder.ToString().Trim();
         }
+
+        public string RevealPrivateMethods(string classToInvestigate)
+        {
+            Type classType = Type.GetType(classToInvestigate);
+            MethodInfo[] classMethods = classType.GetMethods(
+                BindingFlags.Instance | BindingFlags.NonPublic);
+            StringBuilder stringBuilder = new StringBuilder();
+
+            stringBuilder.AppendLine($"All Private Methods of Class: {classToInvestigate}");
+            stringBuilder.AppendLine($"Base Class: {classType.BaseType.Name}");
+
+            foreach (MethodInfo method in classMethods)
+            {
+                stringBuilder.AppendLine(method.Name);
+            }
+
+            return stringBuilder.ToString().Trim();
+        }
     }
 }
