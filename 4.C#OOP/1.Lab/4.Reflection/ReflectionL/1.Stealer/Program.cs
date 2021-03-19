@@ -11,7 +11,9 @@ namespace Stealer
 
             //string result = spy.AnalyzeAccessModifiers("Stealer.Hacker");
 
-            string result = spy.RevealPrivateMethods("Stealer.Hacker");
+            //string result = spy.RevealPrivateMethods("Stealer.Hacker");
+
+            string result = spy.CollectGettersAndSetters("Stealer.Hacker");
 
             Console.WriteLine(result);
         }
