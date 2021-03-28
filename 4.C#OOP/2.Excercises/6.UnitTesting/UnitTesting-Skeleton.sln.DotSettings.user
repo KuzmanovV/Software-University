@@ -1,26 +1,13 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=89387276_002D2b4f_002D4062_002D9f00_002Db7ee493f5856/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="CtorShouldBeInitializedWith16elements" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
-    &lt;TestId&gt;NUnit3x::5795F810-87D3-4FC9-89B3-61985EE6F92B::.NETCoreApp,Version=v3.1::Tests.DatabaseTests.AddThrowsExceptionWhenAddedMoreThan16Elements&lt;/TestId&gt;&#xD;
-    &lt;TestId&gt;NUnit3x::5795F810-87D3-4FC9-89B3-61985EE6F92B::.NETCoreApp,Version=v3.1::Tests.DatabaseTests.RemoveThrowsExceptionWhenEmpry&lt;/TestId&gt;&#xD;
-    &lt;TestId&gt;NUnit3x::5795F810-87D3-4FC9-89B3-61985EE6F92B::.NETCoreApp,Version=v3.1::Tests.DatabaseTests.FetchReturnsDatabaseCopyInsteadOfReference&lt;/TestId&gt;&#xD;
-    &lt;TestId&gt;NUnit3x::5795F810-87D3-4FC9-89B3-61985EE6F92B::.NETCoreApp,Version=v3.1::Tests.DatabaseTests.CountReturnZero_WhenDatabaseIsEmpty&lt;/TestId&gt;&#xD;
-    &lt;TestId&gt;NUnit3x::5795F810-87D3-4FC9-89B3-61985EE6F92B::.NETCoreApp,Version=v3.1::Tests.DatabaseTests.CtorThrowsException_WhenCapacityExceeded&lt;/TestId&gt;&#xD;
-    &lt;TestId&gt;NUnit3x::5795F810-87D3-4FC9-89B3-61985EE6F92B::.NETCoreApp,Version=v3.1::Tests.DatabaseTests.CtorAddsElementsToDatabase&lt;/TestId&gt;&#xD;
-    &lt;TestId&gt;NUnit3x::2CA77E66-6639-40BB-95E7-672D3E22C7DC::.NETCoreApp,Version=v3.1::Tests.ExtendedDatabaseTests.AddThrowsException_WhenCapacityAcceeded&lt;/TestId&gt;&#xD;
-    &lt;TestId&gt;NUnit3x::2CA77E66-6639-40BB-95E7-672D3E22C7DC::.NETCoreApp,Version=v3.1::Tests.ExtendedDatabaseTests.AddThrowsException_WhenUsernameAlreadyUsed&lt;/TestId&gt;&#xD;
-    &lt;TestId&gt;NUnit3x::2CA77E66-6639-40BB-95E7-672D3E22C7DC::.NETCoreApp,Version=v3.1::Tests.ExtendedDatabaseTests.AddThrowsException_WhenIdAlreadyUsed&lt;/TestId&gt;&#xD;
-    &lt;TestId&gt;NUnit3x::2CA77E66-6639-40BB-95E7-672D3E22C7DC::.NETCoreApp,Version=v3.1::Tests.ExtendedDatabaseTests.AddIncreasesCounter_WhenUserValid&lt;/TestId&gt;&#xD;
-    &lt;TestId&gt;NUnit3x::2CA77E66-6639-40BB-95E7-672D3E22C7DC::.NETCoreApp,Version=v3.1::Tests.ExtendedDatabaseTests.RemoveThrowsException_WhenDBEmpty&lt;/TestId&gt;&#xD;
-    &lt;TestId&gt;NUnit3x::2CA77E66-6639-40BB-95E7-672D3E22C7DC::.NETCoreApp,Version=v3.1::Tests.ExtendedDatabaseTests.RemoveDecreasesDBCount&lt;/TestId&gt;&#xD;
-    &lt;TestId&gt;NUnit3x::2CA77E66-6639-40BB-95E7-672D3E22C7DC::.NETCoreApp,Version=v3.1::Tests.ExtendedDatabaseTests.RemoveRemovesElementFromDB&lt;/TestId&gt;&#xD;
-    &lt;TestId&gt;NUnit3x::2CA77E66-6639-40BB-95E7-672D3E22C7DC::.NETCoreApp,Version=v3.1::Tests.ExtendedDatabaseTests.FindByUserNameThrowsException_WhenArgumentIsNullOrEmpty&lt;/TestId&gt;&#xD;
-    &lt;TestId&gt;NUnit3x::2CA77E66-6639-40BB-95E7-672D3E22C7DC::.NETCoreApp,Version=v3.1::Tests.ExtendedDatabaseTests.FindByUserNameThrowsException_WhenUnserNameDoesNotExist&lt;/TestId&gt;&#xD;
-    &lt;TestId&gt;NUnit3x::2CA77E66-6639-40BB-95E7-672D3E22C7DC::.NETCoreApp,Version=v3.1::Tests.ExtendedDatabaseTests.FindByUserName_ReturnsExpectedUser_WhenUserExists&lt;/TestId&gt;&#xD;
-    &lt;TestId&gt;NUnit3x::2CA77E66-6639-40BB-95E7-672D3E22C7DC::.NETCoreApp,Version=v3.1::Tests.ExtendedDatabaseTests.FindByIdThrowsException_WhenIdIsNegative&lt;/TestId&gt;&#xD;
-    &lt;TestId&gt;NUnit3x::2CA77E66-6639-40BB-95E7-672D3E22C7DC::.NETCoreApp,Version=v3.1::Tests.ExtendedDatabaseTests.FindByIdThrowsException_WhenIdDoesNotExist&lt;/TestId&gt;&#xD;
-    &lt;TestId&gt;NUnit3x::2CA77E66-6639-40BB-95E7-672D3E22C7DC::.NETCoreApp,Version=v3.1::Tests.ExtendedDatabaseTests.FindByIdReturnsExpectedUser_WhenUserExists&lt;/TestId&gt;&#xD;
-    &lt;TestId&gt;NUnit3x::2CA77E66-6639-40BB-95E7-672D3E22C7DC::.NETCoreApp,Version=v3.1::Tests.ExtendedDatabaseTests.CtorThrowsException_WhenCapacityExceeded&lt;/TestId&gt;&#xD;
-    &lt;TestId&gt;NUnit3x::2CA77E66-6639-40BB-95E7-672D3E22C7DC::.NETCoreApp,Version=v3.1::Tests.ExtendedDatabaseTests.CtorAddsInitialPeopleToDB&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::E1FB916D-50FB-496B-83F9-BDF2F37EA267::.NETCoreApp,Version=v3.1::Tests.CarTests.CtorThrowsException_WhenDataInvalid&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::E1FB916D-50FB-496B-83F9-BDF2F37EA267::.NETCoreApp,Version=v3.1::Tests.CarTests.CtorSetsIniitialValues_WhenArgumentsValid&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::E1FB916D-50FB-496B-83F9-BDF2F37EA267::.NETCoreApp,Version=v3.1::Tests.CarTests.RefuelThrowsException_WhenFuelIsZeroOrNegative&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::E1FB916D-50FB-496B-83F9-BDF2F37EA267::.NETCoreApp,Version=v3.1::Tests.CarTests.RefuelIncreasesAmount_WhenFuelAmountIsValid&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::E1FB916D-50FB-496B-83F9-BDF2F37EA267::.NETCoreApp,Version=v3.1::Tests.CarTests.RefuelSetsFuelAmountToCapacity_WhenCapacityIsExceeded&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::E1FB916D-50FB-496B-83F9-BDF2F37EA267::.NETCoreApp,Version=v3.1::Tests.CarTests.DriveThrowsException_WhenFuelIsZero&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::E1FB916D-50FB-496B-83F9-BDF2F37EA267::.NETCoreApp,Version=v3.1::Tests.CarTests.DriveDecreasesFuelAmount_WhenDistanceIsValid&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::E1FB916D-50FB-496B-83F9-BDF2F37EA267::.NETCoreApp,Version=v3.1::Tests.CarTests.DriveDecreasesFuelAmountToZero_WhenRequiredFuelIsEqualToFuelAmount&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
