@@ -9,5 +9,12 @@
     &lt;TestId&gt;NUnit3x::E1FB916D-50FB-496B-83F9-BDF2F37EA267::.NETCoreApp,Version=v3.1::Tests.CarTests.DriveThrowsException_WhenFuelIsZero&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;NUnit3x::E1FB916D-50FB-496B-83F9-BDF2F37EA267::.NETCoreApp,Version=v3.1::Tests.CarTests.DriveDecreasesFuelAmount_WhenDistanceIsValid&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;NUnit3x::E1FB916D-50FB-496B-83F9-BDF2F37EA267::.NETCoreApp,Version=v3.1::Tests.CarTests.DriveDecreasesFuelAmountToZero_WhenRequiredFuelIsEqualToFuelAmount&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::E1FB916D-50FB-496B-83F9-BDF2F37EA267::.NETCoreApp,Version=v3.1::Tests.CarTests.FuelAmountThrowsException_WhenNegativeValueIsPassed&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::B06408E4-1E32-4981-AA8F-C32DF68D2B0E::.NETCoreApp,Version=v3.1::Tests.WarriorTests.CtorThrowsException_WhenDataIsInvalid&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::B06408E4-1E32-4981-AA8F-C32DF68D2B0E::.NETCoreApp,Version=v3.1::Tests.WarriorTests.AttackThrowsException_WhenHPIsLessThanMin&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::B06408E4-1E32-4981-AA8F-C32DF68D2B0E::.NETCoreApp,Version=v3.1::Tests.WarriorTests.AttackThrowsException_WhenWarriorKillsTheAttacker&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::B06408E4-1E32-4981-AA8F-C32DF68D2B0E::.NETCoreApp,Version=v3.1::Tests.WarriorTests.AttackDecreasesAttackerHP&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::B06408E4-1E32-4981-AA8F-C32DF68D2B0E::.NETCoreApp,Version=v3.1::Tests.WarriorTests.AttackSetsEnemyHPToZero_WhenAttackersDemageIsGreterThanEnemyHP&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::B06408E4-1E32-4981-AA8F-C32DF68D2B0E::.NETCoreApp,Version=v3.1::Tests.WarriorTests.AttackDecreasesAttackerHPAndWarriorHP&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

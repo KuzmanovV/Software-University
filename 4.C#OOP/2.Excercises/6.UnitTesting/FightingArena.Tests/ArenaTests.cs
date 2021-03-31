@@ -1,12 +1,15 @@
-﻿using NUnit.Framework;
+﻿using FightingArena;
+using NUnit.Framework;
 
 namespace Tests
 {
     public class ArenaTests
     {
+        private Arena arena;
         [SetUp]
         public void Setup()
         {
+            arena = new Arena();
         }
 
         [Test]
