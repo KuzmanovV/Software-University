@@ -14,6 +14,7 @@ namespace CounterStrike.Models.Guns
         {
             if (BulletsCount-fireRate<=0)
             {
+                BulletsCount -= fireRate;
                 return fireRate;
             }
 
