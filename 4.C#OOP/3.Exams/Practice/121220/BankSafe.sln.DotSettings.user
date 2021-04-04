@@ -1,0 +1,12 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=3389a39a_002D49f9_002D4f2c_002Db7d2_002D5ccf7c2f9ca7/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="NoSuchCellExists" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::F6F7C721-DE5B-4921-8E71-70A081ECCDB7::.NETCoreApp,Version=v3.1::BankSafe.Tests.BankVaultTests.NoSuchCellExists&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::F6F7C721-DE5B-4921-8E71-70A081ECCDB7::.NETCoreApp,Version=v3.1::BankSafe.Tests.BankVaultTests.CellAlreadyFull&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::F6F7C721-DE5B-4921-8E71-70A081ECCDB7::.NETCoreApp,Version=v3.1::BankSafe.Tests.BankVaultTests.ItemAlreadyExistsInCell&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::F6F7C721-DE5B-4921-8E71-70A081ECCDB7::.NETCoreApp,Version=v3.1::BankSafe.Tests.BankVaultTests.CorrectMessageWhenAdded&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::F6F7C721-DE5B-4921-8E71-70A081ECCDB7::.NETCoreApp,Version=v3.1::BankSafe.Tests.BankVaultTests.NoSuchCellExistsWhenRemoving&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::F6F7C721-DE5B-4921-8E71-70A081ECCDB7::.NETCoreApp,Version=v3.1::BankSafe.Tests.BankVaultTests.ItemToRemoveNotTheSame&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::F6F7C721-DE5B-4921-8E71-70A081ECCDB7::.NETCoreApp,Version=v3.1::BankSafe.Tests.BankVaultTests.CorrectMessageWhenRemoved&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
