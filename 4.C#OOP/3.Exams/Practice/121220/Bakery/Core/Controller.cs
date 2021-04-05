@@ -15,6 +15,7 @@ namespace Bakery.Core
         private List<IBakedFood> backedFoods;
         private List<IDrink> drinks;
         private List<ITable> tables;
+        private decimal totalIncome=0;
 
         public Controller()
         {
@@ -40,20 +41,20 @@ namespace Bakery.Core
         {
             if (type == "Water")
             {
-                drinks.Add(new Water(name, portion,brand));
+                drinks.Add(new Water(name, portion, brand));
             }
             if (type == "Tea")
             {
                 drinks.Add(new Tea(name, portion, brand));
             }
 
-            return $"Added {name} ({type}) to the drink menu";
+            return $"Added {name} ({brand}) to the drink menu";
         }
         public string AddTable(string type, int tableNumber, int capacity)
         {
             if (type == "InsideTable")
             {
-                tables.Add(new InsideTable(tableNumber,capacity));
+                tables.Add(new InsideTable(tableNumber, capacity));
             }
             if (type == "OutsideTable")
             {
@@ -67,7 +68,7 @@ namespace Bakery.Core
         {
             ITable tableToReserve = tables.FirstOrDefault(t => t.IsReserved == false && t.Capacity >= numberOfPeople);
 
-            if (tableToReserve==null)
+            if (tableToReserve == null)
             {
                 return $"No available table for {numberOfPeople} people";
             }
@@ -79,38 +80,76 @@ namespace Bakery.Core
         public string OrderFood(int tableNumber, string foodName)
         {
             ITable table = tables.FirstOrDefault(t => t.TableNumber == tableNumber);
-            if (table==null)
+            if (table == null)
             {
                 return $"Could not find table {tableNumber}";
             }
-            
-            IBakedFood food = backedFoods.FirstOrDefault(t => t.Name == foodName);
-            if (food==null)
+            else
             {
-                return $"No {foodName} in the menu";
+                IBakedFood food = backedFoods.FirstOrDefault(t => t.Name == foodName);
+                if (food == null)
+                {
+                    return $"No {foodName} in the menu";
+                }
+                else
+                {
+                    table.OrderFood(food);
+                    return $"Table {tableNumber} ordered {foodName}";
+                }
             }
-
-            return $"Table {tableNumber} ordered {foodName}";
         }
 
         public string OrderDrink(int tableNumber, string drinkName, string drinkBrand)
         {
-            throw new System.NotImplementedException();
+            var table = tables.FirstOrDefault(t => t.TableNumber == tableNumber);
+            if (table == null)
+            {
+                return $"Could not find table {tableNumber}";
+            }
+            else
+            {
+                var drink = drinks.FirstOrDefault(t => t.Name == drinkName && t.Brand==drinkBrand);
+                if (drink == null)
+                {
+                    return $"There is no {drinkName} {drinkBrand} available";
+                }
+                else
+                {
+                    table.OrderDrink(drink);
+                    return $"Table {tableNumber} ordered {drinkName} {drinkBrand}";
+                }
+            }
         }
 
         public string LeaveTable(int tableNumber)
         {
-            throw new System.NotImplementedException();
+            var table = tables.FirstOrDefault(t => t.TableNumber == tableNumber);
+
+            decimal bill = table.GetBill();
+
+            totalIncome += bill;
+            
+            table.Clear();
+
+            return $"Table: {tableNumber}\r\nBill: {bill:f2}";
         }
 
         public string GetFreeTablesInfo()
         {
-            throw new System.NotImplementedException();
+            var freeTables = tables.Where(t => !t.IsReserved).ToList();
+
+            string result = "";
+            foreach (var freeTable in freeTables)
+            {
+                result+= freeTable.GetFreeTableInfo()+"\r\n";
+            }
+
+            return result.TrimEnd();
         }
 
         public string GetTotalIncome()
         {
-            throw new System.NotImplementedException();
+            return $"Total income: {totalIncome:f2}lv";
         }
     }
 }

@@ -16,5 +16,15 @@
     &lt;TestId&gt;NUnit3x::B06408E4-1E32-4981-AA8F-C32DF68D2B0E::.NETCoreApp,Version=v3.1::Tests.WarriorTests.AttackDecreasesAttackerHP&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;NUnit3x::B06408E4-1E32-4981-AA8F-C32DF68D2B0E::.NETCoreApp,Version=v3.1::Tests.WarriorTests.AttackSetsEnemyHPToZero_WhenAttackersDemageIsGreterThanEnemyHP&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;NUnit3x::B06408E4-1E32-4981-AA8F-C32DF68D2B0E::.NETCoreApp,Version=v3.1::Tests.WarriorTests.AttackDecreasesAttackerHPAndWarriorHP&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::B06408E4-1E32-4981-AA8F-C32DF68D2B0E::.NETCoreApp,Version=v3.1::Tests.ArenaTests.CtorInitializeWarriors&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::B06408E4-1E32-4981-AA8F-C32DF68D2B0E::.NETCoreApp,Version=v3.1::Tests.ArenaTests.CountIsZero_WhenArenaEmpty&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::B06408E4-1E32-4981-AA8F-C32DF68D2B0E::.NETCoreApp,Version=v3.1::Tests.ArenaTests.EnrollThrowsException_WhenWarriorAlreadyExist&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::B06408E4-1E32-4981-AA8F-C32DF68D2B0E::.NETCoreApp,Version=v3.1::Tests.ArenaTests.EnrollEncreasesCount&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::B06408E4-1E32-4981-AA8F-C32DF68D2B0E::.NETCoreApp,Version=v3.1::Tests.ArenaTests.EnrollAddsWarriorToWarriors&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::B06408E4-1E32-4981-AA8F-C32DF68D2B0E::.NETCoreApp,Version=v3.1::Tests.ArenaTests.FightThrowsException_WhenWarriorDoesNotExist&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::B06408E4-1E32-4981-AA8F-C32DF68D2B0E::.NETCoreApp,Version=v3.1::Tests.ArenaTests.FightThrowsException_WhenAttackerDoesNotExist&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::B06408E4-1E32-4981-AA8F-C32DF68D2B0E::.NETCoreApp,Version=v3.1::Tests.ArenaTests.FightThrowsException_WhenDefenderDoesNotExist&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::B06408E4-1E32-4981-AA8F-C32DF68D2B0E::.NETCoreApp,Version=v3.1::Tests.ArenaTests.FightThrowsException_WhenAttackerAndDefenderDoesNotExist&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::B06408E4-1E32-4981-AA8F-C32DF68D2B0E::.NETCoreApp,Version=v3.1::Tests.ArenaTests.FightDecreasesHPOfBothWarriors&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

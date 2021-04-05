@@ -10,8 +10,8 @@ namespace Bakery.Models.Tables
 {
     public abstract class Table : ITable
     {
-        private List<IBakedFood> FoodOrders;
-        private List<IDrink> DrinkOrders;
+        private List<IBakedFood> foodOrders;
+        private List<IDrink> drinkOrders;
         private int capacity;
         private int numberOfPeople;
 
@@ -20,8 +20,8 @@ namespace Bakery.Models.Tables
             TableNumber = tableNumber;
             Capacity = capacity;
             PricePerPerson = pricePerPerson;
-            FoodOrders = new List<IBakedFood>();
-            DrinkOrders = new List<IDrink>();
+            foodOrders = new List<IBakedFood>();
+            drinkOrders = new List<IDrink>();
         }
 
         public int TableNumber { get; private set; }
@@ -54,7 +54,7 @@ namespace Bakery.Models.Tables
                     throw new ArgumentException(ExceptionMessages.InvalidNumberOfPeople);
                 }
 
-                capacity = value;
+                numberOfPeople = value;
             }
         }
         public decimal PricePerPerson { get; private set; }
@@ -75,30 +75,30 @@ namespace Bakery.Models.Tables
 
         public void OrderFood(IBakedFood food)
         {
-            FoodOrders.Add(food);
+            foodOrders.Add(food);
         }
 
         public void OrderDrink(IDrink drink)
         {
-            DrinkOrders.Add(drink);
+            drinkOrders.Add(drink);
         }
 
         public decimal GetBill()
         {
-            return FoodOrders.Sum(f => f.Price) + DrinkOrders.Sum(d => d.Price);
+            return PricePerPerson*NumberOfPeople+foodOrders.Sum(f => f.Price) + drinkOrders.Sum(d => d.Price);
         }
 
         public void Clear()
         {
-            FoodOrders.Clear();
-            DrinkOrders.Clear();
+            foodOrders.Clear();
+            drinkOrders.Clear();
             IsReserved = false;
-            NumberOfPeople = 0;
+            numberOfPeople = 0;
         }
 
         public string GetFreeTableInfo()
         {
-            return $"Table: {TableNumber}\r\nType: {GetType().Name}\r\nCapacity: {Capacity}\r\nPrice per Person: {PricePerPerson}";
+            return $"Table: {TableNumber}\r\nType: {GetType().Name}\r\nCapacity: {Capacity}\r\nPrice per Person: {PricePerPerson:f2}";
         }
     }
 }

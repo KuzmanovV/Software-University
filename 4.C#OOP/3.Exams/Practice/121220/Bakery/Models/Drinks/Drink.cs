@@ -80,7 +80,7 @@ namespace Bakery.Models.Drinks
                     throw new ArgumentException(ExceptionMessages.InvalidBrand);
                 }
 
-                name = value;
+                brand = value;
             }
         }
 
