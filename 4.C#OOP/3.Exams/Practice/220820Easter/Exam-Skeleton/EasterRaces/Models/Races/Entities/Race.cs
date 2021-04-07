@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using EasterRaces.Models.Drivers.Contracts;
 using EasterRaces.Models.Races.Contracts;
+using EasterRaces.Utilities.Messages;
 
 namespace EasterRaces.Models.Races.Entities
 {
@@ -10,11 +11,12 @@ namespace EasterRaces.Models.Races.Entities
     {
         private string name;
         private int laps;
-
+        private readonly IDictionary<string, IDriver> driversByName;
         public Race(string name, int laps)
         {
             Name = name;
             Laps = laps;
+            driversByName = new Dictionary<string, IDriver>();
         }
         
         public string Name
@@ -27,7 +29,7 @@ namespace EasterRaces.Models.Races.Entities
             {
                 if (string.IsNullOrEmpty(value) || value.Length < 5)
                 {
-                    throw new ArgumentException($"Name {Name} cannot be less than 5 symbols.");
+                    throw new ArgumentException(string.Format(ExceptionMessages.InvalidName,value,5));
                 }
 
                 name = value;
@@ -43,29 +45,32 @@ namespace EasterRaces.Models.Races.Entities
             {
                 if (value < 1)
                 {
-                    throw new ArgumentException("Laps cannot be less than 1.");
+                    throw new ArgumentException(string.Format(ExceptionMessages.InvalidNumberOfLaps,1));
                 }
 
                 laps = value;
             }
         }
-        public IReadOnlyCollection<IDriver> Drivers { get; }
+
+        public IReadOnlyCollection<IDriver> Drivers => driversByName.Values.ToList();
         public void AddDriver(IDriver driver)
         {
             if (driver==null)
             {
-                throw new ArgumentNullException("Driver cannot be null.");
+                throw new ArgumentNullException(ExceptionMessages.DriverInvalid);
             }
 
             if (!driver.CanParticipate)
             {
-                throw new ArgumentException($"Driver {driver.Name} could not participate in race.");
+                throw new ArgumentException(string.Format(ExceptionMessages.DriverNotParticipate,driver.Name));
             }
 
             if (Drivers.Contains(driver))
             {
-                throw new ArgumentNullException($"Driver {driver.Name} is already added in {Name} race.");
+                throw new ArgumentNullException(string.Format(ExceptionMessages.DriverAlreadyAdded,driver.Name,Name));
             }
+
+            driversByName.Add(driver.Name,driver);
         }
     }
 }
