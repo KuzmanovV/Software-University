@@ -1,0 +1,18 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=12649138_002D1f95_002D4d61_002D9104_002D819502624a0c/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="CheckSameManuf" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::F65F8D78-43B0-4652-A424-1EA9ADBE0F15::.NETCoreApp,Version=v3.1::Computers.Tests.Tests.CheckSameManuf&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::F65F8D78-43B0-4652-A424-1EA9ADBE0F15::.NETCoreApp,Version=v3.1::Computers.Tests.Tests.CheckRemoving&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::F65F8D78-43B0-4652-A424-1EA9ADBE0F15::.NETCoreApp,Version=v3.1::Computers.Tests.Tests.ExcWhenGetComp&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::F65F8D78-43B0-4652-A424-1EA9ADBE0F15::.NETCoreApp,Version=v3.1::Computers.Tests.Tests.CheckListByManuf&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=bf5a9971_002Dfa5f_002D495b_002D97cf_002D8162c04292b5/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="CheckListByManuf" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::F65F8D78-43B0-4652-A424-1EA9ADBE0F15::.NETCoreApp,Version=v3.1::Computers.Tests.Tests.CheckListByManuf&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::F65F8D78-43B0-4652-A424-1EA9ADBE0F15::.NETCoreApp,Version=v3.1::Computers.Tests.Tests.CheckCounter&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::F65F8D78-43B0-4652-A424-1EA9ADBE0F15::.NETCoreApp,Version=v3.1::Computers.Tests.Tests.CheckSameManuf&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::F65F8D78-43B0-4652-A424-1EA9ADBE0F15::.NETCoreApp,Version=v3.1::Computers.Tests.Tests.GetComp&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::F65F8D78-43B0-4652-A424-1EA9ADBE0F15::.NETCoreApp,Version=v3.1::Computers.Tests.Tests.CheckAdd&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
