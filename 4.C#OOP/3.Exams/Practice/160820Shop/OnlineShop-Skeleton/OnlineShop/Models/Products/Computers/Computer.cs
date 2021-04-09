@@ -11,18 +11,18 @@ namespace OnlineShop.Models.Products.Computers
     {
         private double _overallPerformance = 0;
         private decimal _price = 0;
-        private IReadOnlyCollection<IComponent> components;
-        private IReadOnlyCollection<IPeripheral> peripherals;
+        private List<IComponent> components;
+        private List<IPeripheral> peripherals;
 
         public Computer(int id, string manufacturer, string model, decimal price, double overallPerformance)
             : base(id, manufacturer, model, price, overallPerformance)
         {
-            components = new List<IComponent>(){};
-            peripherals = new List<IPeripheral>(){};
+            components = new List<IComponent>();
+            peripherals = new List<IPeripheral>();
         }
 
-        public IReadOnlyCollection<IComponent> Components { get; private set; }
-        public IReadOnlyCollection<IPeripheral> Peripherals { get; private set; }
+        public IReadOnlyCollection<IComponent> Components => components.AsReadOnly();
+        public IReadOnlyCollection<IPeripheral> Peripherals => peripherals.AsReadOnly();
         public void AddComponent(IComponent component)
         {
             if (Components.Contains(component))

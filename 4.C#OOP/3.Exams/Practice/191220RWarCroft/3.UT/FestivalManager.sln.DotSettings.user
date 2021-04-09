@@ -1,0 +1,16 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=1241b7ea_002D6c40_002D4e38_002Da33a_002D1b578c1a5359/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="ThrowIfUnder18" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::CDD9094C-5BD0-4FF5-8FAC-F6E50F878DC0::.NETCoreApp,Version=v3.1::FestivalManager.Tests.StageTests.ThrowIfUnder18&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::CDD9094C-5BD0-4FF5-8FAC-F6E50F878DC0::.NETCoreApp,Version=v3.1::FestivalManager.Tests.StageTests.ThrowSongUnder1Min&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::CDD9094C-5BD0-4FF5-8FAC-F6E50F878DC0::.NETCoreApp,Version=v3.1::FestivalManager.Tests.StageTests.AddSongToPerfNull&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::CDD9094C-5BD0-4FF5-8FAC-F6E50F878DC0::.NETCoreApp,Version=v3.1::FestivalManager.Tests.StageTests.PlayCount&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=306a335f_002D4b1d_002D4643_002Daaac_002D5d12d3cdc385/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="PlayCount" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::CDD9094C-5BD0-4FF5-8FAC-F6E50F878DC0::.NETCoreApp,Version=v3.1::FestivalManager.Tests.StageTests.PlayCount&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::CDD9094C-5BD0-4FF5-8FAC-F6E50F878DC0::.NETCoreApp,Version=v3.1::FestivalManager.Tests.StageTests.GetPerformerExc&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::CDD9094C-5BD0-4FF5-8FAC-F6E50F878DC0::.NETCoreApp,Version=v3.1::FestivalManager.Tests.StageTests.GetPerformerAndGetSongExc&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
