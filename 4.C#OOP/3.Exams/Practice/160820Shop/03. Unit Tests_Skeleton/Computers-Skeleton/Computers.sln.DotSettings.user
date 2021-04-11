@@ -14,5 +14,9 @@
     &lt;TestId&gt;NUnit3x::F65F8D78-43B0-4652-A424-1EA9ADBE0F15::.NETCoreApp,Version=v3.1::Computers.Tests.Tests.CheckSameManuf&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;NUnit3x::F65F8D78-43B0-4652-A424-1EA9ADBE0F15::.NETCoreApp,Version=v3.1::Computers.Tests.Tests.GetComp&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;NUnit3x::F65F8D78-43B0-4652-A424-1EA9ADBE0F15::.NETCoreApp,Version=v3.1::Computers.Tests.Tests.CheckAdd&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::F65F8D78-43B0-4652-A424-1EA9ADBE0F15::.NETCoreApp,Version=v3.1::Computers.Tests.Tests.CheckCtor&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::F65F8D78-43B0-4652-A424-1EA9ADBE0F15::.NETCoreApp,Version=v3.1::Computers.Tests.Tests.CheckRemoving&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::F65F8D78-43B0-4652-A424-1EA9ADBE0F15::.NETCoreApp,Version=v3.1::Computers.Tests.Tests.CheckCompCtor&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::F65F8D78-43B0-4652-A424-1EA9ADBE0F15::.NETCoreApp,Version=v3.1::Computers.Tests.Tests.CheckCompManagerCtor&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

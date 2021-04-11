@@ -1,0 +1,12 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=8a41eee8_002D524e_002D46f8_002Db2a6_002Ddceb9ef8987c/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="CheckName" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::646C24EC-2751-4BF2-A3A5-2CFD7EA92785::.NETCoreApp,Version=v3.0::Aquariums.Tests.AquariumsTests.CheckName&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::646C24EC-2751-4BF2-A3A5-2CFD7EA92785::.NETCoreApp,Version=v3.0::Aquariums.Tests.AquariumsTests.CheckCapacity&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::646C24EC-2751-4BF2-A3A5-2CFD7EA92785::.NETCoreApp,Version=v3.0::Aquariums.Tests.AquariumsTests.CheckCounter&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::646C24EC-2751-4BF2-A3A5-2CFD7EA92785::.NETCoreApp,Version=v3.0::Aquariums.Tests.AquariumsTests.CheckAdding&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::646C24EC-2751-4BF2-A3A5-2CFD7EA92785::.NETCoreApp,Version=v3.0::Aquariums.Tests.AquariumsTests.CheckRemoving&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::646C24EC-2751-4BF2-A3A5-2CFD7EA92785::.NETCoreApp,Version=v3.0::Aquariums.Tests.AquariumsTests.CheckSell&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::646C24EC-2751-4BF2-A3A5-2CFD7EA92785::.NETCoreApp,Version=v3.0::Aquariums.Tests.AquariumsTests.CheckReport&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
