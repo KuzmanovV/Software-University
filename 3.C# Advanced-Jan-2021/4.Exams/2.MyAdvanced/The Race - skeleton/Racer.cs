@@ -6,10 +6,6 @@ namespace TheRace
 {
     public class Racer
     {
-        //        Name: string
-        //Age: int
-        //Country: string
-        //Car: Car
         public Racer(string name, int age, string country, Car car)
         {
             Name = name;

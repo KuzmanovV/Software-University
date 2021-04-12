@@ -30,15 +30,15 @@ namespace TheRace
             race.Add(racer2);
 
             Racer oldestRacer = race.GetOldestRacer(); // Racer with name Stephen
-            Racer racerStephen = race.GetRacer("Stephen"); // Racer with name Stephen
+            Racer dataStephen = race.GetRacer("Stephen"); // Racer with name Stephen
             Racer fastestRacer = race.GetFastestRacer(); // Racer with name Mark
 
             Console.WriteLine(oldestRacer); //Racer: Stephen, 40 (Bulgaria)
-            Console.WriteLine(racerStephen); //Racer: Stephen, 40 (Bulgaria)
+            Console.WriteLine(dataStephen); //Racer: Stephen, 40 (Bulgaria)
             Console.WriteLine(fastestRacer); // Racer: Mark, 34 (UK)
 
             Console.WriteLine(race.Report());
-            //Racers working at Indianapolis 500:
+            //data working at Indianapolis 500:
             //Racer: Stephen, 40 (Bulgaria)
             //Racer: Mark, 34 (UK)
         }
