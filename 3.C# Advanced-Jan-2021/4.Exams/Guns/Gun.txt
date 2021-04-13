@@ -1,13 +1,57 @@
+//ParsingCharToInt
+int bar = int.Parse(foo.ToString());
+
+---------------------------------------------------------------------------------------------------
+//Stack/Queue input
+
+Queue<int> firstLootbox = new Queue<int>(Console.ReadLine().Split(" ",StringSplitOptions.RemoveEmptyEntries).Select(int.Parse).ToArray());
+Stack<int> secondLootbox = new Stack<int>(Console.ReadLine().Split(" ", StringSplitOptions.RemoveEmptyEntries).Select(int.Parse).ToArray());
+
 Console.ReadLine().Split(", ").Select(int.Parse).ToArray()
 
-for (int row = 0; row < n; row++)
+
+------------------------------------------------------------------------------------------------
+//Matrix input with Start fix and Barrow fix.
+
+int size = int.Parse(Console.ReadLine());
+char[,] matrix = new char[size,size];
+
+int curRow = -1;
+int curCol = -1;
+int firstORow = -1;
+int firstOCol = -1;
+int secondORow = -1;
+int secondOCol = -1;
+for (int row = 0; row < size; row++)
 {
 	string currentRow = Console.ReadLine();
 	for (int col = 0; col < currentRow.Length; col++)
 	{
 		matrix[row, col] = currentRow[col];
+
+		if (matrix[row, col]=='S')
+			{
+			curRow = row;
+			curCol = col;
+			}
+ 		if (matrix[row, col] == 'O')
+                  		  {
+                      		  if (firstORow==-1)
+                      		  {
+                          		  firstORow = row;
+                           		 firstOCol = col;
+                        		}
+                        		else
+                       		 {
+                         		 secondORow = row;
+                          	 	 secondOCol = col;
+                       		 }
+                    }
 	}
 }
+
+------------------------------------------------------------------------------------------------
+//Printing matrix
 
 for (int row = 0; row < matrix.GetLength(0); row++)
 {
@@ -26,6 +70,42 @@ while (input != "End")
 	input = Console.ReadLine();
 }
 
+-------------------------------------------------------------------------------------------
+
+//Printer
+public static void Print(char[,] matrix)
+        {
+            for (int row = 0; row < matrix.GetLength(0); row++)
+            {
+                for (int col = 0; col < matrix.GetLength(1); col++)
+                {
+                    Console.Write(matrix[row, col]);
+                }
+
+                Console.WriteLine();
+            }
+        }
+
+--------------------------------------------------------------------------------------------
+
+//Verifying position
+public static bool IsPositionValid(int row, int col, int rows, int cols)
+{
+	if (row < 0 || row >= rows)
+	{
+		return false;
+	}
+	if (col < 0 || col >= cols)
+	{
+		return false;
+	}
+
+	return true;
+}
+
+---------------------------------------------------------------------------------------------
+
+//Moving position
 public static int MoveRow(int row, string movement)
 {
 	if (movement == "up")
@@ -54,19 +134,9 @@ public static int MoveCol(int col, string movement)
 	return col;
 }
 
-public static bool IsPositionValid(int row, int col, int rows, int cols)
-{
-	if (row < 0 || row >= rows)
-	{
-		return false;
-	}
-	if (col < 0 || col >= cols)
-	{
-		return false;
-	}
+------------------------------------------------------------------------------------------------------------------
 
-	return true;
-}
+//StringBuilder
 
 public string GetStatistics()
         {

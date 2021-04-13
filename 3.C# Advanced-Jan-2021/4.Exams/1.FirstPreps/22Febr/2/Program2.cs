@@ -148,13 +148,10 @@ namespace _2
                     }
                 }
 
-                if (matrix[currRow, currCol] != 'F')
-                {
-                    matrix[currRow, currCol] = 'f';
-                }
-                else
-                {
-                    matrix[currRow, currCol] = 'f';
+                matrix[currRow, currCol] = 'f';
+
+                if (matrix[currRow, currCol] == 'F')
+                { 
                     finished = true;
                     break;
                 }

@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29728.190
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Guild", "Guild\Guild.csproj", "{F99CBF38-FF75-4CF5-9808-A67FEB4DC470}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Guild", "Guild\Guild.csproj", "{F99CBF38-FF75-4CF5-9808-A67FEB4DC470}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1.LootBox", "1.LootBox\1.LootBox.csproj", "{9A9059EE-9084-4862-9AD8-722DB9B3748C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.ReVolt", "2.ReVolt\2.ReVolt.csproj", "{6CEED2B8-E3B2-4B32-B32A-65F42FF2785A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{F99CBF38-FF75-4CF5-9808-A67FEB4DC470}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F99CBF38-FF75-4CF5-9808-A67FEB4DC470}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F99CBF38-FF75-4CF5-9808-A67FEB4DC470}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A9059EE-9084-4862-9AD8-722DB9B3748C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A9059EE-9084-4862-9AD8-722DB9B3748C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A9059EE-9084-4862-9AD8-722DB9B3748C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A9059EE-9084-4862-9AD8-722DB9B3748C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CEED2B8-E3B2-4B32-B32A-65F42FF2785A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CEED2B8-E3B2-4B32-B32A-65F42FF2785A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CEED2B8-E3B2-4B32-B32A-65F42FF2785A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CEED2B8-E3B2-4B32-B32A-65F42FF2785A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
