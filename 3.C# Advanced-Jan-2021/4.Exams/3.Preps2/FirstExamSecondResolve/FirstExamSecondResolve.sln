@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31129.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.Gondor", "2.Gondor\2.Gondor.csproj", "{668F6366-D678-45ED-94BA-DC24C6C9DC3E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.WareShips", "2.WareShips\2.WareShips.csproj", "{32EB7C44-ACAF-40EF-B55B-D4EE7CF7AD5B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{668F6366-D678-45ED-94BA-DC24C6C9DC3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{668F6366-D678-45ED-94BA-DC24C6C9DC3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{668F6366-D678-45ED-94BA-DC24C6C9DC3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{668F6366-D678-45ED-94BA-DC24C6C9DC3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32EB7C44-ACAF-40EF-B55B-D4EE7CF7AD5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32EB7C44-ACAF-40EF-B55B-D4EE7CF7AD5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32EB7C44-ACAF-40EF-B55B-D4EE7CF7AD5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32EB7C44-ACAF-40EF-B55B-D4EE7CF7AD5B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {ABB034ED-7330-46B6-8261-FA5ED45140D6}
+	EndGlobalSection
+EndGlobal

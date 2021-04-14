@@ -7,10 +7,17 @@ int bar = int.Parse(foo.ToString());
 Queue<int> firstLootbox = new Queue<int>(Console.ReadLine().Split(" ",StringSplitOptions.RemoveEmptyEntries).Select(int.Parse).ToArray());
 Stack<int> secondLootbox = new Stack<int>(Console.ReadLine().Split(" ", StringSplitOptions.RemoveEmptyEntries).Select(int.Parse).ToArray());
 
-Console.ReadLine().Split(", ").Select(int.Parse).ToArray()
+Console.ReadLine().Split(", ").Select(int.Parse).ToArray();
 
+--------------------------------------------------------------------------------------------------
 
-------------------------------------------------------------------------------------------------
+//Printing Queue
+for (int i = 0; i < plates.Count - 1; i++)
+                {
+                    Console.Write($"{plates.Dequeue()}, ");
+                }
+                Console.WriteLine(plates.Dequeue());
+--------------------------------------------------------------------------------------------------
 //Matrix input with Start fix and Barrow fix.
 
 int size = int.Parse(Console.ReadLine());
@@ -50,6 +57,20 @@ for (int row = 0; row < size; row++)
 	}
 }
 
+
+		OR		OR
+
+
+string[] hits = Console.ReadLine().Split(",", StringSplitOptions.RemoveEmptyEntries).ToArray();
+for (int row = 0; row < size; row++)
+            {
+                string[] currentRow = Console.ReadLine().Split(" ").ToArray();
+
+                for (int col = 0; col < currentRow.Length; col++)
+                {
+                    matrix[row, col] = currentRow[col];
+                }
+            }
 ------------------------------------------------------------------------------------------------
 //Printing matrix
 
@@ -70,7 +91,7 @@ while (input != "End")
 	input = Console.ReadLine();
 }
 
--------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------
 
 //Printer
 public static void Print(char[,] matrix)
@@ -85,6 +106,8 @@ public static void Print(char[,] matrix)
                 Console.WriteLine();
             }
         }
+
+		
 
 --------------------------------------------------------------------------------------------
 
@@ -137,7 +160,6 @@ public static int MoveCol(int col, string movement)
 ------------------------------------------------------------------------------------------------------------------
 
 //StringBuilder
-
 public string GetStatistics()
         {
             StringBuilder result = new StringBuilder();

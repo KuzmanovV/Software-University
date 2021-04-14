@@ -68,7 +68,7 @@ namespace _1.TheFightForGondor
             if (platesOver)
             {
                 Console.WriteLine("The orcs successfully destroyed the Gondor's defense.");
-                Console.Write($"Orcs left: ");
+                Console.Write("Orcs left: ");
                 for (int i = 0; i < wave.Count - 1; i++)
                 {
                     Console.Write($"{wave.Pop()}, ");
