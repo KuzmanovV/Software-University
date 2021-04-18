@@ -1,4 +1,4 @@
 function hellow(){
-console.log("Hellow Softuni")
+console.log("Hello SoftUni")
 }
 hellow()
