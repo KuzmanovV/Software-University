@@ -1,4 +1,6 @@
 function squareArea(input){
 let area = input[0]*input[0];
-console.log(input);
+console.log(area);
 }
+
+squareArea([2]);
