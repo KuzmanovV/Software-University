@@ -2,7 +2,7 @@ function totalPrice(args) {
     let days = Number(args[0]);
     let room = args[1];
     let tip = args[2];
-    let discounted = 0;
+    let discounted = 1;
     let price = 18;
 
     switch (room) {
@@ -36,4 +36,6 @@ function totalPrice(args) {
     console.log(result.toFixed(2))
 }
 
-totalPrice(["14","apartment","positive"])
+totalPrice(["12",
+"room for one person",
+"positive"])
