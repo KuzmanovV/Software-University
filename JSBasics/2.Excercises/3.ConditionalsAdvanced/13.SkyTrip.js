@@ -19,7 +19,7 @@ function totalPrice(args) {
             price = 35
             if (days < 10)
                 discounted = .9;
-            else if (days >= 10 && da <= 15)
+            else if (days >= 10 && days <= 15)
                 discounted = .85;
             else
                 discounted = .8;
@@ -31,7 +31,7 @@ function totalPrice(args) {
     if (tip == 'positive')
         result *= 1.25
     else
-        result *= 1.1
+        result *= .9
 
     console.log(result.toFixed(2))
 }
