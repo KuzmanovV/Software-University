@@ -4,7 +4,7 @@ function login(params) {
 
     for (let i = 0; i < params.length; i++) {
         if (pass === params[i]) {
-            console.log(`User Acer logged in.`);
+            console.log(`User ${account} logged in.`);
         }
         else{
             if (i==3) {
