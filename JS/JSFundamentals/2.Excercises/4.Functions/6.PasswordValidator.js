@@ -5,7 +5,7 @@ function validator(pass) {
 
     function validLettersAndDigits(pass) {
         let isValid = true
-        for (let i = 0; i < pass.length - 1; i++) {
+        for (let i = 0; i < pass.length; i++) {
             let code = pass.charCodeAt(i)
             let isValid = code > 47 && code < 58
                 || code > 64 && code < 91
@@ -21,7 +21,7 @@ function validator(pass) {
     function validNumberOfDigits(pass) {
         let numberOfDigits = 0
 
-        for (let i = 0; i < pass.length - 1; i++) {
+        for (let i = 0; i < pass.length; i++) {
             let code = pass.charCodeAt(i)
             if (code > 47 && code < 58)
                 numberOfDigits++
