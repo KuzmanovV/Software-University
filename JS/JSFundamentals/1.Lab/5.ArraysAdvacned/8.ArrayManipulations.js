@@ -1,26 +1,30 @@
 function arrayManipulations(input) {
-    let result = input.shift().split(' ').map(Number)
+    let result = input
+        .shift()
+        .split(' ')
+        .map(Number)
 
-    for (const iterator of input) {
-        switch (iterator.split(' ').shift()) {
+    for (const part of input) {
+        let [cmd, firstNum, secondNum] = part.split(' ')
+        switch (cmd) {
             case 'Add':
-                result.push(+iterator.pop())
+                result.push(+firstNum)
                 break;
             case 'Remove':
-                result.splice(result.indexOf(iterator[0]), 1)
+                result = result.filter(x=>x!==+firstNum)
                 break;
             case 'RemoveAt':
-                result.splice(iterator[0], 1)
+                result.splice(+firstNum, 1)
                 break;
             case 'Insert':
-                result.splice(iterator[1], 1, iterator[0])
+                result.splice(+secondNum, 0, +firstNum)
                 break;
             default:
                 break;
         }
     }
 
-    return result
+    return result.join(' ')
 }
 
 console.log(arrayManipulations(['4 19 2 53 6 43',
