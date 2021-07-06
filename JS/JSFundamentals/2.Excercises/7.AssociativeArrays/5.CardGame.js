@@ -1,5 +1,18 @@
 function solve(input) {
     let players = {}
+    let typeArr = {
+        S: 4,
+        H: 3,
+        D: 2,
+        C: 1
+    }
+    let powerArr = {
+        J: 11,
+        Q: 12,
+        K: 13,
+        A: 14
+    }
+
     for (let line of input) {
         [person, hand] = line.split(': ')
         hand = hand.split(', ')
@@ -14,15 +27,19 @@ function solve(input) {
     Object.keys(players).forEach(key => {
         let cardsArr = new Set(players[key])
         let total = 0
-
-        Array.from(cardsArr).forEach(card=>{
+        Array.from(cardsArr).forEach(card => {
             let elements = card.split('')
             let type = elements.pop()
-            let cardNumber=elements.join('')
-            if (isNaN(cardNumber)) {
-                
+            let power = elements.join('')
+            if (isNaN(power)) {
+                total += powerArr[power] * typeArr[type]
+            } else {
+                total += power * typeArr[type]
             }
         })
+        
+        players[key] = total
+        console.log(`${key}: ${players[key]}`)
     })
 }
 
