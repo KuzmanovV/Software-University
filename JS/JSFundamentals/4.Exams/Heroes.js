@@ -7,17 +7,18 @@ function solve(input) {
                 heroes[name].mp -= Number(mpCost)
                 console.log(`${name} has successfully cast ${spellName} and now has ${heroes[name].mp} MP!`);
             } else {
-                console.log(`${name} does not have 
-                enough MP to cast ${spellName}!`);
+                console.log(`${name} does not have enough MP to cast ${spellName}!`);
             }
         },
         TakeDamage: (heroes, [name, damage, attacker]) => {
-            let hero=heroes[name]
-            hero.hp-=damage
-            if (hero.hp>0) {
-                console.log();
+            let hero = heroes[name]
+            hero.hp -= damage
+            if (hero.hp > 0) {
+                console.log(`${name} was hit for ${damage} HP by ${attacker} and now has ${hero.hp} HP left!`);
+            }else{
+                console.log(`${name} has been killed by ${attacker}!`);
             }
-         },
+        },
         Recharge: (heroes, [name, mpAmt]) => {
             let initialMP = heroes[name].mp
             heroes[name].mp = Math.min(heroes[name].mp + Number(mpAmt), 200)
@@ -26,7 +27,7 @@ function solve(input) {
         Heal: (heroes, [name, hpAmt]) => {
             let hero = heroes[name]
             let initialHP = hero.hp
-            hero.hp = Math.min(hero.mp + Number(hpAmt), 100)
+            hero.hp = Math.min(hero.hp + Number(hpAmt), 100)
             console.log(`${name} healed for ${hero.hp - initialHP} HP!`);
         }
     }
@@ -43,18 +44,20 @@ function solve(input) {
         let [command, ...args] = input.shift().split(' - ')
         commands[command](heroes, args)
     }
+
+    let sorted = Object.entries(heroes)
+        .filter(([n, { hp, mp }]) => hp > 0)
+        .sort((a, b) => b[1].hp - a[1].hp || a[0].localeCompare(b[0]))
+
+    for (const hero of sorted) {
+        console.log(hero[0]);
+        console.log(`  HP: ${hero[1].hp}`);
+        console.log(`  MP: ${hero[1].mp}`);
+    }
 }
 
 
-solve(['2',
-    'Solmyr 85 120',
-    'Kyrre 99 50',
-    'Heal - Solmyr - 10',
-    'Recharge - Solmyr - 50',
-    'TakeDamage - Kyrre - 66 - Orc',
-    'CastSpell - Kyrre - 15 - ViewEarth',
-    'End']);
-console.log('----------------');
+
 solve(['4',
     'Adela 90 150',
     'SirMullich 70 40',
