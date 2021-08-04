@@ -5,10 +5,8 @@
         public FreshwaterFish(string name, string species, decimal price) 
             : base(name, species, price)
         {
-            
+            Size = 3;
         }
-        public int Size => 5;
-
 
         public override void Eat()
         {

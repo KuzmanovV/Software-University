@@ -8,9 +8,7 @@ namespace _10LadyBugs
         static void Main(string[] args)
         {
             int fieldSize = int.Parse(Console.ReadLine());
-
             int[] field = new int[fieldSize];
-
             int[] indexes = Console.ReadLine()
                 .Split()
                 .Select(int.Parse)

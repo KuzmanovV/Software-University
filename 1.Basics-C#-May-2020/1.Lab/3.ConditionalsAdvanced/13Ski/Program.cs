@@ -23,7 +23,7 @@ namespace _13Ski
                     case "president apartment": total = 35 * (days - 1)*0.9;break;
                 }
             }
-            else if (days>=10&&days<=15)
+            else if (days>=10 && days<=15)
             {
 switch (room)
                 {

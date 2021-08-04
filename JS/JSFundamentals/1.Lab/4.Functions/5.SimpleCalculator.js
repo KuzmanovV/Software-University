@@ -1,21 +1,21 @@
 function calc(a, b, operator) {
     switch (operator) {
         case 'multiply':
-            let result = (a, b) => a * b
-            return result(a, b)
+            let multiply = (a, b) => a * b
+            return multiply(a, b)
             break;
         case 'divide':
-            let devide = (a, b) => a / b
-            return result(a, b)
+            let divide = (a, b) => a / b
+            return divide(a, b)
             break;
-        /*case 'add':
-            let result = (a, b) => a + b
-            return result(a, b)
+        case 'add':
+            let add = (a, b) => a + b
+            return add(a, b)
             break;
         case 'subtract':
-            let result = (a, b) => a - b
-            return result(a, b)
-            break;*/
+            let sub = (a, b) => a - b
+            return sub(a, b)
+            break;
         default:
             break;
     }

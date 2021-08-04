@@ -21,7 +21,6 @@ namespace _4.PasswordValidator
             else
             {
                 Console.WriteLine("Password must be between 6 and 10 characters");
-                isValid1 = false;
             }
 
             for (int i = 0; i < password.Length; i++)
@@ -33,7 +32,6 @@ namespace _4.PasswordValidator
                 else
                 {
                     Console.WriteLine("Password must consist only of letters and digits");
-                    isValid2 = false;
                     break;
                 }
             }
