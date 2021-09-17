@@ -4,10 +4,10 @@ function radar(speed, area) {
         'interstate': 90,
         'city': 50,
         'residential': 20
-    }
+    };
 
     let severity = speed-limits[area];
-    let status = ''
+    let status = '';
     
     if (severity<=0) {
         console.log(`Driving ${speed} km/h in a ${limits[area]} zone`);
