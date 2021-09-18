@@ -5,6 +5,7 @@ function nth(inputArr, step) {
     }
     return output;
 }
+
 console.log(nth(['dsa',
 'asd', 
 'test', 

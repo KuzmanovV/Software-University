@@ -3,13 +3,7 @@ function rotateArray(inputArr, times) {
         inputArr.unshift(inputArr.pop());        
     }
 
-    let output = '';
-    
-    for (const iterator of inputArr) {
-        output+=iterator+' ';
-    }
-
-    console.log(output);
+    console.log(inputArr.join(' '));
 }
 
 rotateArray(['1', 

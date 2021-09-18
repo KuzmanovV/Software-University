@@ -11,16 +11,11 @@ function AR(commands) {
         inputNum++;
     }
 
-    let outputForPrint='';
-    for (const iterator of output) {
-        outputForPrint+=(iterator+'\n')
-    }
-    
-    if (outputForPrint.length===0) {
+    if (output.length===0) {
         return 'Empty'
     }
     else{
-        return outputForPrint;
+        return output.join('\n');
     }
 }
 
