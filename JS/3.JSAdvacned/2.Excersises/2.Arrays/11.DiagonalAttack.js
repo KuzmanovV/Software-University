@@ -26,7 +26,7 @@ function solve(inputArr) {
 
     for (const iterator of matrix) {
         console.log(iterator.join(' '));
-    }
+     }
 }
 
 solve(['5 3 12 3 1',
