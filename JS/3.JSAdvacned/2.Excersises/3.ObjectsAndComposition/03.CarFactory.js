@@ -1,19 +1,21 @@
 function cf(input) {
-    if (input.power >= 200) {
-        power = 200;
-        volume = 3500;
-    } else if (input.power >= 120) {
-        power = 120;
-        volume = 2400;
-    } else {
-        power = 90;
-        volume = 1800;
-    }
-
-    let engine = {
-        power: power,
-        volume: volume
-    };
+   function getEngine(power) {
+       if (input.power >= 200) {
+           power = 200;
+           volume = 3500;
+       } else if (input.power >= 120) {
+           power = 120;
+           volume = 2400;
+       } else {
+           power = 90;
+           volume = 1800;
+       }
+   
+       return engine = {
+           power,
+           volume
+       };
+   }
 
     let carriage = {
         type: input.carriage,
@@ -26,13 +28,14 @@ function cf(input) {
         oneWheel = input.wheelsize-1;
     }
 
-    let wheels = [oneWheel, oneWheel, oneWheel, oneWheel];
+    let wheels = [];
+    wheels.fill(input.wheelsize,0,4)
 
     let output = {
         model: input.model,
-        engine: engine,
-        carriage: carriage,
-        wheels: wheels
+        engine: getEngine(input.power),
+        carriage,
+        wheels
     };
 
     return output;
