@@ -1,12 +1,19 @@
 function hi(input) {
     let output = [];
 
-    for (const iterator of input) {
-        let[name, level, items] = iterator.split(' / ');
+    // for (const iterator of input) {
+    //     let[name, level, items] = iterator.split(' / ');
+    //     level = Number(level);
+    //     items = items ? items.split(', ') : [];
+    //     output.push({name, level, items});
+    // }
+
+    input.forEach(element => {
+        let[name, level, items] = element.split(' / ');
         level = Number(level);
-        items = items ? items.split(', ') : [];
+        items = items ? items.split(', '): [];
         output.push({name, level, items});
-    }
+    });
 
     return JSON.stringify(output);
 }

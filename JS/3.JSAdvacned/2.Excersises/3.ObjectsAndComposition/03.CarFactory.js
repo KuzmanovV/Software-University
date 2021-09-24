@@ -28,8 +28,7 @@ function cf(input) {
         oneWheel = input.wheelsize-1;
     }
 
-    let wheels = [];
-    wheels.fill(input.wheelsize,0,4)
+    let wheels = new Array(4).fill(oneWheel,0,4)
 
     let output = {
         model: input.model,
