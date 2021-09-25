@@ -6,37 +6,31 @@ function solve() {
             mana: 100,
             cast: (spell) => {
                 console.log(`${name} cast ${spell}`)
-                this.mana-=1;
+                this.mana--;
             }
         }
     }
 
-    let canFight = (state) => {
-        fight: () => {
-            console.log(`${state.name} slashes at the foe!`);
-            this.stamina--;
-        }
-    }
-    
     let fighter = (name) => {
-        let state = {
+        return {
             name,
             health: 100,
-            stamina: 100
+            stamina: 100,
+            fight() {
+                console.log(`${name} slashes at the foe!`);
+                this.stamina--;
+            }
         }
-        return Object.assign(state, canFight);
     }
     return {
         fighter,
         mage
-        
     };
 }
 
 let create = solve();
 const scorcher = create.mage("Scorcher");
-scorcher.cast("fireball")
-scorcher.cast("thunder")
+
 scorcher.cast("light")
 
 const scorcher2 = create.fighter("Scorcher 2");
