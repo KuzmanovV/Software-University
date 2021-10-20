@@ -1,29 +1,28 @@
 function generateReport() {
     let allHeads = Array.from(document.querySelectorAll('input'));
+    //console.log(allHeads[2]);
     let checkedHeadersIndexes = [];
     let result = [];
 
-    for (let i = 0; i < 7; i++) {
-        if (allHeads[i].checked) {
+    for (let i = 0; i < allHeads.length; i++) {
+        if (allHeads[i].checked==true) {
             checkedHeadersIndexes.push(i);
         }
     }
 
-    let rowElements = Array.from(document.querySelectorAll('tr'));
+    let rowElements = Array.from(document.querySelectorAll('tbody tr'))
 
-    for (let i = 1; i < rowElements.length; i++) {
-        const row = rowElements.children[i];
+    for (let i = 0; i < rowElements.length; i++) {
+        const row = rowElements[i];
+
         let obj = {};
-
-        for (let j = 0; j < row.length; j++) {
-
-            if (checkedHeadersIndexes.includes(j)) {
-                obj[allHeads[j].name] = row[j].textContent;
-            }
+        for (const iterator of checkedHeadersIndexes) {
+            obj[allHeads[iterator].name] = row.children[iterator].textContent;
         }
-        
+
         result.push(obj);
     }
 
-    console.log(result);
+    document.getElementById('output').value = JSON.stringify(result);
+    //console.log(JSON.stringify(result));
 }
