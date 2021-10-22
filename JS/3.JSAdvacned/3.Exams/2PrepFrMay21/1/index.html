@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="site">
+    <header>
+      <h1>SoftBlog</h1>
+      <section>
+
+    </header>
+    <div class="site-content">
+      <main>
+        <section>
+          <h2>Posts</h2>
+
+          <article>
+            <h1>JavaScript</h1>
+            <p>Category:
+              <strong>Programming</strong>
+            </p>
+            <p>Creator:
+              <strong>John</strong>
+            </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, corrupti quod quaerat debitis
+              voluptates dolorum enim. Facilis vel, deserunt voluptates quam odio sapiente repellat fuga libero,
+              provident assumenda distinctio beatae!</p>
+            <div class="buttons">
+              <button class="btn delete">Delete</button>
+              <button class="btn archive">Archive</button>
+            </div>
+          </article>
+
+        </section>
+      </main>
+      <aside>
+        <section>
+          <h2>Create New Post</h2>
+          <form>
+            <p>
+              <label for="creator">Author</label>
+              <input type="text" id="creator">
+            </p>
+            <p>
+              <label for="title">Title</label>
+              <input type="text" id="title">
+            </p>
+            <p>
+              <label for="category">Category</label>
+              <input type="text" id="category">
+            </p>
+            <p>
+              <label for="content">Content</label>
+              <textarea name="content" id="content"></textarea>
+            </p>
+            <button class="btn create">Create</button>
+          </form>
+        </section>
+        <section class="archive-section">
+          <h2>Archive</h2>
+          <ol></ol>
+        </section>
+      </aside>
+    </div>
+    <footer>
+      <p>SoftBlog &copy; This is the best blog ever!</p>
+    </footer>
+  </div>
+</body>
+<script src="app.js"></script>
+<script>
+  document.onload = solve();
+</script>
+
+</html>
