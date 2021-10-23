@@ -1,11 +1,12 @@
-function solve(){
+function solve() {
    let titleIE = document.querySelector('#title');
    let categoryIE = document.querySelector('#category');
    let authorIE = document.getElementById('creator');
    let contentIE = document.querySelector('#content');
-   
+   let articlesArr = [];
+
    let createBtn = document.querySelector('.btn.create');
-   createBtn.addEventListener('click',(e)=>{
+   createBtn.addEventListener('click', (e) => {
       e.preventDefault();
 
       let h1E = document.createElement('h1');
@@ -29,10 +30,12 @@ function solve(){
       let divE = document.createElement('div');
       divE.classList.add('buttons');
       let delBtnE = document.createElement('button');
-      delBtnE.classList.add(['btn', 'delete']);
+      delBtnE.classList.add('btn');
+      delBtnE.classList.add('delete');
       delBtnE.textContent = 'Delete';
       let archBtnE = document.createElement('button');
-      archBtnE.classList.add(['btn', 'archive']);
+      archBtnE.classList.add('btn');
+      archBtnE.classList.add('archive');
       archBtnE.textContent = 'Archive';
       divE.appendChild(delBtnE);
       divE.appendChild(archBtnE);
@@ -46,5 +49,30 @@ function solve(){
 
       let sectionE = document.querySelector('main section');
       sectionE.appendChild(articleE);
+
+      delBtnE.addEventListener('click', () => {
+         sectionE.removeChild(articleE);
+      })
+
+      archBtnE.addEventListener('click', () => {
+         articlesArr.push(h1E.textContent);
+         articlesArr = articlesArr.sort((a,b)=>a.localeCompare(b));
+
+         let olE = document.querySelector('ol');
+         olE.textContent = '';
+
+         articlesArr.forEach(title => {
+            let liE = document.createElement('li');
+            liE.textContent = title;
+            olE.appendChild(liE);
+         });
+
+         sectionE.removeChild(articleE);
+      })
+
+      titleIE.value = '';
+      categoryIE.value = '';
+      authorIE.value = '';
+      contentIE.value = '';
    })
 }
