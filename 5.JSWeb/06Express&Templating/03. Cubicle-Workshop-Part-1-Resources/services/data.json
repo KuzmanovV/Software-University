@@ -1,0 +1,24 @@
+{
+  "asdf1234": {
+    "name": "Cube B",
+    "description": "Coooool",
+    "imageURL": "1.jpg",
+    "difficulty": "5"
+  },
+  "eae8b533-ed51": {
+    "name": "third",
+    "description": "Mnogo",
+    "imageUrl": "2.jpg",
+    "difficulty": null
+  },
+  "06c85b9d-db1e": {
+    "name": "Last",
+    "description": "Aikido time",
+    "difficulty": null
+  },
+  "7b17eaad-1911": {
+    "name": "Montana",
+    "description": "At home................",
+    "difficulty": null
+  }
+}

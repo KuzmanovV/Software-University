@@ -1,0 +1,12 @@
+
+      {{#with cub}}
+      <h1>{{name}}</h1>
+      <img class="cube" src="/static/assets/{{imageURL}}">
+      <div class="details">
+        <p><span>Description:</span> {{description}}</p>
+        <p><span>Difficulty level: </span> {{difficulty}}</p>
+        <a class="btn" href="/">Back</a>
+        <a class="btn" href="/delete/{{id}}">Delete</a>
+        <a class="btn" href="/edit/{{id}}">Edit</a>
+      </div>
+      {{/with}}
