@@ -1,3 +1,5 @@
+import { Routes, Route } from "react-router-dom";
+
 import Album from "./Components/Album/Album";
 import Carousel from "./Components/Carousel/Carousel";
 import Footer from "./Components/Footer/Footer";
@@ -9,11 +11,15 @@ function App() {
         <div>
             <Navbar />
 
-            <Carousel />
 
-            <Album />
 
-            <Adventures />
+            <Routes>
+                <Route>
+                    <Route path="/" element={<Carousel />} />
+                    <Route path="/album" element={<Album />} />
+                    <Route path="/adventures" element={<Adventures />} />
+                </Route>
+            </Routes>
 
             <Footer />
 
