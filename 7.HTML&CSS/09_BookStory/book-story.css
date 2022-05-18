@@ -1,0 +1,13 @@
+h1 {
+    text-align: center;
+}
+
+main {
+    border: 1px solid #000000;
+    width: 400px;
+    background-color: #dddddd;
+}
+
+p{
+    font-size: 18px;
+}
