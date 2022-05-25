@@ -1,0 +1,20 @@
+#art{
+    background-color: #f2f4c0;
+    border: 1px solid #b2ad7d;
+}
+
+section{
+    font-style: italic;
+    color: #4c7658;
+    background-color: #f2f4c0;
+    border: 1px solid #b2ad7d;
+}
+
+
+body{
+    background-color: #e4e978;
+}
+
+article{
+    width: 700px;
+}

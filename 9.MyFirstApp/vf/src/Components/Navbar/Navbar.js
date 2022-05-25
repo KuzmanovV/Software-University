@@ -17,16 +17,19 @@ export default function Navbar() {
                         <Link className="nav-link" to="/">Ледницата <span className="sr-only">(current)</span></Link>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
+                        <Link className="nav-link" to="/Adventures">Приключения </Link>
                     </li>
                     <li class="nav-item">
                         <Link className="nav-link" to="/album">Албум </Link>
                     </li>
                     <li class="nav-item">
-                        <Link className="nav-link" to="/Adventures">Приключения </Link>
+                        <Link className="nav-link" to="/album">Конкурс </Link>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contact.html">contact </a>
+                        <a class="nav-link" href="about.html">Ледничари</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Координати </a>
                     </li>
                 </ul>
             </div>

@@ -3,11 +3,11 @@ export default function Carousel() {
         <div id="carousel-thumb" class="carousel slide carousel-fade carousel-thumbnails" data-ride="carousel">
         <div class="carousel-inner" role="listbox">
             <div class="carousel-item active">
-                <img class="d-block w-100" src="images/ЛедниДрон.jpg" alt="First slide" />
+                <img class="d-block w-100" src="images/ЛедниДронС.jpg" alt="First slide" />
                     <div class="gradient"></div>
                     <div class="carousel-caption">
-                        <h1>Woman walking in the green fields.</h1>
-                        <p class="lead">Woman walking in the green fields...</p>
+                        <h1>Ледницата</h1>
+                        <p class="lead">Парк за приключения</p>
                         <a class="btn btn-primary" href="about.html"><span>Learn more</span></a>
                     </div>
             </div>
@@ -40,7 +40,7 @@ export default function Carousel() {
             </div>
         </div>
         
-        <ol class="carousel-indicators">
+        {/* <ol class="carousel-indicators">
             <li data-target="#carousel-thumb" data-slide-to="0" class="active"> <img class="d-block w-100" src="images/banner-image-4.jpg" className="img-fluid" />
                 <span>Woman walking in the green fields</span>
             </li>
@@ -53,7 +53,7 @@ export default function Carousel() {
             <li data-target="#carousel-thumb" data-slide-to="3"><img class="d-block w-100" src="images/banner-image-1.jpg" className="img-fluid" />
                 <span>Snow white mountain of east china.</span>
             </li>
-        </ol>
+        </ol> */}
     </div>
     );
 }
