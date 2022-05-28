@@ -1,5 +1,7 @@
+@import url("https://use.fontawesome.com/releases/v5.15.4/css/all.css");
+
 body{
-    font-family: 'proxima-nova', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+    font-family: proxima-nova, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 nav{
@@ -10,11 +12,10 @@ nav{
     background-color: #f5f5f5;
 }
 
-ul{
-    list-style: none;
-}
+
 
 ul li{
+    list-style: none;
     line-height: 25px;
     margin-left: -15px;
 }
@@ -30,21 +31,23 @@ i{
 }
 
 button{
-    padding: 4px 12px 4px 12px;
+    padding: 4px 12px;
     line-height: 20px;
     color: #ffffff;
-    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
     cursor: pointer;
 }
 
 button.shopping{
     background-color: #83a94c;
+    border-color: rgba(0, 0, 0, 0.1);
 }
 
 button.info{
     background-color: #008ed0;
+    border-color: rgba(0, 0, 0, 0.1);
 }
 
 button.delete{
     background-color: #cc4036;
+    border-color: rgba(0, 0, 0, 0.25);
 }
