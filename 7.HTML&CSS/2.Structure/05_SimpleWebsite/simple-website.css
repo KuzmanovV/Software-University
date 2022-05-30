@@ -25,16 +25,16 @@ li {
     display: inline-block;
 }
 
-h1 {
+article>p {
+    font-size: 24px;
+}
+
+header h1 {
     font-size: 28px;
  }
 
- header p{
+header p{
     font-style: italic;
-}
-
-article p {
-    font-size: 24px;
 }
 
 section{
@@ -43,6 +43,9 @@ section{
 
 footer{
     background-color: #444;
+}
+
+footer p{
     color: #fff;
     text-align: center;
     padding: 10px;
