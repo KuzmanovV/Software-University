@@ -6,8 +6,8 @@ body{
     font-size: 18px;
 }
 
-ul li{
-    list-style: none;
+ul{
+    list-style-type: none;
 }
 
 ul.check li i{
