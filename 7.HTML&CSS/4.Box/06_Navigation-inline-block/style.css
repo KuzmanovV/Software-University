@@ -1,0 +1,8 @@
+html {
+    font-family: Helvetica, sans-serif;
+}
+
+li, a, nav {
+    list-style: none;
+    display: inline-block;
+}
