@@ -1,7 +1,10 @@
 div{
     width: 280px;
     display: inline-block;
-    padding: 16px 16px 16px 32px;
+    padding-top: 16px;
+    padding-right: 16px;
+    padding-bottom: 16px;
+    padding-left: 32px;
     margin-top: 20px;
     background-color: #0A2C48;
     color: #fff;
@@ -13,6 +16,6 @@ div:hover{
 }
 
 p{
-    color: c9d6ff;
+    color: #c9d6ff;
     font-size: 18px;
 }
