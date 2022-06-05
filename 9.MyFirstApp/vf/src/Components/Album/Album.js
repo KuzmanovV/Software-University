@@ -1,4 +1,23 @@
+import { useEffect, useState } from "react";
+import {AlbumCard} from './AlbumCard';
+
 export default function Album () {
+    const [pics, setPics] = useState([]);
+    
+    useEffect(()=>{
+        fetch('https://parseapi.back4app.com/classes/PicsBase',{
+            method: 'GET',
+            headers: {
+                'X-Parse-Application-Id': 'XwBHamKqXHfzyCOOR2Ki1mUWSAeRUcURBBHooDGs',
+                'X-Parse-REST-API-Key':'kwUKzkv4QNkVX3miI74lUPTw1Qzu1j4UZIi2Qql9'
+            }
+        })
+        .then(res=>res.json())
+        .then(result=>{
+            setPics(result);
+        })
+    }, []);
+    
     return (
         <section id="portfolio">
                 <div class="container">
@@ -58,30 +77,7 @@ export default function Album () {
                                 </a>
                             </div>
                             <div class="row">
-                                <a href="https://unsplash.it/1200/768.jpg?image=257" data-toggle="lightbox" data-gallery="example-gallery" class="col-xl-6 col-md-4 box-1">
-                                    <img src="https://unsplash.it/600.jpg?image=257" class="img-fluid" />
-                                    <div class="overlay">
-                                        <img src="images/comment.png" alt="plus-icon" />
-                                        <div class="text">Man standing on the middle of the road in the morning <span>Landscapes</span></div>
-                                        <div class="count">45</div>
-                                    </div>
-                                </a>
-                                <a href="https://unsplash.it/1200/768.jpg?image=258" data-toggle="lightbox" data-gallery="example-gallery" class="col-xl-3 col-md-4 box-2">
-                                    <img src="https://unsplash.it/600.jpg?image=258" class="img-fluid" />
-                                    <div class="overlay">
-                                        <img src="images/comment.png" alt="plus-icon" />
-                                        <div class="text">Man standing on the middle of the road in the morning <span>Landscapes</span></div>
-                                        <div class="count">45</div>
-                                    </div>
-                                </a>
-                                <a href="https://unsplash.it/1200/768.jpg?image=259" data-toggle="lightbox" data-gallery="example-gallery" class="col-xl-3 col-md-4 box-2">
-                                    <img src="https://unsplash.it/600.jpg?image=259" class="img-fluid" />
-                                    <div class="overlay">
-                                        <img src="images/comment.png" alt="plus-icon" />
-                                        <div class="text">Man standing on the middle of the road in the morning <span>Landscapes</span></div>
-                                        <div class="count">45</div>
-                                    </div>
-                                </a>
+                                {pics.map(pic=><AlbumCard />)}
                             </div>
                         </div>
                     </div>
