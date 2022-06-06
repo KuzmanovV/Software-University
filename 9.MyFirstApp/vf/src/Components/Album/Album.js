@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import {AlbumCard} from './AlbumCard';
+import {AlbumCard} from './AlbumCard.js';
 
 export default function Album () {
     const [pics, setPics] = useState([]);
@@ -77,7 +77,7 @@ export default function Album () {
                                 </a>
                             </div>
                             <div class="row">
-                                {pics.map(pic=><AlbumCard />)}
+                                {pics.map(x=><AlbumCard pic={x}/>)}
                             </div>
                         </div>
                     </div>

@@ -10,9 +10,6 @@ function App() {
     return (
         <div>
             <Navbar />
-
-
-
             <Routes>
                 <Route>
                     <Route path="/" element={<Carousel />} />
