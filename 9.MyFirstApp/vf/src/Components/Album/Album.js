@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import {AlbumCard} from './AlbumCard.js';
+import AlbumCard from './AlbumCard.js';
 
 export default function Album () {
     const [pics, setPics] = useState([]);
@@ -51,22 +51,10 @@ export default function Album () {
                                 </a>
                             </div>
                             <div class="row">
-                                <a href="https://unsplash.it/1200/768.jpg?image=254" data-toggle="lightbox" data-gallery="example-gallery" class="col-xl-3 col-md-4 box-2">
-                                    <img src="https://unsplash.it/600.jpg?image=254" class="img-fluid" />
-                                    <div class="overlay">
-                                        <img src="images/comment.png" alt="plus-icon" />
-                                        <div class="text">Man standing on the middle of the road in the morning <span>Landscapes</span></div>
-                                        <div class="count">45</div>
-                                    </div>
-                                </a>
-                                <a href="https://unsplash.it/1200/768.jpg?image=255" data-toggle="lightbox" data-gallery="example-gallery" class="col-xl-3 col-md-4 box-2">
-                                    <img src="https://unsplash.it/600.jpg?image=255" class="img-fluid" />
-                                    <div class="overlay">
-                                        <img src="images/comment.png" alt="plus-icon" />
-                                        <div class="text">Man standing on the middle of the road in the morning <span>Landscapes</span></div>
-                                        <div class="count">45</div>
-                                    </div>
-                                </a>
+                                
+                                {/* {pics.map(x=><AlbumCard pic={x}/>)} */}
+
+                               
                                 <a href="https://unsplash.it/1200/768.jpg?image=256" data-toggle="lightbox" data-gallery="example-gallery" class="col-xl-6 col-md-4 box-1">
                                     <img src="https://unsplash.it/600.jpg?image=256" class="img-fluid" />
                                     <div class="overlay">
@@ -77,7 +65,6 @@ export default function Album () {
                                 </a>
                             </div>
                             <div class="row">
-                                {pics.map(x=><AlbumCard pic={x}/>)}
                             </div>
                         </div>
                     </div>
