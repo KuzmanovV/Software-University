@@ -1,0 +1,14 @@
+body :nth-child(1){
+    background-color: green;
+    height: 50%;
+}
+
+body :nth-child(2){
+    height: 50%;
+    background-color: orange;
+}
+
+section.card{
+    display: block;
+    position: absolute;
+}
