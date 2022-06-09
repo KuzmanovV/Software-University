@@ -1,7 +1,21 @@
-ul{
-    display: inline-block;
-}
+@import url("https://use.fontawesome.com/releases/v5.15.4/css/all.css");
+
+/* ul{
+} */
 
 a{
     border-radius: 50%;
+}
+
+li{
+    display: inline-block;
+    list-style-type: none;
+}
+
+i{
+    color: black;
+}
+
+i :hover{
+    color: aqua;
 }
