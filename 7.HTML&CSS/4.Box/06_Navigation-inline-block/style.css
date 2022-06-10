@@ -6,3 +6,24 @@ li, a, nav {
     list-style: none;
     display: inline-block;
 }
+
+a{
+    text-decoration: none;
+    color: green;
+    padding-right: 10px;
+}
+
+nav{
+    position: absolute;
+    top: 0;
+    left: 200px;
+}
+
+header{
+    position: relative;
+}
+
+hr{
+    height: 1px;
+    background-color: black;
+}

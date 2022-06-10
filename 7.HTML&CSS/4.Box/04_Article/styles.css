@@ -6,7 +6,6 @@ main{
 img{
     border-right: 1px solid #d1d1d1;
     float: left;
-    display: inline;
     margin-right: 19px;
     padding-right: 19px;
 }
