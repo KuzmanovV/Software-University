@@ -1,20 +1,31 @@
 @import url("https://use.fontawesome.com/releases/v5.15.4/css/all.css");
 
 .viewport:first-child{
-    background-color: green;
+    background-image: linear-gradient(to right, #185b9d, #42cda3);
     /* height: 50%; */
 }
 
 .viewport:last-child{
     /* height: 50%; */
-    background-color: orange;
+    background-image: linear-gradient(to right, #a83278, #d28213);
 }
 
 .viewport{
+   height: 50vh;
     position: relative;
+    overflow: hidden;
 }
 
 .viewport .card{
     display: block;
+    width: 200px;
+    
     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.viewport .card img{
+    width: 100%;
 }
