@@ -1,5 +1,23 @@
+html{
+    font-family: sans-serif;
+}
+
 body{
     background-color: rgb(238, 238, 238);
+    padding: 5%;
+    position: relative;
+}
+
+main{
+    display: inline-block;
+    width: 69%;
+}
+
+aside{
+    display: inline-block;
+    width: 30%;
+    position: absolute;
+    top: 200px;
 }
 
 img{
@@ -19,4 +37,48 @@ blockquote{
 h1, h2, h3{
     font-family: Georgia, serif;
     font-size: 1em/1.2;
+}
+
+hr{
+    height: 4px;
+    background-color: black;
+}
+
+header nav ul{
+    list-style: none;
+    color: green;
+}
+
+header nav ul li{
+    display: inline;
+    margin: 10px;
+    font-size: 15px;
+}
+
+header{
+    position: relative;
+}
+
+header p{
+    font-weight: bold;
+    font-size: 40px;
+}
+
+header nav{
+    position: absolute;
+    top: -15px;
+    right: 0px;
+    font-weight: bold;
+}
+
+#firstImg{
+    float: right;
+}
+
+blockquote{
+    display: inline;
+}
+
+#secondImg{
+    float: left;
 }
