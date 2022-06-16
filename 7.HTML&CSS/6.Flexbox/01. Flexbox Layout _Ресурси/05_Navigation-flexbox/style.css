@@ -1,0 +1,16 @@
+#mainHeader{
+    display: flex;
+    border-bottom: 2px solid rgb(0,0,0);
+    justify-content: space-between;
+}
+
+#mainHeader ul{
+    display: flex;
+    color: green;
+    gap: 20px
+}
+
+a{
+    color: rgb(0, 153, 0);
+    text-decoration: none;;
+}
