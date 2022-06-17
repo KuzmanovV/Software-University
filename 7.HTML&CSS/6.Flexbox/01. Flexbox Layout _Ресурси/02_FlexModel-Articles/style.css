@@ -12,4 +12,9 @@ section{
     display: flex;
     justify-content: space-between;
     max-width: 70vw;
+    margin: 5rem auto;
+}
+
+article{
+    width: 30%;
 }
