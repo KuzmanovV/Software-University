@@ -1,0 +1,35 @@
+.page{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+html{
+    padding: 50px;
+}
+
+body{
+    background-color: rgb(238, 238, 238);
+}
+
+main{
+    /* display: inline; */
+    width: 70%;
+}
+
+aside{
+    /* display: inline; */
+}
+
+img{
+    background-color: rgb(255, 255, 255);
+}
+
+blockquote, h1, h3{
+    font-family: Georgia, serif;
+}
+
+aside a{
+    color: rgb(0, 153, 0);
+    text-decoration: none;
+}

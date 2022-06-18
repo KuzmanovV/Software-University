@@ -1,0 +1,13 @@
+card{
+    width: 200px;
+display: flex;
+direction: vertical;
+}
+
+img{
+    
+}
+
+body{
+    background-color: rgb(238, 238, 238);
+}

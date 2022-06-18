@@ -1,0 +1,27 @@
+body, ul, li{
+    display: flex;
+}
+
+body{
+    padding: 30px;
+    background-color: lightgrey;
+}
+
+ul{
+    justify-content: space-between;
+    align-items: space-between;
+    flex-wrap: wrap;
+    row-gap: 10px;
+}
+
+li{
+    border: 5px solid black;
+    width: 30%;
+    /* border-color: white; */
+    align-items: center;
+    justify-content: center;
+}
+
+img{
+    width: 90%;
+}

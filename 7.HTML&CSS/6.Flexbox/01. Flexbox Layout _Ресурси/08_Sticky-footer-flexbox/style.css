@@ -1,0 +1,35 @@
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(238, 238, 238);
+    height: 100vh;
+    font-family: Helvetica, sans-serif;
+}
+
+header{
+    text-transform: uppercase;
+}
+
+header{
+    margin-bottom: 30px;
+}
+
+footer{
+    color: rgb(255, 255, 255);
+    background-color: rgb(102, 102, 102);
+    padding:15px;
+}
+
+p, h2{
+    margin-bottom: 30px;
+    font-style: normal;
+}
+
+h1, main{
+    margin-left: 30px;
+}
+
+hr{
+    height: 5px;
+}
+
