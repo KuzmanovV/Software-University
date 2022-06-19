@@ -2,14 +2,42 @@ body {
     background-color: rgb(238, 238, 238);
     display: flex;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
+    position: relative;
 }
 
 .container{
     display: flex;
     flex-wrap: wrap;
-    width: 50%;
-    height: 50%;
+    width: 45%;
+    height: 80vh;
+    justify-content: space-between;
+    position: absolute;
+    top: 30%;
 }
 
-        
+.card{
+    width: 12%;
+    height: 45%;
+    border-radius: 5px;
+}        
+
+.second{
+    width: 60%;
+    height: 45%;
+    background-color: black;
+}
+
+img{
+    border-radius: 5px;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.card .b{
+    width: 97%;
+    height: 100%;
+    margin: 0 auto;
+    border-radius: 6px;
+}

@@ -22,7 +22,20 @@ aside{
 }
 
 img{
+    width: 95%;
+    height: 300px;
+    object-fit: contain;
+}
+
+.imgWrapper{
     background-color: rgb(255, 255, 255);
+    width: 200px;
+    height: 295px;
+    float: right;
+    border: 3px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 blockquote, h1, h3{
@@ -32,4 +45,12 @@ blockquote, h1, h3{
 aside a{
     color: rgb(0, 153, 0);
     text-decoration: none;
+}
+
+#firstImg{
+float: right;
+}
+
+p{
+    margin-bottom: 10px;
 }
