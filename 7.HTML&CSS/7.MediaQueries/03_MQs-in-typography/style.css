@@ -1,0 +1,91 @@
+.page{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+html{
+    padding: 50px;
+}
+
+body{
+    background-color: rgb(238, 238, 238);
+}
+
+main{
+    /* display: inline; */
+    width: 70%;
+}
+
+aside{
+    /* display: inline; */
+}
+
+img{
+    width: 95%;
+    height: 300px;
+    object-fit: contain;
+}
+
+.imgWrapper{
+    background-color: rgb(255, 255, 255);
+    width: 200px;
+    height: 295px;
+    float: right;
+    border: 3px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 20px 20px 20px;
+}
+
+.imgWrapper.sI{
+    height: 140px;
+    float: left;
+}
+
+blockquote, h1, h3{
+    font-family: Georgia, serif;
+}
+
+aside a{
+    color: rgb(0, 153, 0);
+    text-decoration: none;
+}
+
+#firstImg{
+float: right;
+}
+
+p{
+    margin-bottom: 10px;
+}
+
+/*BLOCKQ*/
+
+.bqs{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template: 
+        "para1 para1"
+        "para2 bq"
+        "para3 para3";
+    gap: 30px;
+}
+
+.bqs p:nth-child(1){
+    grid-area: para1;
+}
+
+.bqs p:nth-child(2){
+    grid-area: para2;
+}
+
+.bqs blockquote{
+    grid-area: bq;
+    border-left: 1px solid #000;
+}
+
+.bqs p:last-child{
+    grid-area: para3;
+}
