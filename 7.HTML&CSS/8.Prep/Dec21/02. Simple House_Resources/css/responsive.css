@@ -1,0 +1,35 @@
+@media screen and (max-width: 600px) {
+
+    /*Header*/
+    h2.tm-section-title {
+        margin-left: 0px;
+    }
+
+    li.tm-nav-li {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    article .row.tm-header-inner {
+        display: unset;
+    }
+
+    /*GALLERY*/
+    .tm-gallery-page {
+        margin: 0 50px;
+    }
+
+    div.row.tm-gallery {
+        margin-left: unset;
+    }
+
+    div#tm-gallery-page-pizza {
+        justify-content: center;
+    }
+
+    /*LAST AERICLE*/
+    article.row {
+        display: unset;
+        width: 100vw;
+    }
+}
