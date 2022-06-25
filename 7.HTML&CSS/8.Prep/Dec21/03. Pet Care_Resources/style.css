@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@100;300;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&family=Poppins:wght@100;300;600;700&display=swap');
+:root {
+    --clr-p: #919193;
+    --clr-black: #121731
+}
+
+/*Fonts*/
+h1, h2{
+font-family: "Poppins";
+}
+
+p{
+    font-family: 'Open Sans';
+    font-size: .27rem;
+}
+
+body{
+    max-width: 455px;
+}
+
+/*Header*/
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 5rem;
+}
+
+#nav ul {
+    display: flex;
+    gap: 1rem;
+}
+
+#nav ul li{
+    font-size: 0.3rem;
+    font-weight: 700;
+}
+
+.img-logo{
+    width: 2.5rem;
+}
+
+/*Section Hero*/
+#hero{
+    position: relative;
+    margin-bottom: 4rem;
+    display: flex;
+}
+
+.section__bg{
+    position: absolute;
+    z-index: -1;
+    height: 94%;
+}
+
+#hero__img{
+    width: 60%;
+    position: absolute;
+    top: 1.3rem;
+    left: 7rem;
+}
+
+.section__info{
+    font-size: 0.3rem;
+    color: #fff;
+    padding: 4rem;
+    max-width: 14rem;
+}
+
+#firstTitle{
+    font-weight: 200;
+    font-size: 1rem;
+    line-height: 0.8rem;
+}
+
+#secondTitle{
+    font-size: 1.1rem;
+}
+
+.btn{
+    margin-top: 1rem;
+    background-color: #fff;
+    border: none;
+    border-radius: 6px;
+    color: red;
+    padding: .2rem;
+    width: 3rem;
+}
+
+/*Services*/
+#services{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#services h1{
+    text-align: center;
+    font-size: .84rem;
+}
+
+#services>p{
+    text-align: center;
+width: 40%;
+}

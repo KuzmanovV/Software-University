@@ -1,0 +1,10 @@
+body{
+    padding: 32px;
+   color: black;
+}
+
+section{
+    padding: 5rem;
+    background-color: grey;
+    margin-bottom: 2rem;
+}
