@@ -1,0 +1,16 @@
+@media screen and(max-width: 600px) {
+    article .w3-hide-small{
+        display: none;
+    }
+
+    .w3-round.w3-image.w3-opacity-min.__web-inspector-hide-shortcut__ {
+        display: none;
+    }
+
+    article>img {
+    }
+    
+    main.w3-content section.w3-row.w3-padding-64 article.w3-row.w3-padding-64 img.w3-col.m6.w3-padding-large.w3-hide-small .w3-round.w3-image.w3-opacity-min{
+        display: none;
+    }
+}
