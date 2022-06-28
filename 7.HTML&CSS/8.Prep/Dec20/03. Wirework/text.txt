@@ -1,3 +1,6 @@
+•	Use Font Awesome with the icons (wrench, unlock-alt, legal, key)
+•	Use font 'Helvetica' 
+
 WIREWORKBY TEMPLATEDHOMEPAGEOUR CLIENTSABOUT USCAREERSCONTACT US
 This is Wirework, a free, fully standards-compliant CSS template designed by TEMPLATED. The photos in this template are from Fotogrph. This free template is released under the Creative Commons Attribution license, so you're pretty much free to do whatever you want with it (even use it commercially) provided you give us credit for it. Have fun :)
 

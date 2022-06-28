@@ -10,7 +10,7 @@
         padding-right: 15px;
     }
 
-    article .row.tm-header-inner {
+    article.row.tm-header-inner {
         display: unset;
     }
 

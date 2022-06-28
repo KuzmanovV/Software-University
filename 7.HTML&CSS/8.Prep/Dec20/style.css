@@ -1,0 +1,9 @@
+@media screen and (max-width: 600px) {
+    
+}
+
+:root{
+    --clt-white: #fff;
+    --clr-black: #191919;
+    --clr-grey: grey;
+}

@@ -1,0 +1,53 @@
+@media screen and (max-width: 600px) {
+    
+    .left-to-right:first-child{
+        height: 500px;
+    }
+    
+    section.left-to-right>article {
+        border-radius: 20%;
+        height: 38vh;
+        width: 60vw;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    body>main>section:nth-child(1)>article>button,
+    body > main > section:nth-child(2) > article:nth-child(1) > button,
+    body > main > section:nth-child(3) > article > button {
+        display: none;
+    }
+
+    body>main>section:nth-child(1)>article>header>h1,
+    body > main > section:nth-child(2) > article:nth-child(1) > header > h1,
+    body > main > section:nth-child(3) > article > header > h1 {
+        font-size: 2rem;
+    }
+
+    body>main>section:nth-child(1)>article,
+    body > main > section:nth-child(3) > article {
+        padding: 75px 50px;
+    }
+
+  
+    body > main > section:nth-child(2){
+        display: unset;
+    }
+
+    body > main > section:nth-child(4){
+        display: unset;
+    }
+
+    body > main > section:nth-child(4) > article:nth-child(2) > img{
+        width: 70vw;
+    }
+
+    body > main > section:nth-child(2) > article:nth-child(2) > img{
+        width: 95vw;
+
+    }
+}

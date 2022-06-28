@@ -1,0 +1,114 @@
+@import url("https://use.fontawesome.com/releases/v5.15.4/css/all.css");
+
+:root {
+    --clt-white: #f2c1b9;
+    --clr-black: #191919;
+    --clr-grey: lightgrey;
+    --clr-red: #e24f2b;
+}
+
+body {
+    font-family: 'Helvetica', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: .6rem 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+h1 {
+    font-size: 1.6rem;
+    border-right: 0.15rem solid var(--clr-grey);
+    padding-right: .8rem;
+}
+
+.logo p {
+    font-size: 0.7rem;
+    padding-left: .8rem;
+}
+
+nav>ul {
+    display: flex;
+    gap: 0.1rem;
+}
+
+nav>ul>li>a {
+    background-color: var(--clr-grey);
+    text-decoration: none;
+    padding: 1rem;
+    color: var(--clr-black);
+    font-size: 0.75rem;
+}
+
+#firstA {
+    background-color: var(--clr-red);
+    color: #fff;
+}
+
+/* section CABLES */
+.cables {
+    height: 43vh;
+}
+
+.cables>img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+/* section RED */
+.red {
+    background-color: var(--clr-red);
+    height: 20vh;
+    color: var(--clt-white);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    font-size: .8rem;
+    font-weight: lighter;
+}
+
+.red .emth {
+    text-decoration: underline;
+    color: white;
+}
+
+.red .bold {
+    font-weight: bold;
+    ;
+}
+
+/* section GRY HIGH */
+.grey {
+    background-color: var(--clr-grey);
+    height: 43vh;
+}
+
+.grey>ul{
+    display: flex;
+}
+
+.bg{
+}
+
+.bg{
+    display: flex;
+    background-color: var(--clr-red);
+    height: 2.5rem;
+    width: 2.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+i{
+    
+}

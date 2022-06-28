@@ -1,0 +1,40 @@
+@import url("https://use.fontawesome.com/releases/v5.15.4/css/all.css");
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+    /* •	Use font - PT Sans
+•	Use Font Awesome for the icons – "gg" and "charshopping" icons */
+
+
+body{
+    font-family: "PT Sans", sans-serif;
+    
+}
+
+:root{
+    --clt-white: #ffffff;
+    --clr-black: ;
+    --clr-grey: ;
+    --clr-red: ;
+}
+
+header{
+    background-image: url("/image/computer-main.jpg");
+    height: 60vh;
+    background-size: cover;
+    background-position: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.first-row{
+    display: flex;
+    justify-content: center;
+    color: var(--clt-white);
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 80vh;
+
+}
