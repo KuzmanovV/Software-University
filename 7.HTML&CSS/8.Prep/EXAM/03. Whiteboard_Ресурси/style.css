@@ -1,38 +1,76 @@
 @import url("https://use.fontawesome.com/releases/v5.15.4/css/all.css");
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
-    /* •	Use font - PT Sans
-•	Use Font Awesome for the icons – "gg" and "charshopping" icons */
+
+/*• Use Font Awesome for the icons – "gg" and "charshopping" icons */
 
 
-body{
-    font-family: "PT Sans", sans-serif;
-    
-}
-
-:root{
+:root {
     --clt-white: #ffffff;
-    --clr-black: ;
-    --clr-grey: ;
+    --clr-black: black;
+    --clr-grey: grey;
     --clr-red: ;
 }
 
-header{
-    background-image: url("/image/computer-main.jpg");
-    height: 60vh;
-    background-size: cover;
-    background-position: 0;
+body {
+    font-family: "PT Sans", sans-serif;
+    padding: 0px 5rem;
+}
+
+header {
+    height: 70vh;
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
 }
 
-.first-row{
+header img.bg {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+header::after {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: .6;
+    background-image: linear-gradient(black, transparent);
+    /* background-color: var(--clr-black); */
+}
+
+.first-row,
+.cart,
+.logo {
     display: flex;
     justify-content: center;
     color: var(--clt-white);
+    align-items: center;
 }
 
-.grid{
+.first-row {
+    justify-content: space-between;
+    margin-top: 1rem;
+font-size: 1.8rem;
+}
+
+.logo {
+    margin-right: 40rem;
+}
+
+i{
+    margin-right: .5rem;
+}
+
+.grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     height: 80vh;
