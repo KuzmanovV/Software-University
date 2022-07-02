@@ -29,7 +29,7 @@ export default function Navbar() {
                         <a class="nav-link" href="about.html">Ледничари</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Координати </a>
+                        <Link className="nav-link" to="/coordinates">Координати</Link>
                     </li>
                 </ul>
             </div>

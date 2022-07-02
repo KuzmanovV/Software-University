@@ -3,8 +3,8 @@ export default function Footer() {
         <footer>
         <section class="footer-top">
             <div class="container">
-                <h2>My Flickr Feed</h2>
-                <div class="row text-center text-lg-left">
+                <h2>Ледницата ЕООД</h2>
+                {/* <div class="row text-center text-lg-left">
                     <div class="col-lg-2 col-md-4 col-xs-6">
                         <a href="#" class="d-block h-100"><img class="img-fluid img-thumbnail" src="images/banner-image-1.jpg" alt="" /></a>
                     </div>
@@ -23,7 +23,7 @@ export default function Footer() {
                     <div class="col-lg-2 col-md-4 col-xs-6">
                         <a href="#" class="d-block h-100"><img class="img-fluid img-thumbnail" src="images/banner-image-1.jpg" alt="" /></a>
                     </div>
-                </div>
+                </div> */}
 
             </div>
         </section>

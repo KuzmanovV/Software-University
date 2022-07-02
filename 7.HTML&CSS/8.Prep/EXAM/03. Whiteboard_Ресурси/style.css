@@ -8,20 +8,23 @@
     --clt-white: #ffffff;
     --clr-black: black;
     --clr-grey: grey;
-    --clr-red: ;
+    --clr-green: #0fd08e;
 }
 
 body {
     font-family: "PT Sans", sans-serif;
-    padding: 0px 5rem;
+    padding: 0px 7.45rem;
 }
 
+/* HEADER */
 header {
     height: 70vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
+    color: var(--clt-white);
+    text-shadow: 0px 3px 2px #000;
 }
 
 header img.bg {
@@ -52,24 +55,81 @@ header::after {
 .logo {
     display: flex;
     justify-content: center;
-    color: var(--clt-white);
     align-items: center;
 }
 
 .first-row {
     justify-content: space-between;
-    margin-top: 1rem;
-font-size: 1.8rem;
+    margin-top: 2rem;
 }
 
 .logo {
-    margin-right: 40rem;
+    margin-right: 60rem;
 }
 
-i{
+.logo p{
+    font-weight: 1;
+    font-size: 1.7rem;
+}
+
+.logo i{
+    font-size: 2.2rem;
+}
+
+.cart{
+    font-size: 2.2rem;
+}
+
+i {
     margin-right: .5rem;
 }
 
+h1{
+    font-size: 5rem;
+    margin-top: 5rem;
+}
+
+p{
+    font-size: 2rem;
+    text-align: center;
+}
+
+#overTheGreenBtn{
+    margin-top: .6rem;
+    width: 40%;
+}
+
+button{
+background-color: var(--clr-green);
+border: none;
+width: 160px;
+height: 60px;
+border-radius: 5px;
+color: var(--clt-white);
+font-size: 25px;
+font-weight: 900;
+letter-spacing: 2px;
+margin-top: 6rem;
+}
+
+.see{
+    display: flex;
+    text-decoration: none;
+    color: var(--clt-white);
+    justify-content: center;
+    align-items: center;
+    margin-top: 4.5rem;
+}
+
+.see p{
+    margin-right: 1rem;
+}
+
+.see i{
+    font-size: 2rem;
+}
+
+/* GRID */
 .grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
