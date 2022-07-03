@@ -1,5 +1,5 @@
 @import url("https://use.fontawesome.com/releases/v5.15.4/css/all.css");
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
 
 /*• Use Font Awesome for the icons – "gg" and "charshopping" icons */
 
@@ -67,16 +67,16 @@ header::after {
     margin-right: 60rem;
 }
 
-.logo p{
+.logo p {
     font-weight: 1;
     font-size: 1.7rem;
 }
 
-.logo i{
+.logo i {
     font-size: 2.2rem;
 }
 
-.cart{
+.cart {
     font-size: 2.2rem;
 }
 
@@ -84,35 +84,42 @@ i {
     margin-right: .5rem;
 }
 
-h1{
+h1 {
     font-size: 5rem;
     margin-top: 5rem;
 }
 
-p{
+p {
     font-size: 2rem;
     text-align: center;
 }
 
-#overTheGreenBtn{
+#overTheGreenBtn {
     margin-top: .6rem;
     width: 40%;
 }
 
-button{
-background-color: var(--clr-green);
-border: none;
-width: 160px;
-height: 60px;
-border-radius: 5px;
-color: var(--clt-white);
-font-size: 25px;
-font-weight: 900;
-letter-spacing: 2px;
-margin-top: 6rem;
+button {
+    background-color: var(--clr-green);
+    border: var(--clt-white);
+    width: 160px;
+    height: 60px;
+    border-radius: 5px;
+    color: var(--clt-white);
+    font-size: 25px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    margin-top: 6rem;
+    cursor: pointer;
 }
 
-.see{
+button:hover {
+    background-color: transparent;
+    /* border-color: var(--clt-white); */
+    border: 4px solid var(--clt-white)
+}
+
+.see {
     display: flex;
     text-decoration: none;
     color: var(--clt-white);
@@ -121,11 +128,11 @@ margin-top: 6rem;
     margin-top: 4.5rem;
 }
 
-.see p{
+.see p {
     margin-right: 1rem;
 }
 
-.see i{
+.see i {
     font-size: 2rem;
 }
 
@@ -133,6 +140,75 @@ margin-top: 6rem;
 .grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    height: 80vh;
+    grid-template-rows: 52vh 52vh;
+}
 
+.gridImg {
+    width: 100%;
+}
+
+.info {
+    padding: 2rem 5rem;
+}
+
+.info p {
+    font-size: 28px;
+    text-align: left;
+}
+
+.info p.underh {
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.info ul {
+    margin-top: 3rem;
+}
+.info .low ul {
+    margin-top: 5rem;
+}
+
+
+.info ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.info ul li i {
+    color: var(--clr-green);
+    font-size: 28px;
+    margin-right: 2.5rem;
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+/* InfoLow */
+.low{
+    text-align: center;
+    margin: auto auto;
+}
+
+.low img {
+    width: 42%;
+}
+
+.low ul{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem
+}
+
+.low ul li{
+    display: flex;
+    flex-direction: column;
+}
+
+.low ul li p{
+    color: var(--clr-green);
+    font-weight: 700;
+    font-size: 30px;
 }

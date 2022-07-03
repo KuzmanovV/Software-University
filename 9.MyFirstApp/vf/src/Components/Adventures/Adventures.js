@@ -1,10 +1,10 @@
 export default function Adventures() {
     return (
-        <section class="blog">
+        <section class="blog-page">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-md-12 left-side">
-                    <h2>My Recent Blog Posts</h2>
+                    <h2>ВАШИТЕ Приключения!</h2>
                     <div class="row">
                         <div class="col-md-6">
                             <figure class="figure">
@@ -74,7 +74,7 @@ export default function Adventures() {
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-12">
+                {/* <div class="col-lg-6 col-md-12">
                     <div class="row">
                         <div class="col-md-12">
                             <div class="right-side">
@@ -114,7 +114,7 @@ export default function Adventures() {
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> */}
             </div>
         </div>
     </section>

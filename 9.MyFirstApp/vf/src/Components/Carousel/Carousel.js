@@ -6,8 +6,8 @@ export default function Carousel() {
                 <img class="d-block w-100" src="images/ЛедниДронС.jpg" alt="First slide" />
                     <div class="gradient"></div>
                     <div class="carousel-caption">
+                        <h4 class="lead">Парк за приключения</h4>
                         <h1>Ледницата</h1>
-                        <p class="lead">Парк за приключения</p>
                         <a class="btn btn-primary" href="about.html"><span>Learn more</span></a>
                     </div>
             </div>
@@ -21,11 +21,11 @@ export default function Carousel() {
                     </div>
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100" src="images/banner-image-2.jpg" alt="Third slide" />
+                <img class="d-block w-100" src="images/Tower.png" alt="Third slide" />
                     <div class="gradient"></div>
                     <div class="carousel-caption">
-                        <h1>Beautiful sunsetting in the mountains.</h1>
-                        <p class="lead">Beautiful sunsetting in the mountains...</p>
+                        <h1>Висоти и панорами</h1>
+                        <p class="lead">...не само за смелите и сръчните!</p>
                         <a class="btn btn-primary" href="about.html"><span>Learn more</span></a>
                     </div>
             </div>

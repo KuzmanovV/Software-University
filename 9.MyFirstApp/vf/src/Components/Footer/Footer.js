@@ -3,27 +3,27 @@ export default function Footer() {
         <footer>
         <section class="footer-top">
             <div class="container">
-                <h2>Ледницата ЕООД</h2>
-                {/* <div class="row text-center text-lg-left">
+                <h2>Скали, Пещери, Катерене, Висоти, Забавления, Приключения ...</h2>
+                <div class="row text-center text-lg-left">
                     <div class="col-lg-2 col-md-4 col-xs-6">
-                        <a href="#" class="d-block h-100"><img class="img-fluid img-thumbnail" src="images/banner-image-1.jpg" alt="" /></a>
+                        <a href="#" class="d-block h-100"><img class="img-fluid img-thumbnail" src="images/Tower.png" alt="" /></a>
                     </div>
                     <div class="col-lg-2 col-md-4 col-xs-6">
-                        <a href="#" class="d-block h-100"><img class="img-fluid img-thumbnail" src="images/banner-image-2.jpg" alt="" /></a>
+                        <a href="#" class="d-block h-100"><img class="img-fluid img-thumbnail" src="images/ЛедниДрон.jpg" alt="" /></a>
                     </div>
                     <div class="col-lg-2 col-md-4 col-xs-6">
                         <a href="#" class="d-block h-100"><img class="img-fluid img-thumbnail" src="images/banner-image-3.jpg" alt="" /></a>
                     </div>
                     <div class="col-lg-2 col-md-4 col-xs-6">
-                        <a href="#" class="d-block h-100"><img class="img-fluid img-thumbnail" src="images/banner-image-4.jpg" alt="" /></a>
+                        <a href="#" class="d-block h-100"><img class="img-fluid img-thumbnail" src="images/Tower.png" alt="" /></a>
                     </div>
                     <div class="col-lg-2 col-md-4 col-xs-6">
-                        <a href="#" class="d-block h-100"><img class="img-fluid img-thumbnail" src="images/banner-image-2.jpg" alt="" /></a>
+                        <a href="#" class="d-block h-100"><img class="img-fluid img-thumbnail" src="images/ЛедниДрон.jpg" alt="" /></a>
                     </div>
                     <div class="col-lg-2 col-md-4 col-xs-6">
                         <a href="#" class="d-block h-100"><img class="img-fluid img-thumbnail" src="images/banner-image-1.jpg" alt="" /></a>
                     </div>
-                </div> */}
+                </div>
 
             </div>
         </section>

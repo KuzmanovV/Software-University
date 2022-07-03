@@ -293,6 +293,7 @@ nav {
     border-color: #007bff;
     text-transform: uppercase;
     font-family: 'Playfair Display', serif;
+    margin-top: 1rem;                           /*VK*/
 }
 
 .carousel-caption .btn-primary span {
@@ -2607,5 +2608,10 @@ footer .img-thumbnail {
     }
     .blog-single h2 {
         font-size: 22px;
+    }
+
+    /* MY Own! */
+    #googleMap{
+        width: vw;
     }
 }
