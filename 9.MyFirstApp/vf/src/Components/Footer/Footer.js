@@ -12,16 +12,16 @@ export default function Footer() {
                         <a href="#" class="d-block h-100"><img class="img-fluid img-thumbnail" src="images/ЛедниДрон.jpg" alt="" /></a>
                     </div>
                     <div class="col-lg-2 col-md-4 col-xs-6">
-                        <a href="#" class="d-block h-100"><img class="img-fluid img-thumbnail" src="images/banner-image-3.jpg" alt="" /></a>
+                        <a href="#" class="d-block h-100"><img class="img-fluid img-thumbnail" src="images/landsc.jpg" alt="" /></a>
                     </div>
                     <div class="col-lg-2 col-md-4 col-xs-6">
                         <a href="#" class="d-block h-100"><img class="img-fluid img-thumbnail" src="images/Tower.png" alt="" /></a>
                     </div>
                     <div class="col-lg-2 col-md-4 col-xs-6">
-                        <a href="#" class="d-block h-100"><img class="img-fluid img-thumbnail" src="images/ЛедниДрон.jpg" alt="" /></a>
+                        <a href="#" class="d-block h-100"><img class="img-fluid img-thumbnail" src="images/sunset.jpg" alt="" /></a>
                     </div>
                     <div class="col-lg-2 col-md-4 col-xs-6">
-                        <a href="#" class="d-block h-100"><img class="img-fluid img-thumbnail" src="images/banner-image-1.jpg" alt="" /></a>
+                        <a href="#" class="d-block h-100"><img class="img-fluid img-thumbnail" src="images/ЛедниДрон.jpg" alt="" /></a>
                     </div>
                 </div>
 

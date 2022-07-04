@@ -12,11 +12,11 @@ export default function Carousel() {
                     </div>
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100" src="images/banner-image-3.jpg" alt="Second slide" />
+                <img class="d-block w-100" src="images/landsc.jpg" alt="Second slide" />
                     <div class="gradient"></div>
                     <div class="carousel-caption">
-                        <h1>Remainings of old boat in the beach of bali.</h1>
-                        <p class="lead">Remainings of old boat in the beach of bali...</p>
+                        <h1>приключения безкрай!</h1>
+                        <p class="lead">във всички посоки и измерения</p>
                         <a class="btn btn-primary" href="about.html"><span>Learn more</span></a>
                     </div>
             </div>
@@ -30,11 +30,11 @@ export default function Carousel() {
                     </div>
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100" src="images/banner-image-1.jpg" alt="Third slide" />
+                <img class="d-block w-100" src="/images/sunset.jpg" alt="Third slide" />
                     <div class="gradient"></div>
                     <div class="carousel-caption">
-                        <h1>Snow white mountain of east china.</h1>
-                        <p class="lead">Snow white mountain of east china...</p>
+                        <h1>от зори до здрач!</h1>
+                        <p class="lead">смисъл в днешния ден и надежда в утрешния :)</p>
                         <a class="btn btn-primary" href="about.html"><span>Learn more</span></a>
                     </div>
             </div>

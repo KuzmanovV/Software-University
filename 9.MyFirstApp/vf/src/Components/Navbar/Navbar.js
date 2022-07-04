@@ -14,19 +14,22 @@ export default function Navbar() {
             <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <Link className="nav-link" to="/">Ледницата <span className="sr-only">(current)</span></Link>
+                        <Link className="nav-link" to="/">Ледницата 
+                        <span className="sr-only">(current)</span>
+                        </Link>
                     </li>
                     <li class="nav-item">
-                        <Link className="nav-link" to="/Adventures">Приключения </Link>
+                        <Link className="nav-link" to="/adventures">Приключения</Link>
                     </li>
                     <li class="nav-item">
                         <Link className="nav-link" to="/album">Албум </Link>
                     </li>
                     <li class="nav-item">
-                        <Link className="nav-link" to="/album">Конкурс </Link>
+                        <Link className="nav-link" to="/contest">Конкурс </Link>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="about.html">Ледничари</a>
+                        {/* <a class="nav-link" href="contact.html">Ледничари</a> */}
+                        <Link className="nav-link" to="/about">Ледничари</Link>
                     </li>
                     <li class="nav-item">
                         <Link className="nav-link" to="/coordinates">Координати</Link>
