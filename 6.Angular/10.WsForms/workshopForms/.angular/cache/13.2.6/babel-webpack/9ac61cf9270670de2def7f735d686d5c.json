@@ -1,0 +1,1 @@
+{"ast":null,"code":"export function emailValidator(control) {\n  const value = control.value;\n\n  if (!/.{6,}@gmail\\.(bg|com)/.test(value)) {\n    return {\n      email: true\n    };\n  }\n}\nexport function passwordMatch(passwordFormControl) {\n  return rePasswordFormControl => {};\n}","map":null,"metadata":{},"sourceType":"module"}
