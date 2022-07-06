@@ -6,9 +6,10 @@
 
 :root {
     --clt-white: #ffffff;
-    --clr-black: black;
+    --clr-black: #24394d;
     --clr-grey: grey;
     --clr-green: #0fd08e;
+    --clr-low-green:#b2f0dd;
 }
 
 body {
@@ -207,8 +208,44 @@ h2 {
     flex-direction: column;
 }
 
-.low ul li p{
+h3{
     color: var(--clr-green);
     font-weight: 700;
     font-size: 30px;
+}
+
+/* GREEN */
+.green{
+    background-color: var(--clr-low-green);
+    text-align: center;
+    padding: 2rem 7rem;
+}
+
+.green h2{
+    margin-bottom: 4rem;
+}
+
+.green ul{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 7rem
+    /* grid-template-rows: 52vh 52vh; */
+}
+
+.green h3{
+    color: var(--clr-black);
+}
+
+.green p{
+font-size: 20px;
+line-height: 25px;
+}
+
+.green .lastRow{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.green .lastRow span{
+    font-weight: bold;
 }

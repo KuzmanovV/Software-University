@@ -8,7 +8,7 @@ export default function Carousel() {
                     <div class="carousel-caption">
                         <h4 class="lead">Парк за приключения</h4>
                         <h1>Ледницата</h1>
-                        <a class="btn btn-primary" href="about.html"><span>Learn more</span></a>
+                        <a class="btn btn-primary" href="about.html"><span>вижте още</span></a>
                     </div>
             </div>
             <div class="carousel-item">

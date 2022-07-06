@@ -25,7 +25,7 @@ function App() {
 
             <Footer />
 
-            {/* <a href="javascript:" id="return-to-top"><i class="fa fa-long-arrow-up" aria-hidden="true"></i></a> */}
+            <a href="javascript:" id="return-to-top"><i class="fa fa-long-arrow-up" aria-hidden="true"></i></a>
             
         </div>
     );

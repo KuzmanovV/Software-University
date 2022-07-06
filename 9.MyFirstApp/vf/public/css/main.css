@@ -2614,4 +2614,9 @@ footer .img-thumbnail {
     #googleMap{
         width: vw;
     }
+
+    #jorj{
+width:100%;
+height: unset;
+    }
 }
