@@ -175,7 +175,7 @@ nav {
     letter-spacing: 0.5px;
 }
 
-.navbar.navbar-dark .navbar-nav .nav-item.active > .nav-link,
+.navbar.navbar-dark .navbar-nav .nav-item.active>.nav-link,
 .navbar.navbar-dark .navbar-nav .nav-item .nav-link:hover {
     color: #f9e43f;
     background-color: rgba(255, 255, 255, .1);
@@ -210,7 +210,7 @@ nav {
     background: -moz-linear-gradient(left, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%);
     background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%);
     background: linear-gradient(to right, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4d000000', endColorstr='#4d000000', GradientType=1);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4d000000', endColorstr='#4d000000', GradientType=1);
 }
 
 .carousel-indicators li span {
@@ -293,7 +293,8 @@ nav {
     border-color: #007bff;
     text-transform: uppercase;
     font-family: 'Playfair Display', serif;
-    margin-top: 1rem;                           /*VK*/
+    margin-top: 1rem;
+    /*VK*/
 }
 
 .carousel-caption .btn-primary span {
@@ -720,22 +721,26 @@ footer .img-thumbnail {
     height: 145px;
     object-fit: cover;
 }
+
 .d-block {
-  position: relative;
-  overflow: hidden;
+    position: relative;
+    overflow: hidden;
 }
+
 .d-block img {
-  max-width: 100%;
-  
-  -moz-transition: all 0.4s;
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
+    max-width: 100%;
+
+    -moz-transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
 }
+
 .d-block:hover img {
-  -moz-transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
+
 /*==============================
         Gallery-page
 ===============================*/
@@ -1553,7 +1558,7 @@ footer .img-thumbnail {
     font-style: italic;
 }
 
-.blog-single .custom-control-input:disabled ~ .custom-control-label {
+.blog-single .custom-control-input:disabled~.custom-control-label {
     font-size: 20px;
     font-weight: 400;
     line-height: 35px;
@@ -1565,7 +1570,7 @@ footer .img-thumbnail {
     font-family: 'Playfair Display', serif;
 }
 
-.blog-single .custom-checkbox .custom-control-input:disabled:checked ~ .custom-control-label::before {
+.blog-single .custom-checkbox .custom-control-input:disabled:checked~.custom-control-label::before {
     background-color: #cecece;
 }
 
@@ -1588,7 +1593,7 @@ footer .img-thumbnail {
     font-family: 'Montserrat', sans-serif;
 }
 
-{}
+    {}
 
 .blog-single figure .btn-danger,
 .blog-single figure .btn-danger:not(:disabled):not(.disabled):active {
@@ -1773,9 +1778,11 @@ footer .img-thumbnail {
     .carousel .carousel-inner img {
         height: 660px;
     }
+
     .carousel-caption {
         top: 30%;
     }
+
     .carousel-indicators {
         position: absolute;
         right: 0;
@@ -1793,285 +1800,362 @@ footer .img-thumbnail {
         margin-left: 0;
         list-style: none;
     }
+
     .carousel-thumbnails ol li img {
         height: 120px;
     }
+
     .carousel-thumbnails .carousel-indicators li {
         height: 120px;
     }
+
     .carousel-thumbnails .carousel-indicators .active {
         height: 120px;
     }
+
     .carousel-indicators li span {
         padding: 10px 10px;
         font-size: 12px;
 
     }
+
     .carousel-caption .btn-primary,
     .carousel-caption .btn-primary:not(:disabled):not(.disabled):active {
         font-size: 14px;
         width: 160px;
         padding: 10px 30px;
     }
+
     .carousel-caption h1 {
         font-size: 44px;
     }
+
     .carousel-caption .lead {
         letter-spacing: 3px;
     }
+
     #portfolio h2 {
         font-size: 32px;
         padding: 40px 0;
     }
+
     #portfolio .box-1 .overlay,
     #portfolio .box-2 .overlay {
         width: 90.7%;
     }
+
     #portfolio .box-1 .overlay img,
     #portfolio .box-2 .overlay img {
         width: 25%;
     }
+
     #portfolio .img-fluid {
         height: 260px;
     }
+
     #portfolio .box-1 .overlay,
     #portfolio .box-2 .overlay {
         height: 90%;
     }
+
     .blog .left-side h2 {
         font-size: 32px;
     }
+
     .blog {
         padding-top: 20px;
         padding-bottom: 30px;
     }
+
     .blog .left-side figure .figure-img {
         height: 175px;
     }
+
     .blog .left-side h4 {
         font-size: 16px;
         line-height: 24px;
         padding-bottom: 15px;
     }
+
     .blog .left-side .btn-danger,
     .blog .left-side .btn-primary {
         font-size: 12px;
         padding: 8px 10px;
     }
+
     .blog .right-side {
         padding: 20px 30px;
     }
+
     .blog .right-side h3 {
         font-size: 26px;
     }
+
     .blog .right-side h5 {
         font-size: 14px;
         letter-spacing: 0.5px;
         line-height: 25px;
         padding-bottom: 15px;
     }
+
     .blog .right-side a .fa {
         font-size: 25px;
     }
+
     .blog .right-side h2 {
         font-size: 26px;
     }
+
     .blog .right-side figure img {
         height: 150px;
     }
+
     .blog .right-side figure {
         margin: 0 0 1rem;
     }
+
     footer .footer-bottom ul li a {
         font-size: 14px;
     }
+
     footer .footer-bottom .hidden {
         padding: 0px 8px;
         font-size: 14px;
     }
+
     footer .footer-bottom p {
         font-size: 14px;
     }
+
     footer .footer-bottom p a {
         font-size: 14px;
         letter-spacing: 1px;
     }
+
     footer .img-thumbnail {
         height: 130px;
     }
+
     footer .footer-top {
         padding-bottom: 30px;
     }
+
     footer .footer-top h2 {
         font-size: 32px;
     }
+
     .gallery-page h2 {
         font-size: 32px;
         padding: 40px 0;
     }
+
     .gallery-page .box-1 .overlay,
     .gallery-page .box-2 .overlay {
         width: 90.7%;
     }
+
     .gallery-page .box-1 .overlay img,
     .gallery-page .box-2 .overlay img {
         width: 25%;
     }
+
     .gallery-page .img-fluid {
         height: 260px;
     }
+
     .gallery-page .box-1 .overlay,
     .gallery-page .box-2 .overlay {
         height: 90%;
     }
+
     .blog-page .left-side h2 {
         font-size: 32px;
     }
+
     .blog-page {
         padding-top: 20px;
         padding-bottom: 30px;
     }
+
     .blog-page .left-side figure .figure-img {
         height: 175px;
     }
+
     .blog-page .left-side h4 {
         font-size: 16px;
         line-height: 24px;
         padding-bottom: 15px;
     }
+
     .blog-page .left-side .btn-danger,
     .blog-page .left-side .btn-primary {
         font-size: 12px;
         padding: 8px 10px;
     }
+
     .blog-page .right-side {
         padding: 20px 30px;
     }
+
     .blog-page .right-side h3 {
         font-size: 26px;
     }
+
     .blog-page .right-side h5 {
         font-size: 14px;
         letter-spacing: 0.5px;
         line-height: 25px;
         padding-bottom: 15px;
     }
+
     .blog-page .right-side a .fa {
         font-size: 25px;
     }
+
     .blog-page .right-side h2 {
         font-size: 26px;
     }
+
     .blog-page .right-side figure img {
         height: 150px;
     }
+
     .blog-page .right-side figure {
         margin: 0 0 1rem;
     }
+
     .support .main {
         width: 100%;
     }
+
     .support {
         padding-bottom: 100px;
         text-align: center;
     }
+
     .support .text-left {
         padding-bottom: 50px;
     }
+
     .support p {
         font-size: 14px;
         padding: 0;
         line-height: 30px;
         padding-bottom: 10px;
     }
+
     .mystories-page h2 {
         font-size: 32px;
         padding: 40px 0;
     }
+
     .mystories-page .box-1 .overlay,
     .mystories-page .box-2 .overlay {
         width: 90.7%;
     }
+
     .mystories-page .box-1 .overlay img,
     .mystories-page .box-2 .overlay img {
         width: 25%;
     }
+
     .mystories-page .img-fluid {
         height: 260px;
     }
+
     .mystories-page .box-1 .overlay,
     .mystories-page .box-2 .overlay {
         height: 90%;
     }
+
     .about-page h3 {
         padding-bottom: 30px;
     }
+
     .about-page figure img {
         margin-bottom: 20px;
     }
+
     .about-page p {
         font-size: 16px;
         line-height: 30px;
         padding-bottom: 20px;
     }
+
     .about-page {
         padding-bottom: 80px;
     }
+
     .blog-single .main-contant {
         padding: 20px;
     }
+
     .blog-single figure img {
         height: 400px;
     }
+
     .blog-single h3 {
         line-height: 40px;
         font-size: 32px;
         padding: 45px 50px;
     }
+
     .blog-single p {
         font-size: 16px;
         line-height: 30px;
         padding-bottom: 10px;
     }
+
     .blog-single p:nth-child(4) {
         padding: 0 80px;
         padding-bottom: 30px;
         font-size: 20px;
     }
-    .blog-single .custom-control-input:disabled ~ .custom-control-label {
+
+    .blog-single .custom-control-input:disabled~.custom-control-label {
         font-size: 16px;
         line-height: 30px;
     }
+
     .blog-single h2 {
         font-size: 34px;
         padding-bottom: 40px;
     }
+
     .blog-single a .img-fluid {
         height: 250px;
     }
+
     .blog-single .overlay {
         width: 93.5%;
     }
+
     .blog-single .box-2 .overlay img {
         width: 16%;
     }
+
     .blog-single .form-control {
         padding: 10px 15px;
     }
+
     .blog-single .btn-primary {
         width: 100%;
         padding: 8px 0;
         font-size: 18px;
     }
+
     .blog-single .form {
         padding-bottom: 30px;
     }
+
     .blog-single .post span {
         font-size: 16px;
     }
+
     .blog-single .post strong {
         font-size: 20px;
     }
+
     .blog-single {
         padding-bottom: 100px;
     }
@@ -2081,264 +2165,332 @@ footer .img-thumbnail {
     nav .navbar-nav {
         padding: 20px 0 20px;
     }
+
     .carousel .carousel-inner img {
         height: 560px;
     }
+
     .carousel-caption {
         top: 25%;
     }
+
     .carousel-caption h1 {
         font-size: 36px;
     }
+
     #portfolio .box-1 .overlay,
     #portfolio .box-2 .overlay {
         height: 87%;
         width: 87.5%;
     }
+
     #portfolio .img-fluid {
         height: 200px;
     }
+
     #portfolio h2 {
         font-size: 28px;
         padding-top: 20px;
         padding-bottom: 40px;
     }
+
     #portfolio .box-1 .overlay .count,
     #portfolio .box-2 .overlay .count {
         top: 3px;
         right: 12px;
         font-size: 12px;
     }
+
     #portfolio .text {
         font-size: 14px;
     }
+
     #portfolio .overlay .text span {
         font-size: 14px;
     }
+
     .blog {
         padding-top: 0;
     }
+
     .blog .left-side h2 {
         font-size: 28px;
     }
+
     .blog .left-side h4 {
         font-size: 18px;
         line-height: 30px;
         padding-bottom: 18px;
     }
+
     .blog .right-side figure img {
         height: 200px;
     }
+
     .blog .right-side h2 {
         font-size: 24px;
     }
+
     .carousel-caption .btn-primary,
     .carousel-caption .btn-primary:not(:disabled):not(.disabled):active {
         font-size: 12px;
         width: 135px;
     }
+
     footer .footer-bottom .hidden {
         padding: 0px 5px;
     }
+
     footer .footer-top h2 {
         font-size: 28px;
     }
+
     footer .footer-bottom ul li a {
         font-size: 12px;
     }
+
     footer .footer-bottom p {
         font-size: 12px;
     }
+
     footer .footer-bottom p a {
         font-size: 12px;
     }
+
     .gallery-page .box-1 .overlay,
     .gallery-page .box-2 .overlay {
         height: 87%;
         width: 87.5%;
     }
+
     .gallery-page .img-fluid {
         height: 200px;
     }
+
     .gallery-page h2 {
         font-size: 28px;
         padding-top: 20px;
         padding-bottom: 40px;
     }
+
     .gallery-page .box-1 .overlay .count,
     .gallery-page .box-2 .overlay .count {
         top: 3px;
         right: 12px;
         font-size: 12px;
     }
+
     .gallery-page .text {
         font-size: 14px;
     }
+
     .gallery-page .overlay .text span {
         font-size: 14px;
     }
+
     .gallery-page {
         padding-bottom: 100px;
     }
+
     .gallery-page .bt ul li a {
         width: 70px;
         height: 30px;
         font-size: 14px;
         padding: 3px 0;
     }
+
     .gallery-page {
         padding-bottom: 70px;
     }
+
     .gallery-page .bt {
         padding-top: 20px;
     }
+
     .blog-page {
         padding-top: 0;
     }
+
     .blog-page .left-side h2 {
         font-size: 28px;
     }
+
     .blog-page .left-side h4 {
         font-size: 18px;
         line-height: 30px;
         padding-bottom: 18px;
     }
+
     .blog-page .right-side figure img {
         height: 200px;
     }
+
     .blog-page .right-side h2 {
         font-size: 24px;
     }
+
     .blog-page .bt ul li a {
         width: 70px;
         height: 30px;
         font-size: 14px;
         padding: 3px 0;
     }
+
     .blog-page .bt ul {
         text-align: center;
     }
+
     .support .btn-primary {
         width: 238px;
         font-size: 12px;
     }
+
     .support h3 {
         font-size: 28px;
         padding-bottom: 30px;
     }
+
     .support p {
         font-size: 14px;
         padding: 0;
         line-height: 25px;
     }
+
     .support select {
         height: 34px;
     }
+
     .support .form-group {
         margin-bottom: 0;
     }
+
     .support textarea.form-control {
         margin-bottom: 23px;
     }
+
     .support ::placeholder {
         font-size: 12px;
     }
+
     .support .btn-primary {
         width: 199px;
         font-size: 12px;
         letter-spacing: 0.5px;
         height: 42px;
     }
+
     .support .row {
         margin-right: -15px;
         margin-left: -15px;
     }
+
     .mystories-page .box-1 .overlay,
     .mystories-page .box-2 .overlay {
         height: 87%;
         width: 87.5%;
     }
+
     .mystories-page .img-fluid {
         height: 200px;
     }
+
     .mystories-page h2 {
         font-size: 28px;
         padding-top: 20px;
         padding-bottom: 40px;
     }
+
     .mystories-page .box-1 .overlay .count,
     .mystories-page .box-2 .overlay .count {
         top: 3px;
         right: 12px;
         font-size: 12px;
     }
+
     .mystories-page .text {
         font-size: 14px;
     }
+
     .mystories-page .overlay .text span {
         font-size: 14px;
     }
+
     .mystories-page {
         padding-bottom: 100px;
     }
+
     .mystories-page .bt ul li a {
         width: 70px;
         height: 30px;
         font-size: 14px;
         padding: 3px 0;
     }
+
     .mystories-page {
         padding-bottom: 70px;
     }
+
     .mystories-page .bt {
         padding-top: 20px;
     }
+
     .about-page h3 {
         font-size: 30px;
     }
+
     .about-page {
         padding-top: 100px;
         padding-bottom: 50px;
     }
+
     .about-page p {
         font-size: 14px;
         line-height: 26px;
         padding-bottom: 10px;
     }
+
     .blog-single .overlay {
         width: 91.1%;
         padding: 10px;
     }
+
     .blog-single .box-2 .overlay img {
         width: 22%;
     }
+
     .blog-single figure img {
         height: 300px;
     }
+
     .blog-single h3 {
         font-size: 24px;
         letter-spacing: 0.5px;
         padding: 20px 20px;
         line-height: 30px;
     }
+
     .blog-single p {
         font-size: 14px;
         letter-spacing: 0.5px;
         line-height: 26px;
         padding-bottom: 0;
     }
+
     .blog-single p:nth-child(4) {
         padding: 0 50px;
         padding-bottom: 20px;
         font-size: 18px;
     }
+
     .blog-single h2 {
         font-size: 28px;
         padding-bottom: 30px;
     }
+
     .blog-single {
         padding-bottom: 50px;
     }
+
     .blog-single figure .btn-danger,
     .blog-single figure .btn-primary {
         border-radius: 0;
@@ -2346,6 +2498,7 @@ footer .img-thumbnail {
         letter-spacing: 0.5px;
         padding: 5px 10px
     }
+
     .blog-single figure .figure-caption span {
         font-size: 14px;
     }
@@ -2355,199 +2508,250 @@ footer .img-thumbnail {
     .carousel-caption {
         top: 20%;
     }
+
     .carousel-caption .lead {
         letter-spacing: 1px;
         font-size: 14px;
     }
+
     .carousel-caption h1 {
         font-size: 22px;
     }
+
     .carousel .carousel-inner img {
         height: 400px;
     }
+
     .carousel-indicators li span {
         display: none;
     }
+
     .carousel-thumbnails ol li img {
         height: 100px;
     }
+
     .carousel-thumbnails .carousel-indicators li {
         height: 100px;
     }
+
     .carousel-thumbnails .carousel-indicators .active {
         height: 100px;
     }
+
     #portfolio .text {
         font-size: 14px;
         padding: 0 90px;
     }
+
     #portfolio h2 {
         font-size: 22px;
         padding-top: 20px;
         padding-bottom: 30px;
     }
+
     #portfolio .box-1 .overlay,
     #portfolio .box-2 .overlay {
         height: 87%;
         width: 93%;
     }
+
     #portfolio .box-1 .overlay .count,
     #portfolio .box-2 .overlay .count {
         top: 6px;
         right: 20px;
         font-size: 16px;
     }
+
     #portfolio .box-1 .overlay img,
     #portfolio .box-2 .overlay img {
         width: 20%;
     }
+
     .blog .left-side h2 {
         font-size: 22px;
     }
+
     .blog .left-side figure .figure-img {
         height: 200px;
     }
+
     .blog .right-side h3 {
         font-size: 22px;
     }
+
     .blog .right-side {
         padding: 20px 10px;
     }
+
     .blog .right-side .btn-primary {
         font-size: 14px;
     }
+
     footer .img-thumbnail {
         height: 130px;
         width: 100%;
         margin: 0 auto;
     }
+
     .gallery-page .text {
         font-size: 14px;
         padding: 0 90px;
     }
+
     .gallery-page h2 {
         font-size: 22px;
         padding-top: 20px;
         padding-bottom: 30px;
     }
+
     .gallery-page .box-1 .overlay,
     .gallery-page .box-2 .overlay {
         height: 87%;
         width: 93%;
     }
+
     .gallery-page .box-1 .overlay .count,
     .gallery-page .box-2 .overlay .count {
         top: 6px;
         right: 20px;
         font-size: 16px;
     }
+
     .gallery-page .box-1 .overlay img,
     .gallery-page .box-2 .overlay img {
         width: 20%;
     }
+
     .gallery-page .bt ul li a {
         width: 54px;
     }
+
     footer .footer-top h2 {
         font-size: 24px;
     }
+
     .blog-page .left-side h2 {
         font-size: 22px;
     }
+
     .blog-page .left-side figure .figure-img {
         height: 200px;
     }
+
     .blog-page .right-side h3 {
         font-size: 22px;
     }
+
     .blog-page .right-side {
         padding: 20px 10px;
     }
+
     .blog-page .right-side .btn-primary {
         font-size: 14px;
     }
+
     .blog-page .bt ul li a {
         width: 54px;
     }
+
     .mystories-page .text {
         font-size: 14px;
         padding: 0 90px;
     }
+
     .mystories-page h2 {
         font-size: 22px;
         padding-top: 20px;
         padding-bottom: 30px;
     }
+
     .mystories-page .box-1 .overlay,
     .mystories-page .box-2 .overlay {
         height: 87%;
         width: 93%;
     }
+
     .mystories-page .box-1 .overlay .count,
     .mystories-page .box-2 .overlay .count {
         top: 6px;
         right: 20px;
         font-size: 16px;
     }
+
     .mystories-page .box-1 .overlay img,
     .mystories-page .box-2 .overlay img {
         width: 20%;
     }
+
     .mystories-page .bt ul li a {
         width: 54px;
     }
+
     .about-page h3 {
         font-size: 26px;
     }
+
     .about-page figure img {
         height: 200px;
         margin-bottom: 10px;
     }
+
     .about-page p {
         font-size: 13px;
         letter-spacing: 0.5px;
         line-height: 24px;
         padding-bottom: 0;
     }
+
     .blog-single .main-contant {
         border: none;
         padding: 0;
     }
+
     .blog-single figure img {
         height: 250px;
     }
+
     .blog-single h3 {
         font-size: 18px;
         letter-spacing: 0.5px;
         padding: 20px 0;
     }
+
     .blog-single p:nth-child(4) {
         padding: 0;
         padding-bottom: 15px;
         font-size: 16px;
     }
-    .blog-single .custom-control-input:disabled ~ .custom-control-label {
+
+    .blog-single .custom-control-input:disabled~.custom-control-label {
         font-size: 14px;
         letter-spacing: 0.5px;
         line-height: 25px;
     }
+
     .blog-single p {
         line-height: 25px;
     }
+
     .blog-single .overlay {
         width: 93.1%;
         padding: 0;
     }
+
     .blog-single a .img-fluid {
         height: 200px;
     }
+
     .blog-single h2 {
         font-size: 24px;
     }
+
     .blog-single .post span {
         font-size: 14px;
         padding-bottom: 5px;
     }
+
     .blog-single .post strong {
         font-size: 18px;
     }
@@ -2557,66 +2761,80 @@ footer .img-thumbnail {
     .carousel-thumbnails ol li img {
         height: 80px;
     }
+
     .carousel-thumbnails .carousel-indicators li {
         height: 80px;
     }
+
     .carousel-thumbnails .carousel-indicators .active {
         height: 80px;
     }
+
     #portfolio .box-1 .overlay,
     #portfolio .box-2 .overlay {
         width: 92%;
     }
+
     .gallery-page .box-1 .overlay,
     .gallery-page .box-2 .overlay {
         width: 92%;
     }
+
     .gallery-page .bt ul li a {
         width: 45px;
     }
+
     .blog-page .bt ul li a {
         width: 45px;
     }
+
     .mystories-page .box-1 .overlay,
     .mystories-page .box-2 .overlay {
         width: 92%;
     }
+
     .mystories-page .bt ul li a {
         width: 45px;
     }
+
     .blog-single figure .figure-caption span {
         font-size: 14px;
         display: block;
         padding: 10px;
     }
+
     .blog-single h3 {
         font-size: 16px;
         letter-spacing: 0.5px;
         padding: 15px 0;
     }
+
     .blog-single p {
         font-size: 12px;
         line-height: 22px;
     }
+
     .blog-single p:nth-child(4) {
         font-size: 14px;
         line-height: 30px;
     }
-    .blog-single .custom-control-input:disabled ~ .custom-control-label {
+
+    .blog-single .custom-control-input:disabled~.custom-control-label {
         font-size: 12px;
         line-height: 22px;
     }
+
     .blog-single h2 {
         font-size: 22px;
     }
 
     /* MY Own! */
-    #googleMap{
+    #googleMap {
         width: vw;
     }
 
-    #jorj{
-width:100%;
-height: unset;
+    #jorj {
+        width: 100%;
+        height: unset;
     }
 }
