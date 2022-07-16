@@ -1,12 +1,12 @@
 import { Routes, Route } from "react-router-dom";
 
-import Album from "./Components/Album/Album";
-import Carousel from "./Components/Carousel/Carousel";
-import Footer from "./Components/Footer/Footer";
-import Adventures from "./Components/Adventures/Adventures";
-import Navbar from "./Components/Navbar/Navbar";
-import Coordinates from "./Components/Coordinates/Coordinates";
-import About from "./Components/About";
+import Album from "./Components/album/Album";
+import Carousel from "./Components/carousel/Carousel";
+import Footer from "./Components/footer/Footer";
+import Adventures from "./Components/adventures/Adventures";
+import Navbar from "./Components/navbar/Navbar";
+import Coordinates from "./Components/coordinates/Coordinates";
+import Login from "./Components/auth/Login";
 
 
 function App() {
@@ -18,7 +18,7 @@ function App() {
                     <Route path="/" element={<Carousel />} />
                     <Route path="/album" element={<Album />} />
                     <Route path="/adventures" element={<Adventures />} />
-                    <Route path="/about" element={<About />} />
+                    <Route path="/login" element={<Login />} />
                     <Route path="/coordinates" element={<Coordinates />} />
                 </Route>
             </Routes>
