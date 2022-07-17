@@ -1,0 +1,27 @@
+nav {
+    background: #000000;
+}
+
+/* .navbar-dark .navbar-nav .nav-link {
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}*/
+
+.navbar.navbar-dark .navbar-nav .nav-item.active>.nav-link,
+.navbar.navbar-dark .navbar-nav .nav-item .nav-link:hover {
+    color: #f9e43f;
+    background-color: rgba(255, 255, 255, .1);
+} 
+
+/* .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 20px;
+    padding-left: 20px;
+} */
+
+/* .nav-link {
+    display: block;
+    padding: .1rem 1rem;
+} */

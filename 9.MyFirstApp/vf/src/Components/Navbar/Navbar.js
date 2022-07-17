@@ -1,13 +1,20 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
+import styles from "./Navbar.module.css";
 
 export default function Navbar() {
+  const setNavStyle = ({isActive}) => {
+    return isActive
+    ? styles['active']
+    :undefined;
+  }
+  
   return (
-    <nav class="navbar navbar-expand-lg navbar-dark cyan fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">
-          <img src="images/logos/logo5.png" alt="nav-logo" />
-        </a>
-        <button
+    <nav className="navbar navbar-expand-lg navbar-dark cyan fixed-top">
+      <div className="container">
+        <Link className="navbar-brand" to="/">
+          <img src="images/logos/logo5.png" alt="nav-logo"/>
+        </Link>
+        {/* <button
           class="navbar-toggler"
           type="button"
           data-toggle="collapse"
@@ -17,14 +24,14 @@ export default function Navbar() {
           aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <Link className="nav-link" to="/">
+        </button> */}
+        <div className="collapse navbar-collapse" id="navbarSupportedContent-4">
+          <ul className="navbar-nav ml-auto">
+            <li className="nav-item">
+              <NavLink className="nav-link {setNavStyle}" to="/">
                 Ледницата
                 <span className="sr-only">(current)</span>
-              </Link>
+              </NavLink>
             </li>
             <li class="nav-item">
               <Link className="nav-link" to="/adventures">
@@ -33,16 +40,15 @@ export default function Navbar() {
             </li>
             <li class="nav-item">
               <Link className="nav-link" to="/album">
-                Албум{" "}
+                Албум
               </Link>
             </li>
             <li class="nav-item">
               <Link className="nav-link" to="/contest">
-                Конкурс{" "}
+                Конкурс
               </Link>
             </li>
             <li class="nav-item">
-              {/* <a class="nav-link" href="contact.html">Ледничари</a> */}
               <Link className="nav-link" to="/login">
                 вход
               </Link>

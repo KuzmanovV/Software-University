@@ -1,4 +1,4 @@
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Link } from "react-router-dom";
 
 import Album from "./Components/album/Album";
 import Carousel from "./Components/carousel/Carousel";
@@ -7,12 +7,14 @@ import Adventures from "./Components/adventures/Adventures";
 import Navbar from "./Components/navbar/Navbar";
 import Coordinates from "./Components/coordinates/Coordinates";
 import Login from "./Components/auth/Login";
+import NotFound from "./Components/NotFound";
 
 
 function App() {
     return (
         <div>
             <Navbar />
+            
             <Routes>
                 <Route>
                     <Route path="/" element={<Carousel />} />
@@ -20,12 +22,13 @@ function App() {
                     <Route path="/adventures" element={<Adventures />} />
                     <Route path="/login" element={<Login />} />
                     <Route path="/coordinates" element={<Coordinates />} />
+                    <Route path="*" element={<NotFound />} />
                 </Route>
             </Routes>
 
             <Footer />
 
-            <a href="javascript:" id="return-to-top"><i class="fa fa-long-arrow-up" aria-hidden="true"></i></a>
+            {/* <Link to="javascript:" id="return-to-top"><i class="fa fa-long-arrow-up" aria-hidden="true"></i></Link> */}
             
         </div>
     );

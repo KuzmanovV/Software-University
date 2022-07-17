@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Carousel() {
     return (
         <div id="carousel-thumb" class="carousel slide carousel-fade carousel-thumbnails" data-ride="carousel">
@@ -8,7 +10,7 @@ export default function Carousel() {
                     <div class="carousel-caption">
                         <h4 class="lead">Парк за приключения</h4>
                         <h1>Ледницата</h1>
-                        <a class="btn btn-primary" href="about.html"><span>вижте още</span></a>
+                        <Link class="btn btn-primary" to="/adventures"><span>вижте още</span></Link>
                     </div>
             </div>
             <div class="carousel-item">
