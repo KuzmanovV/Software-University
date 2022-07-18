@@ -1,11 +1,25 @@
 export default function Coordinates() {
-    return(
-        <section class="blog-page">
-            <h2>КООРДИНАТИ</h2>
-            <h4>43.04771, 24.18350</h4>
-            <img id="googleMap" src="/images/GoogleMap.png" alt="" />
-            <p>Паркинг на пещера "Съева Дупка, 5761 Брестница.</p>
-            <p>За контакт - Жорж Влайков - 088 744 5830.</p>
-        </section>
-    )
+  return (
+      <div class="support">
+        <div class="container">
+          <h3>координати</h3>
+          <h4>43.04771, 24.18350</h4>
+          <div class="row">
+            <div class="col-sm-12">
+              <figure class="figure">
+                <img
+                  src="/images/GoogleMap.png"
+                  class="figure-img img-fluid"
+                  alt="googleMapsPict"
+                />
+              </figure>
+            </div>
+            <div class="col-sm-12">
+              <h5>Паркинг на пещера "Съева Дупка, 5761 Брестница.</h5>
+              <h5>За контакт - Жорж Влайков - 088 744 5830.</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+  );
 }

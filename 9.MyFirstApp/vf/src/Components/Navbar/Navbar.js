@@ -1,5 +1,5 @@
 import { Link, NavLink } from "react-router-dom";
-import styles from "./Navbar.module.css";
+import styles from "./Navbar.css";
 
 export default function Navbar() {
   const setNavStyle = ({isActive}) => {
@@ -14,49 +14,43 @@ export default function Navbar() {
         <Link className="navbar-brand" to="/">
           <img src="images/logos/logo5.png" alt="nav-logo"/>
         </Link>
-        {/* <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent-4"
-          aria-controls="navbarSupportedContent-4"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button> */}
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4" aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
         <div className="collapse navbar-collapse" id="navbarSupportedContent-4">
           <ul className="navbar-nav ml-auto">
             <li className="nav-item">
-              <NavLink className="nav-link {setNavStyle}" to="/">
+              <NavLink className="nav-link setNavStyle" to="/">
                 Ледницата
                 <span className="sr-only">(current)</span>
               </NavLink>
             </li>
-            <li class="nav-item">
-              <Link className="nav-link" to="/adventures">
+            <li className="nav-item">
+              <NavLink className="nav-link setNavStyle" to="/adventures">
                 Приключения
-              </Link>
+              </NavLink>
             </li>
-            <li class="nav-item">
-              <Link className="nav-link" to="/album">
+            <li className="nav-item">
+              <NavLink className="nav-link setNavStyle" to="/album">
                 Албум
-              </Link>
+              </NavLink>
             </li>
-            <li class="nav-item">
-              <Link className="nav-link" to="/contest">
+            <li className="nav-item">
+              <NavLink className="nav-link setNavStyle" to="/contest">
                 Конкурс
-              </Link>
+              </NavLink>
             </li>
-            <li class="nav-item">
-              <Link className="nav-link" to="/login">
+            <li className="nav-item">
+              <NavLink className="nav-link setNavStyle" to="/login">
                 вход
-              </Link>
+              </NavLink>
             </li>
-            <li class="nav-item">
-              <Link className="nav-link" to="/coordinates">
+            <li className="nav-item">
+              <NavLink className="nav-link setNavStyle" to="/coordinates">
                 Координати
-              </Link>
+              </NavLink>
             </li>
           </ul>
         </div>
