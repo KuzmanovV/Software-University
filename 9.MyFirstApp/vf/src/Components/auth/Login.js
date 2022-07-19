@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Login() {
     return(
 <div>
@@ -12,7 +14,7 @@ export default function Login() {
            </figure>
         </div>
         <div class="col-sm-12">
-             <p> Моля въведете Вашите <a href="#">Име</a> и <a href="#">Парола</a>, за да получите достъп до пълната функционалност на сайта. Ако нямате регистрация, може да направите <a href="#">тук...</a></p>
+             <p> Моля въведете вашите <b>Име</b> и <b>Парола</b>, за да получите достъп до пълната функционалност на сайта. Ако нямате регистрация, може да направите <Link to="/register">тук...</Link></p>
         </div>
     </div>
 
@@ -37,7 +39,7 @@ export default function Login() {
 </div>
 
     {/* Return to Top */}
-    <a href="javascript:" id="return-to-top"><i class="fa fa-long-arrow-up" aria-hidden="true"></i></a>
+    {/* <Link to="javascript:" id="return-to-top"><i class="fa fa-long-arrow-up" aria-hidden="true"></i></Link> */}
 
     </div>
     )

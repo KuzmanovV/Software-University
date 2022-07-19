@@ -1,154 +1,287 @@
 export default function Adventures() {
   return (
-    <section class="blog-page">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6 col-md-12 left-side">
+    <section className="blog-page">
+      <div className="container">
+        <div className="row">
+          <div className="col-lg-6 col-md-12 left-side">
             <h2>ВАШИТЕ Приключения!</h2>
-            <div class="row">
-              <div class="col-md-6">
-                <figure class="figure">
+            {/* Card */}
+            <div className="row">
+              {/* CardLeftSide */}
+              <div className="col-md-6">
+                <figure className="figure">
                   <a href="single.html">
                     <img
-                      src="images/banner-image-1.jpg"
-                      class="figure-img img-fluid"
-                      alt="A generic square placeholder image with rounded corners in a figure."
+                      src="images/adventures/ropeGarden/all.jpg"
+                      className="figure-img img-fluid"
+                      alt="ropeGardenImg"
                     />
                   </a>
-                  <figcaption class="figure-caption">
+                  {/* <figcaption className="figure-caption">
                     {" "}
                     <img src="images/comment.png" alt="" />
                     <span>45</span>
-                  </figcaption>
+                  </figcaption> */}
                 </figure>
               </div>
-              <div class="col-md-6">
+              {/* CardRightSide */}
+              <div className="col-md-6">
                 <h4>
                   <a href="single.html">
-                    Super and up for the comming model in shoot at newyork USA
-                    morning..
+                    Въжена градина - веселба за малки и големи...
                   </a>
+                  <p>висящи елементи с различна степен на сложност, ...</p>
                 </h4>
-                <div class="btn-group">
-                  <a href="single.html" class="btn btn-danger">
+                {/* <div className="btn-group">
+                  <a href="single.html" className="btn btn-danger">
                     Ladakh, India
                   </a>
-                  <button class="btn btn-primary">
-                    <i class="fa fa-eye" aria-hidden="true"></i> 345
+                  <button className="btn btn-primary">
+                    <i className="fa fa-eye" aria-hidden="true"></i> 345
                   </button>
                 </div>
-                <p>Posted on : 23.05.2016</p>
+                <p>Posted on : 23.05.2016</p> */}
               </div>
             </div>
-            <div class="row">
-              <div class="col-md-6">
-                <figure class="figure">
+            {/* Card */}
+            <div className="row">
+              <div className="col-md-6">
+                <figure className="figure">
                   <a href="single.html">
                     <img
-                      src="images/banner-image-2.jpg"
-                      class="figure-img img-fluid"
-                      alt="A generic square placeholder image with rounded corners in a figure."
+                      src="images/adventures/ropeGarden/razkr.jpg"
+                      className="figure-img img-fluid"
+                      alt="kidsImg."
                     />
                   </a>
-                  <figcaption class="figure-caption">
-                    {" "}
-                    <img src="images/comment.png" alt="" />
-                    <span>45</span>
-                  </figcaption>
                 </figure>
               </div>
-              <div class="col-md-6">
+              <div className="col-md-6">
                 <h4>
                   <a href="single.html">
-                    Super and up for the comming model in shoot at newyork USA
-                    morning..
+                    Стена за катерене
                   </a>
+                  <p>увеличете височината, подгответе се за истинското изпитание на фератата...</p>
                 </h4>
-                <div class="btn-group">
-                  <a href="single.html" class="btn btn-danger">
-                    Ladakh, India
-                  </a>
-                  <button class="btn btn-primary">
-                    <i class="fa fa-eye" aria-hidden="true"></i> 345
-                  </button>
-                </div>
-                <p>Posted on : 23.05.2016</p>
               </div>
             </div>
-            <div class="row">
-              <div class="col-md-6">
-                <figure class="figure">
+            {/* Card */}
+            <div className="row">
+              <div className="col-md-6">
+                <figure className="figure">
                   <a href="single.html">
                     <img
-                      src="images/banner-image-3.jpg"
-                      class="figure-img img-fluid"
-                      alt="A generic square placeholder image with rounded corners in a figure."
+                      src="images/adventures/kids/kids.jpg"
+                      className="figure-img img-fluid"
+                      alt="kidsImg."
                     />
                   </a>
-                  <figcaption class="figure-caption">
-                    {" "}
-                    <img src="images/comment.png" alt="" />
-                    <span>45</span>
-                  </figcaption>
                 </figure>
               </div>
-              <div class="col-md-6">
+              <div className="col-md-6">
                 <h4>
                   <a href="single.html">
-                    Super and up for the comming model in shoot at newyork USA
-                    morning..
+                    Детски кът - веселбата за едни е спокойствие за други :)
                   </a>
+                  <p>батут, горски боулинг, ...</p>
                 </h4>
-                <div class="btn-group">
-                  <a href="single.html" class="btn btn-danger">
-                    Ladakh, India
-                  </a>
-                  <button class="btn btn-primary">
-                    <i class="fa fa-eye" aria-hidden="true"></i> 345
-                  </button>
-                </div>
-                <p>Posted on : 23.05.2016</p>
               </div>
             </div>
-            <div class="row">
-              <div class="col-md-6">
-                <figure class="figure">
+            {/* Card */}
+            <div className="row">
+              <div className="col-md-6">
+                <figure className="figure">
+                  <a href="single.html">
+                    <img
+                      src="images/adventures/celebration/stage1.jpg"
+                      className="figure-img img-fluid"
+                      alt="kidsImg."
+                    />
+                  </a>
+                </figure>
+              </div>
+              <div className="col-md-6">
+                <h4>
+                  <a href="single.html">
+                    Сцена под небето
+                  </a>
+                  <p>зелено училище, концерти, чествания, споделени тържества...</p>
+                </h4>
+              </div>
+            </div>
+            {/* Card */}
+            <div className="row">
+              <div className="col-md-6">
+                <figure className="figure">
+                  <a href="single.html">
+                    <img
+                      src="images/adventures/cinema/screen.jpg"
+                      className="figure-img img-fluid"
+                      alt="kidsImg."
+                    />
+                  </a>
+                </figure>
+              </div>
+              <div className="col-md-6">
+                <h4>
+                  <a href="single.html">
+                    Лятно кино
+                  </a>
+                  <p>екран под звездите, прохладен спомен от детството...</p>
+                </h4>
+              </div>
+            </div>
+            {/* Card */}
+            <div className="row">
+              <div className="col-md-6">
+                <figure className="figure">
+                  <a href="single.html">
+                    <img
+                      src="images/adventures/stones/stones.jpg"
+                      className="figure-img img-fluid"
+                      alt="kidsImg."
+                    />
+                  </a>
+                </figure>
+              </div>
+              <div className="col-md-6">
+                <h4>
+                  <a href="single.html">
+                    Спомени от камък и кристали
+                  </a>
+                  <p>автентични сувенири и уникални кристални образци...</p>
+                </h4>
+              </div>
+            </div>
+            {/* Card */}
+            <div className="row">
+              <div className="col-md-6">
+                <figure className="figure">
+                  <a href="single.html">
+                    <img
+                      src="images/adventures/stones/shelf.jpg"
+                      className="figure-img img-fluid"
+                      alt="kidsImg."
+                    />
+                  </a>
+                </figure>
+              </div>
+              <div className="col-md-6">
+                <h4>
+                  <a href="single.html">
+                    Подземни приключения
+                  </a>
+                  <p>Хареса ли ви Съева дупка? Знаете ли още колко богатства и чудеса крият недрата на местния карст...</p>
+                </h4>
+              </div>
+            </div>
+            {/* Card */}
+            <div className="row">
+              <div className="col-md-6">
+                <figure className="figure">
+                  <a href="single.html">
+                    <img
+                      src="images/adventures/f&f/beetle.jpg"
+                      className="figure-img img-fluid"
+                      alt="kidsImg."
+                    />
+                  </a>
+                </figure>
+              </div>
+              <div className="col-md-6">
+                <h4>
+                  <a href="single.html">
+                    Нахранете фотоапарата
+                  </a>
+                  <p>изследвайте местната флора и фауна...</p>
+                </h4>
+              </div>
+            </div>
+            {/* Card */}
+            <div className="row">
+              <div className="col-md-6">
+                <figure className="figure">
+                  <a href="single.html">
+                    <img
+                      src="images/adventures/bavaridges/halvi.jpg"
+                      className="figure-img img-fluid"
+                      alt="kidsImg."
+                    />
+                  </a>
+                </figure>
+              </div>
+              <div className="col-md-6">
+                <h4>
+                  <a href="single.html">
+                    Лакомства и вкуснотии
+                  </a>
+                  <p>подкрепете се и заредете...</p>
+                </h4>
+              </div>
+            </div>
+            {/* Card */}
+            <div className="row">
+              <div className="col-md-6">
+                <figure className="figure">
+                  <a href="single.html">
+                    <img
+                      src="images/adventures/ropeGarden/equip.jpg"
+                      className="figure-img img-fluid"
+                      alt="kidsImg."
+                    />
+                  </a>
+                </figure>
+              </div>
+              <div className="col-md-6">
+                <h4>
+                  <a href="single.html">
+                    Via Ferrata
+                  </a>
+                  <p>най-якото е в гората...</p>
+                </h4>
+              </div>
+            </div>
+            {/* <div className="row">
+              <div className="col-md-6">
+                <figure className="figure">
                   <a href="single.html">
                     <img
                       src="images/banner-image-4.jpg"
-                      class="figure-img img-fluid"
+                      className="figure-img img-fluid"
                       alt="A generic square placeholder image with rounded corners in a figure."
                     />
                   </a>
-                  <figcaption class="figure-caption">
+                  <figcaption className="figure-caption">
                     <img src="images/comment.png" alt="" />
                     <span>45</span>
                   </figcaption>
                 </figure>
               </div>
-              <div class="col-md-6">
+              <div className="col-md-6">
                 <h4>
                   <a href="single.html">
                     Super and up for the comming model in shoot at newyork USA
                     morning..
                   </a>
                 </h4>
-                <div class="btn-group">
-                  <a href="single.html" class="btn btn-danger">
+                <div className="btn-group">
+                  <a href="single.html" className="btn btn-danger">
                     Ladakh, India
                   </a>
-                  <button class="btn btn-primary">
-                    <i class="fa fa-eye" aria-hidden="true"></i> 345
+                  <button className="btn btn-primary">
+                    <i className="fa fa-eye" aria-hidden="true"></i> 345
                   </button>
                 </div>
                 <p>Posted on : 23.05.2016</p>
               </div>
-            </div>
+            </div> */}
           </div>
-          <div class="col-lg-6 col-md-12">
-            <div class="row">
-              <div class="col-md-12">
-                <div class="right-side">
+
+          {/* Right section */}
+          <div className="col-lg-6 col-md-12">
+            <div className="row">
+              <div className="col-md-12">
+                <div className="right-side">
                   <h3>... и моето ПРИКЛЮЧЕНИЕ</h3>
                   <figure>
                     <img id="jorj" src="images/Jorj.jpg" alt="JorjPicture" style={{height: 'unset'}} />
@@ -163,33 +296,33 @@ export default function Adventures() {
                     <p>И като че ли не остава място за съжаление...:)</p>
                   </h5>
                   <a href="#">
-                    <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                    <i className="fa fa-facebook-square" aria-hidden="true"></i>
                   </a>
                   <a href="#">
-                    <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                    <i className="fa fa-twitter-square" aria-hidden="true"></i>
                   </a>
                   <a href="#">
-                    <i class="fa fa-youtube-square" aria-hidden="true"></i>
+                    <i className="fa fa-youtube-square" aria-hidden="true"></i>
                   </a>
                   <a href="#">
-                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                    <i className="fa fa-instagram" aria-hidden="true"></i>
                   </a>
                   <a href="#">
-                    <i class="fa fa-dribbble" aria-hidden="true"></i>
+                    <i className="fa fa-dribbble" aria-hidden="true"></i>
                   </a>
                   <a href="#">
-                    <i class="fa fa-pinterest-square" aria-hidden="true"></i>
+                    <i className="fa fa-pinterest-square" aria-hidden="true"></i>
                   </a>
                   <address>
-                    <span>Phone: +44 1234567890</span>
-                    <span>Email : info@clickaholic.com</span>
+                    <span>Phone: +359 887 445 830</span>
+                    <span>Email : </span>
                   </address>
                   {/* <h2>Quick Contact</h2>
-                  <form id="contact" method="post" class="form" role="form">
-                    <div class="row">
-                      <div class="col-xs-6 col-md-6 form-group">
+                  <form id="contact" method="post" className="form" role="form">
+                    <div className="row">
+                      <div className="col-xs-6 col-md-6 form-group">
                         <input
-                          class="form-control"
+                          className="form-control"
                           id="name"
                           name="name"
                           placeholder="Name"
@@ -197,9 +330,9 @@ export default function Adventures() {
                           required
                         />
                       </div>
-                      <div class="col-xs-6 col-md-6 form-group">
+                      <div className="col-xs-6 col-md-6 form-group">
                         <input
-                          class="form-control"
+                          className="form-control"
                           id="email"
                           name="email"
                           placeholder="Email"
@@ -209,16 +342,16 @@ export default function Adventures() {
                       </div>
                     </div>
                     <textarea
-                      class="form-control"
+                      className="form-control"
                       id="message"
                       name="message"
                       placeholder="Message"
                       rows="5"
                     ></textarea>
                     <br />
-                    <div class="row">
-                      <div class="col-xs-12 col-md-12 form-group">
-                        <button class="btn btn-primary" type="submit">
+                    <div className="row">
+                      <div className="col-xs-12 col-md-12 form-group">
+                        <button className="btn btn-primary" type="submit">
                           Alright Submit it
                         </button>
                       </div>

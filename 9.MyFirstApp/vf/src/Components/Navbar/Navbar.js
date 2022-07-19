@@ -12,7 +12,7 @@ export default function Navbar() {
     <nav className="navbar navbar-expand-lg navbar-dark cyan fixed-top">
       <div className="container">
         <Link className="navbar-brand" to="/">
-          <img src="images/logos/logo5.png" alt="nav-logo"/>
+          <img src="images/logos/logo6.png" alt="nav-logo"/>
         </Link>
         
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4" aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">

@@ -1567,8 +1567,6 @@ footer .img-thumbnail {
     font-family: 'Montserrat', sans-serif;
 }
 
-    {}
-
 .blog-single figure .btn-danger,
 .blog-single figure .btn-danger:not(:disabled):not(.disabled):active {
     background-color: #00aeef;
@@ -2803,9 +2801,6 @@ footer .img-thumbnail {
     }
 
     /* MY Own! */
-    #googleMap {
-        width: vw;
-    }
 
     #jorj {
         width: 100%;

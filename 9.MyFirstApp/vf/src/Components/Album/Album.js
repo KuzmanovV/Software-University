@@ -17,7 +17,8 @@ export default function Album () {
             setPics(result);
         })
     }, []);
-    
+    console.log(pics);
+
     return (
         <section id="portfolio">
                 <div class="container">

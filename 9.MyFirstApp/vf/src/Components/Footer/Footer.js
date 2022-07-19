@@ -46,21 +46,29 @@ export default function Footer() {
                 <div className="row">
                     <div className="col-md-12">
                         <ul>
-                            <li><a href="index.html">Home</a></li>
+                            <li><Link to="/">Home</Link></li>
                             <li className="hidden">/</li>
-                            <li><a href="about.html">About-us</a></li>
+                            <li><Link to="/coordinates">About-us</Link></li>
                             <li className="hidden">/</li>
-                            <li><a href="mystories.html">My stories</a></li>
+                            <li><Link to="/adventures">Adventures</Link></li>
                             <li className="hidden">/</li>
-                            <li><a href="destinations.html">Destinations</a></li>
+                            <li><Link to="/album">Pictures</Link></li>
                             <li className="hidden">/</li>
-                            <li><a href="gallery.html">Gallery</a></li>
+                            <li><Link to="/contest">Contest</Link></li>
                             <li className="hidden">/</li>
-                            <li><a href="contact.html">Contact</a></li>
+                            <li><Link to="/login">Login</Link></li>
+                            <li className="hidden">/</li>
+                            <li><Link to="/register">Register</Link></li>
                         </ul>
                     </div>
                     <div className="col-md-12">
-                        <p>(C) All Rights Reserved <a href="https://www.template.net/editable/websites/html5" target="_blank">ClickaHolic</a> <span>/</span> Designed and Developed by <a href="https://www.template.net/editable/websites/html5" target="_blank">Template.net</a></p>
+                        <p>(C) All Rights Reserved 
+                            <a href="https://themewagon.com/themes/free-bootstrap-4-html5-personal-travel-blog-website-template-clickaholic/" target="_blank">ClickaHolic</a>
+                            <span>/</span> 
+                            Designed and Developed by <a href="https://www.template.net" target="_blank">Template.net</a>
+                            <span>/</span> 
+                            Developed for Lednicata by <a href="https://www.template.net/editable/websites/html5" target="_blank">V. Kuzmanov</a>
+                        </p>
                     </div>
                 </div>
             </div>
