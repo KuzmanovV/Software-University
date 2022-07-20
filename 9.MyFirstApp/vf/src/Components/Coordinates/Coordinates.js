@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styles from "./Coordinates.css";
 
 export default function Coordinates() {
@@ -5,6 +6,7 @@ export default function Coordinates() {
       <div class="support">
         <div class="container">
           <h3>координати</h3>
+          <a target="blank" href="https://www.google.com/maps/place/%D0%9B%D0%B5%D0%B4%D0%BD%D0%B8%D1%86%D0%B0%D1%82%D0%B0/@43.047662,24.1814468,17z/data=!3m1!4b1!4m5!3m4!1s0x40abb41d5400054d:0x897d4706163a63!8m2!3d43.0476581!4d24.1836355">Зареди на Google Карти</a>
           <h4 className="yellow">43.04771, 24.18350</h4>
           <div class="row">
             <div class="col-sm-12">

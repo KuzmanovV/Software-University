@@ -38,7 +38,7 @@ export default function Footer() {
                         </Link>
                     </div>
                 </div>
-
+                    
             </div>
         </section>
         <section className="footer-bottom">
@@ -46,6 +46,13 @@ export default function Footer() {
                 <div className="row">
                     <div className="col-md-12">
                         <ul>
+                        <a target="blank" href="https://www.facebook.com/groups/85669606098">
+                        <i className="fa fa-facebook-square" aria-hidden="true"></i>
+                    </a>
+                    {/* <a href="https://viber.me/Жорж Влайков/">
+                    Viber
+                    </a> */}
+                            <li className="hidden">/</li>
                             <li><Link to="/">Home</Link></li>
                             <li className="hidden">/</li>
                             <li><Link to="/coordinates">About-us</Link></li>

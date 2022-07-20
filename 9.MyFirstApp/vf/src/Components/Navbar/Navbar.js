@@ -11,7 +11,7 @@ export default function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark cyan fixed-top">
       <div className="container">
-        <Link className="navbar-brand" to="/">
+        <Link className="navbar-brand" to="/home">
           <img src="images/logos/logo6.png" alt="nav-logo"/>
         </Link>
         
@@ -22,7 +22,7 @@ export default function Navbar() {
         <div className="collapse navbar-collapse" id="navbarSupportedContent-4">
           <ul className="navbar-nav ml-auto">
             <li className="nav-item">
-              <NavLink className="nav-link setNavStyle" to="/">
+              <NavLink className="nav-link setNavStyle" to="/home">
                 Ледницата
                 <span className="sr-only">(current)</span>
               </NavLink>
