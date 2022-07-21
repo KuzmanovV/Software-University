@@ -5,7 +5,7 @@ export default function Footer() {
         <footer>
         <section className="footer-top">
             <div className="container">
-                <h2>Скали, Пещери, Катерене, Висоти, Забавления, Приключения ...</h2>
+                <h3>Скали, Пещери, Висоти, Катерене, Забавления, Приключения ...</h3>
                 <div className="row text-center text-lg-left">
                     <div className="col-lg-2 col-md-4 col-xs-6">
                         <Link to="/carouselItem4" className="d-block h-100">
@@ -74,7 +74,7 @@ export default function Footer() {
                             <span>/</span> 
                             Designed and Developed by <a href="https://www.template.net" target="_blank">Template.net</a>
                             <span>/</span> 
-                            Developed for Lednicata by <a href="https://www.template.net/editable/websites/html5" target="_blank">V. Kuzmanov</a>
+                            Developed for Lednicata by V. Kuzmanov{/* <a href="https://www.template.net/editable/websites/html5" target="_blank">  </a> */}
                         </p>
                     </div>
                 </div>

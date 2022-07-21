@@ -23,7 +23,7 @@ function App() {
             
             <Routes>
                 <Route>
-                    <Route path="/home" element={<Carousel />} />
+                    <Route path="/" element={<Carousel />} />
                     <Route path="/adventures" element={<Adventures />} />
                     <Route path="/album" element={<Album />} />
                     <Route path="/contest" element={<Contest />} />

@@ -20,10 +20,13 @@ export default function Album () {
     console.log(pics);
 
     return (
+
         <section id="portfolio">
                 <div class="container">
-                    <h2>Recently Added Photographs</h2>
-                    <div class="row justify-content-center">
+                    <h2></h2>
+                    <h2></h2>
+<a target="blank" href="https://photos.google.com/share/AF1QipMOuggnmwjt7jmhH--oQrF-qIzzGIBL8bxUzy_WO8PIrQ0Jhju__03aj3y_BbGI8Q?pli=1&key=M3hxVlhrSHdrQm9VMl9rS1F3bDFHVk80V080cDFn"><h3><b>Албум в GOOGLE</b></h3></a>
+                    {/* <div class="row justify-content-center">
                         <div class="col-md-12 col-12">
                             <div class="row">
                                 <a href="https://unsplash.it/1200/768.jpg?image=251" data-toggle="lightbox" data-gallery="example-gallery" class="col-xl-6 col-md-4 box-1">
@@ -53,7 +56,7 @@ export default function Album () {
                             </div>
                             <div class="row">
                                 
-                                {/* {pics.map(x=><AlbumCard pic={x}/>)} */}
+                                {pics.map(x=><AlbumCard pic={x}/>)}
 
                                
                                 <a href="https://unsplash.it/1200/768.jpg?image=256" data-toggle="lightbox" data-gallery="example-gallery" class="col-xl-6 col-md-4 box-1">
@@ -68,7 +71,7 @@ export default function Album () {
                             <div class="row">
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </section>
     );

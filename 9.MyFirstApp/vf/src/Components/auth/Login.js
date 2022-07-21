@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export default function Login() {
     return(
-<div>
+<div id="top">
 {/* Blog-Section */}
 <div class="support">
   <div class="container">
@@ -39,9 +39,9 @@ export default function Login() {
 </div>
 
     {/* Return to Top */}
-    {/* <Link to="javascript:" id="return-to-top"><i class="fa fa-long-arrow-up" aria-hidden="true"></i></Link> */}
+    <a href="#top" id="return-to-top"><i class="fa fa-long-arrow-up" aria-hidden="true"></i></a>
 
-    </div>
+</div>
     )
 }
 
