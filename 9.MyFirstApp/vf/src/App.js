@@ -1,19 +1,19 @@
 import { Routes, Route, Link } from "react-router-dom";
 
-import Navbar from "./Components/navbar/Navbar";
-import Carousel from "./Components/carousel/Carousel";
-import Adventures from "./Components/adventures/Adventures";
-import Album from "./Components/album/Album";
-import Contest from "./Components/contest/Contest";
-import Login from "./Components/auth/Login";
-import Register from "./Components/auth/Register";
-import Coordinates from "./Components/coordinates/Coordinates";
+import Navbar from "./Components/0.Navbar/Navbar";
+import Carousel from "./Components/1.Carousel/Carousel";
+import Adventures from "./Components/2.Adventures/Adventures";
+import Album from "./Components/3.Album/Album";
+import Contest from "./Components/4.Contest/Contest";
+import Login from "./Components/5.Auth/Login";
+import Register from "./Components/5.Auth/Register";
+import Coordinates from "./Components/6.Coordinates/Coordinates";
 import NotFound from "./Components/NotFound";
-import CarouselItem1 from "./Components/carousel/CarouselItem1";
-import CarouselItem2 from "./Components/carousel/CarouselItem2";
-import CarouselItem3 from "./Components/carousel/CarouselItem3";
-import CarouselItem4 from "./Components/carousel/CarouselItem4";
-import Footer from "./Components/footer/Footer";
+import CarouselItem1 from "./Components/7.Footer/CarouselItem1";
+import CarouselItem2 from "./Components/7.Footer/CarouselItem2";
+import CarouselItem3 from "./Components/7.Footer/CarouselItem3";
+import CarouselItem4 from "./Components/7.Footer/CarouselItem4";
+import Footer from "./Components/7.Footer/Footer";
 
 
 function App() {

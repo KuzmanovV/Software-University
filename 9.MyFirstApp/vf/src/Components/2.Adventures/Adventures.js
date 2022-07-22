@@ -1,4 +1,11 @@
+import { useEffect} from "react";
+
 export default function Adventures() {
+  // AutoGoUp hack
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  
   return (
     <section className="blog-page">
       <div className="container">
@@ -10,13 +17,13 @@ export default function Adventures() {
               {/* CardLeftSide */}
               <div className="col-md-6">
                 <figure className="figure">
-                  <a href="single.html">
+                  <a href="single.html"></a>
                     <img
                       src="images/adventures/ropeGarden/all.jpg"
                       className="figure-img img-fluid"
                       alt="ropeGardenImg"
                     />
-                  </a>
+                  
                   {/* <figcaption className="figure-caption">
                     {" "}
                     <img src="images/comment.png" alt="" />
@@ -27,9 +34,10 @@ export default function Adventures() {
               {/* CardRightSide */}
               <div className="col-md-6">
                 <h4>
-                  <a href="single.html">
+                  {/* <a href="single.html"></a> */}
+                  <h5>
                     Въжена градина - веселба за малки и големи...
-                  </a>
+                  </h5>
                   <p>висящи елементи с различна степен на сложност, ...</p>
                 </h4>
                 {/* <div className="btn-group">
@@ -47,20 +55,23 @@ export default function Adventures() {
             <div className="row">
               <div className="col-md-6">
                 <figure className="figure">
-                  <a href="single.html">
+                  <a href="single.html"></a>
                     <img
                       src="images/adventures/ropeGarden/razkr.jpg"
                       className="figure-img img-fluid"
                       alt="kidsImg."
                     />
-                  </a>
+                  
                 </figure>
               </div>
               <div className="col-md-6">
                 <h4>
-                  <a href="single.html">
+                  {/* <a href="single.html">
                     Стена за катерене
-                  </a>
+                  </a> */}
+                  <h5>
+                  Стена за катерене
+                  </h5>
                   <p>увеличете височината, подгответе се за истинското изпитание на фератата...</p>
                 </h4>
               </div>
@@ -69,20 +80,23 @@ export default function Adventures() {
             <div className="row">
               <div className="col-md-6">
                 <figure className="figure">
-                  <a href="single.html">
+                  <a href="single.html"></a>
                     <img
                       src="images/adventures/kids/kids.jpg"
                       className="figure-img img-fluid"
                       alt="kidsImg."
                     />
-                  </a>
+                  
                 </figure>
               </div>
               <div className="col-md-6">
                 <h4>
-                  <a href="single.html">
+                  {/* <a href="single.html">
                     Детски кът - веселбата за едни е спокойствие за други :)
-                  </a>
+                  </a> */}
+                  <h5>
+                  Детски кът - веселбата за едни е спокойствие за други :)
+                  </h5>
                   <p>батут, горски боулинг, ...</p>
                 </h4>
               </div>
@@ -91,20 +105,23 @@ export default function Adventures() {
             <div className="row">
               <div className="col-md-6">
                 <figure className="figure">
-                  <a href="single.html">
+                  <a href="single.html"></a>
                     <img
                       src="images/adventures/celebration/stage1.jpg"
                       className="figure-img img-fluid"
                       alt="kidsImg."
                     />
-                  </a>
+                  
                 </figure>
               </div>
               <div className="col-md-6">
                 <h4>
-                  <a href="single.html">
+                  {/* <a href="single.html">
                     Сцена под небето
-                  </a>
+                  </a> */}
+                  <h5>
+                  Сцена под небето
+                  </h5>
                   <p>зелено училище, концерти, чествания, споделени тържества...</p>
                 </h4>
               </div>
@@ -113,20 +130,23 @@ export default function Adventures() {
             <div className="row">
               <div className="col-md-6">
                 <figure className="figure">
-                  <a href="single.html">
+                  <a href="single.html"></a>
                     <img
                       src="images/adventures/cinema/screen.jpg"
                       className="figure-img img-fluid"
                       alt="kidsImg."
                     />
-                  </a>
+                  
                 </figure>
               </div>
               <div className="col-md-6">
                 <h4>
-                  <a href="single.html">
+                  {/* <a href="single.html">
                     Лятно кино
-                  </a>
+                  </a> */}
+                  <h5>
+                  Лятно кино
+                  </h5>
                   <p>екран под звездите, прохладен спомен от детството...</p>
                 </h4>
               </div>
@@ -135,20 +155,23 @@ export default function Adventures() {
             <div className="row">
               <div className="col-md-6">
                 <figure className="figure">
-                  <a href="single.html">
+                  <a href="single.html"></a>
                     <img
                       src="images/adventures/stones/stones.jpg"
                       className="figure-img img-fluid"
                       alt="kidsImg."
                     />
-                  </a>
+                  
                 </figure>
               </div>
               <div className="col-md-6">
                 <h4>
-                  <a href="single.html">
+                  {/* <a href="single.html">
                     Спомени от камък и кристали
-                  </a>
+                  </a> */}
+                  <h5>
+                  Спомени от камък и кристали
+                  </h5>
                   <p>автентични сувенири и уникални кристални образци...</p>
                 </h4>
               </div>
@@ -157,20 +180,23 @@ export default function Adventures() {
             <div className="row">
               <div className="col-md-6">
                 <figure className="figure">
-                  <a href="single.html">
+                  <a href="single.html"></a>
                     <img
                       src="images/adventures/stones/shelf.jpg"
                       className="figure-img img-fluid"
                       alt="kidsImg."
                     />
-                  </a>
+                  
                 </figure>
               </div>
               <div className="col-md-6">
                 <h4>
-                  <a href="single.html">
+                  {/* <a href="single.html">
                     Подземни приключения
-                  </a>
+                  </a> */}
+                  <h5>
+                  Подземни приключения
+                  </h5>
                   <p>Хареса ли ви Съева дупка? Знаете ли още колко богатства и чудеса крият недрата на местния карст...</p>
                 </h4>
               </div>
@@ -179,20 +205,23 @@ export default function Adventures() {
             <div className="row">
               <div className="col-md-6">
                 <figure className="figure">
-                  <a href="single.html">
+                  <a href="single.html"></a>
                     <img
                       src="images/adventures/f&f/beetle.jpg"
                       className="figure-img img-fluid"
                       alt="kidsImg."
                     />
-                  </a>
+                  
                 </figure>
               </div>
               <div className="col-md-6">
                 <h4>
-                  <a href="single.html">
+                  {/* <a href="single.html">
                     Нахранете фотоапарата
-                  </a>
+                  </a> */}
+                  <h5>
+                  Нахранете фотоапарата
+                  </h5>
                   <p>изследвайте местната флора и фауна...</p>
                 </h4>
               </div>
@@ -201,20 +230,23 @@ export default function Adventures() {
             <div className="row">
               <div className="col-md-6">
                 <figure className="figure">
-                  <a href="single.html">
+                  <a href="single.html"></a>
                     <img
                       src="images/adventures/bavaridges/halvi.jpg"
                       className="figure-img img-fluid"
                       alt="kidsImg."
                     />
-                  </a>
+                  
                 </figure>
               </div>
               <div className="col-md-6">
                 <h4>
-                  <a href="single.html">
+                  {/* <a href="single.html">
                     Лакомства и вкуснотии
-                  </a>
+                  </a> */}
+                  <h5>
+                  Лакомства и вкуснотии
+                  </h5>
                   <p>подкрепете се и заредете...</p>
                 </h4>
               </div>
@@ -223,20 +255,23 @@ export default function Adventures() {
             <div className="row">
               <div className="col-md-6">
                 <figure className="figure">
-                  <a href="single.html">
+                  <a href="single.html"></a>
                     <img
                       src="images/adventures/ropeGarden/equip.jpg"
                       className="figure-img img-fluid"
                       alt="kidsImg."
                     />
-                  </a>
+                  
                 </figure>
               </div>
               <div className="col-md-6">
                 <h4>
-                  <a href="single.html">
+                  {/* <a href="single.html">
                     Via Ferrata
-                  </a>
+                  </a> */}
+                  <h5>
+                  Via Ferrata
+                  </h5>
                   <p>най-якото е в гората...</p>
                 </h4>
               </div>

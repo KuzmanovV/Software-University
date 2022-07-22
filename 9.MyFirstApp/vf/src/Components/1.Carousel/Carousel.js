@@ -1,6 +1,12 @@
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 
 export default function Carousel() {
+    // AutoGoUp hack
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+    
     return (
         <div id="carousel-thumb" className="carousel slide carousel-fade carousel-thumbnails" data-ride="carousel">
         <div className="carousel-inner" role="listbox">
@@ -36,7 +42,7 @@ export default function Carousel() {
                     <div className="gradient"></div>
                     <div className="carousel-caption">
                         <h1>от зори до здрач!</h1>
-                        <p className="lead">смисъл в днешния ден и надежда в утрешния :)</p>
+                        <p className="lead">смисъл в днешния ден и надежда за утрешния :)</p>
                         <Link className="btn btn-primary" to="/adventures"><span>вижте още</span></Link>
                     </div>
             </div>

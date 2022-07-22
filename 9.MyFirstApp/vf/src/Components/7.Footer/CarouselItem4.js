@@ -8,7 +8,7 @@ export default function CarouselItem4() {
                     <div className="gradient"></div>
                     <div className="carousel-caption">
                         <h1>от зори до здрач!</h1>
-                        <p className="lead">смисъл в днешния ден и надежда в утрешния :)</p>
+                        <p className="lead">смисъл в днешния ден и надежда за утрешния :)</p>
                         <Link className="btn btn-primary" to="/adventures"><span>вижте още</span></Link>
                     </div>
             </div>

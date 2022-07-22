@@ -2,6 +2,7 @@ import {Link} from "react-router-dom";
 
 export default function Footer() {
     return (
+        <>
         <footer>
         <section className="footer-top">
             <div className="container">
@@ -55,17 +56,17 @@ export default function Footer() {
                             <li className="hidden">/</li>
                             <li><Link to="/">Home</Link></li>
                             <li className="hidden">/</li>
-                            <li><Link to="/coordinates">About-us</Link></li>
+                            <li><Link to="/coordinates">Contact</Link></li>
                             <li className="hidden">/</li>
                             <li><Link to="/adventures">Adventures</Link></li>
                             <li className="hidden">/</li>
                             <li><Link to="/album">Pictures</Link></li>
                             <li className="hidden">/</li>
-                            <li><Link to="/contest">Contest</Link></li>
+                            {/* <li><Link to="/contest">Contest</Link></li>
                             <li className="hidden">/</li>
                             <li><Link to="/login">Login</Link></li>
                             <li className="hidden">/</li>
-                            <li><Link to="/register">Register</Link></li>
+                            <li><Link to="/register">Register</Link></li> */}
                         </ul>
                     </div>
                     <div className="col-md-12">
@@ -77,9 +78,14 @@ export default function Footer() {
                             Developed for Lednicata by V. Kuzmanov{/* <a href="https://www.template.net/editable/websites/html5" target="_blank">  </a> */}
                         </p>
                     </div>
+
+
                 </div>
             </div>
-        </section>
-    </footer>
+            </section>
+        </footer>
+                    {/* Return to Top */}
+                    <a href="#top" id="return-to-top"><i class="fa fa-long-arrow-up" aria-hidden="true"></i></a>
+                    </>
     )
 }

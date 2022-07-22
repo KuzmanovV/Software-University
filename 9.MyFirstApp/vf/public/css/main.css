@@ -2134,7 +2134,7 @@ footer .img-thumbnail {
 }
 
 @media screen and (max-width: 768px) {
-    nav .navbar-nav {
+    .container .navbar-nav {
         padding: 20px 0 20px;
     }
 

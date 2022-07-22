@@ -2,6 +2,11 @@ import { useEffect, useState } from "react";
 import AlbumCard from './AlbumCard.js';
 
 export default function Album () {
+    // AutoGoUp hack
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+    
     const [pics, setPics] = useState([]);
     
     useEffect(()=>{
@@ -26,6 +31,7 @@ export default function Album () {
                     <h2></h2>
                     <h2></h2>
 <a target="blank" href="https://photos.google.com/share/AF1QipMOuggnmwjt7jmhH--oQrF-qIzzGIBL8bxUzy_WO8PIrQ0Jhju__03aj3y_BbGI8Q?pli=1&key=M3hxVlhrSHdrQm9VMl9rS1F3bDFHVk80V080cDFn"><h3><b>Албум в GOOGLE</b></h3></a>
+
                     {/* <div class="row justify-content-center">
                         <div class="col-md-12 col-12">
                             <div class="row">

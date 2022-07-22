@@ -1,4 +1,11 @@
+import { useEffect } from "react";
+
 export default function Contest() {
+  // AutoGoUp hack
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  
   return (
       <div class="support">
         <div class="container">

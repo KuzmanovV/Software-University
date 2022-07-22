@@ -26,8 +26,27 @@ nav {
     padding: .1rem 1rem;
 } 
 
-.logo{
-    height: 40px;
+/* .logo{
+    height: 35px;
+    width: 35px;
+    background-color: #f9e43f;
+    border-radius: 20px;
+    position: relative;
+} */
+
+/* .logo img{
+    position: absolute;
+    top: 63%;
+    left: 50%;
+    transform: translate(-49%, -39%);
+
+width:270%;
+height: 270%;
+} */
+
+.navbar-brand>img{
+    height: 32px;
+    width: 62px;
 }
 
 

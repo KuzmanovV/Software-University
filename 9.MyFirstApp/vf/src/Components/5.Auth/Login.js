@@ -1,10 +1,15 @@
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 
 export default function Login() {
+    // AutoGoUp hack
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+    
     return(
-<div id="top">
-{/* Blog-Section */}
-<div class="support">
+        <div class="support">
+    {/* Blog-Section */}
   <div class="container">
    <h3>Вход</h3>
     <div class="row">
@@ -36,11 +41,6 @@ export default function Login() {
       </div>
      </div>
   </div>
-</div>
-
-    {/* Return to Top */}
-    <a href="#top" id="return-to-top"><i class="fa fa-long-arrow-up" aria-hidden="true"></i></a>
-
 </div>
     )
 }

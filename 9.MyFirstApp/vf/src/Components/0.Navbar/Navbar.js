@@ -1,5 +1,6 @@
 import { Link, NavLink } from "react-router-dom";
 import styles from "./Navbar.css";
+import { useEffect } from "react";
 
 export default function Navbar() {
   const setNavStyle = ({isActive}) => {
@@ -7,15 +8,20 @@ export default function Navbar() {
     ? styles['active']
     :undefined;
   }
+
+  // AutoGoUp hack
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   
   return (
     <nav className="navbar navbar-expand-lg navbar-dark cyan fixed-top">
       <div className="container">
         <Link className="navbar-brand" to="/">
-          {/* <img src="images/logos/logo6.png" alt="nav-logo"/> */}
-          <div className="logo">
-          <img src="images/logoMy.svg" alt="nav-logo"/>
-          </div>
+            <img src="images/logos/scrL.png" alt="nav-logo"/>
+          {/* <div className="logo">
+            <img src="images/logos/scrL.png" alt="nav-logo"/>
+          </div> */}
         </Link>
         
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4" aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
@@ -40,7 +46,7 @@ export default function Navbar() {
                 Албум
               </NavLink>
             </li>
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <NavLink className="nav-link setNavStyle" to="/contest">
                 Конкурс
               </NavLink>
@@ -49,7 +55,7 @@ export default function Navbar() {
               <NavLink className="nav-link setNavStyle" to="/login">
                 вход
               </NavLink>
-            </li>
+            </li> */}
             <li className="nav-item">
               <NavLink className="nav-link setNavStyle" to="/coordinates">
                 Координати
