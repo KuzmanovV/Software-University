@@ -1,47 +1,33 @@
+import { useState } from "react";
 import {Link} from "react-router-dom";
 
+import ThumbImg from './ThumbImg';
+
 export default function Footer() {
+    const[thumbs, setThumbs] = useState([
+        {_id: 1, to: '/carouselItem4', src: 'images/thumbs/sunset.jpg', alt: 'thumbImg1'},
+        {_id: 2, to: '/carouselItem1', src: 'images/thumbs/ЛедниДрон.jpg', alt: 'thumbImg2'},
+        {_id: 3, to: '/carouselItem2', src: 'images/thumbs/landsc.jpg', alt: 'thumbImg3'},
+        {_id: 4, to: '/carouselItem3', src: 'images/thumbs/Tower.png', alt: 'thumbImg4'},
+        {_id: 5, to: '/carouselItem4', src: 'images/thumbs/sunset.jpg', alt: 'thumbImg1'},
+        {_id: 6, to: '/carouselItem1', src: 'images/thumbs/ЛедниДрон.jpg', alt: 'thumbImg2'},
+      ]);
+
     return (
-        <>
-        <footer>
+    <>
+    <footer>
         <section className="footer-top">
             <div className="container">
                 <h3>Скали, Пещери, Висоти, Катерене, Забавления, Приключения ...</h3>
                 <div className="row text-center text-lg-left">
-                    <div className="col-lg-2 col-md-4 col-xs-6">
-                        <Link to="/carouselItem4" className="d-block h-100">
-                            <img className="img-fluid img-thumbnail" src="images/sunset.jpg" alt="" />
-                        </Link>
-                    </div>
-                    <div className="col-lg-2 col-md-4 col-xs-6">
-                        <Link to="/carouselItem1" className="d-block h-100">
-                            <img className="img-fluid img-thumbnail" src="images/ЛедниДрон.jpg" alt="" />
-                        </Link>
-                    </div>
-                    <div className="col-lg-2 col-md-4 col-xs-6">
-                        <Link to="/carouselItem2" className="d-block h-100">
-                            <img className="img-fluid img-thumbnail" src="images/landsc.jpg" alt="" />
-                        </Link>
-                    </div>
-                    <div className="col-lg-2 col-md-4 col-xs-6">
-                        <Link to="/carouselItem3" className="d-block h-100">
-                            <img className="img-fluid img-thumbnail" src="images/Tower.png" alt="" />
-                        </Link>
-                    </div>
-                    <div className="col-lg-2 col-md-4 col-xs-6">
-                        <Link to="/carouselItem4" className="d-block h-100">
-                            <img className="img-fluid img-thumbnail" src="images/sunset.jpg" alt="" />
-                        </Link>
-                    </div>
-                    <div className="col-lg-2 col-md-4 col-xs-6">
-                        <Link to="/carouselItem1" className="d-block h-100">
-                            <img className="img-fluid img-thumbnail" src="images/ЛедниДрон.jpg" alt="" />
-                        </Link>
-                    </div>
-                </div>
                     
+                    {thumbs.map(t => <ThumbImg key={t._id} {...t}/>)}
+
+                </div>
             </div>
         </section>
+
+        {/* finalFootCaptions */}
         <section className="footer-bottom">
             <div className="container">
                 <div className="row">
@@ -83,9 +69,10 @@ export default function Footer() {
                 </div>
             </div>
             </section>
-        </footer>
-                    {/* Return to Top */}
-                    <a href="#top" id="return-to-top"><i class="fa fa-long-arrow-up" aria-hidden="true"></i></a>
-                    </>
+    </footer>
+        
+    {/* Return to Top */}
+    <a href="#top" id="return-to-top"><i class="fa fa-long-arrow-up" aria-hidden="true"></i></a>
+    </>
     )
 }

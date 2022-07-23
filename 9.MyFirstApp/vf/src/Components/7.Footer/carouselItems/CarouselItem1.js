@@ -1,17 +1,22 @@
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 
-export default function CarouselItem2() {
+export default function CarouselItem1() {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
+    
     return (
         <div className="carousel-inner" role="listbox">
             <div className="carousel-item active">
-                <img className="d-block w-100" src="images/landsc.jpg" alt="Second slide" />
+                <img className="d-block w-100" src="images/thumbs/ЛедниДронС.jpg" alt="First slide" />
                     <div className="gradient"></div>
                     <div className="carousel-caption">
-                        <h1>приключения безкрай!</h1>
-                        <p className="lead">във всички посоки и измерения</p>
+                        <h4 className="lead">Парк за приключения</h4>
+                        <h1>Ледницата</h1>
                         <Link className="btn btn-primary" to="/adventures"><span>вижте още</span></Link>
                     </div>
             </div>
-        </div>
+    </div>
     );
 }

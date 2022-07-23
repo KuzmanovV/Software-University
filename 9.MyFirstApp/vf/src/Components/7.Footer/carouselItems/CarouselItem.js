@@ -1,6 +1,11 @@
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 
-export default function CarouselItem1() {
+export default function CarouselItem() {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, []);
+    
     return (
         <div className="carousel-inner" role="listbox">
             <div className="carousel-item active">

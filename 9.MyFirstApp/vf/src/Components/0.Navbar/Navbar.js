@@ -13,6 +13,12 @@ export default function Navbar() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  const openMobileBridge = 'false';
+
+  const toCollapsBridge=() => {
+    openMobileBridge = 'true';
+  }
   
   return (
     <nav className="navbar navbar-expand-lg navbar-dark cyan fixed-top">
@@ -24,40 +30,44 @@ export default function Navbar() {
           </div> */}
         </Link>
         
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4" aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" 
+                data-toggle="collapse" data-target="#navbarSupportedContent-4" 
+                aria-controls="navbarSupportedContent-4" 
+                aria-expanded={openMobileBridge} 
+                aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
         <div className="collapse navbar-collapse" id="navbarSupportedContent-4">
           <ul className="navbar-nav ml-auto">
             <li className="nav-item">
-              <NavLink className="nav-link setNavStyle" to="/">
+              <NavLink className="nav-link setNavStyle" to="/" onClick={toCollapsBridge}>
                 Ледницата
                 <span className="sr-only">(current)</span>
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link setNavStyle" to="/adventures">
+              <NavLink className="nav-link setNavStyle" to="/adventures" onClick={toCollapsBridge}>
                 Приключения
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link setNavStyle" to="/album">
+              <NavLink className="nav-link setNavStyle" to="/album" onClick={toCollapsBridge}>
                 Албум
               </NavLink>
             </li>
             {/* <li className="nav-item">
-              <NavLink className="nav-link setNavStyle" to="/contest">
+              <NavLink className="nav-link setNavStyle" to="/contest" onClick={toCollapsBridge}>
                 Конкурс
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link setNavStyle" to="/login">
+              <NavLink className="nav-link setNavStyle" to="/login" onClick={toCollapsBridge}>
                 вход
               </NavLink>
             </li> */}
             <li className="nav-item">
-              <NavLink className="nav-link setNavStyle" to="/coordinates">
+              <NavLink className="nav-link setNavStyle" to="/coordinates" onClick={toCollapsBridge}>
                 Координати
               </NavLink>
             </li>

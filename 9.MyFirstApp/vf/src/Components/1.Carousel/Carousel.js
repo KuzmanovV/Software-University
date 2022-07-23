@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { useEffect } from "react";
 
 export default function Carousel() {
-    // AutoGoUp hack
+   
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -11,7 +11,7 @@ export default function Carousel() {
         <div id="carousel-thumb" className="carousel slide carousel-fade carousel-thumbnails" data-ride="carousel">
         <div className="carousel-inner" role="listbox">
             <div className="carousel-item active">
-                <img className="d-block w-100" src="images/ЛедниДронС.jpg" alt="First slide" />
+                <img className="d-block w-100" src="images/thumbs/ЛедниДронС.jpg" alt="First slide" />
                     <div className="gradient"></div>
                     <div className="carousel-caption">
                         <h4 className="lead">Парк за приключения</h4>
@@ -20,7 +20,7 @@ export default function Carousel() {
                     </div>
             </div>
             <div className="carousel-item">
-                <img className="d-block w-100" src="images/landsc.jpg" alt="Second slide" />
+                <img className="d-block w-100" src="images/thumbs/landsc.jpg" alt="Second slide" />
                     <div className="gradient"></div>
                     <div className="carousel-caption">
                         <h1>приключения безкрай!</h1>
@@ -29,7 +29,7 @@ export default function Carousel() {
                     </div>
             </div>
             <div className="carousel-item">
-                <img className="d-block w-100" src="images/Tower.png" alt="Third slide" />
+                <img className="d-block w-100" src="images/thumbs/Tower.png" alt="Third slide" />
                     <div className="gradient"></div>
                     <div className="carousel-caption">
                         <h1>Висоти и панорами</h1>
@@ -38,7 +38,7 @@ export default function Carousel() {
                     </div>
             </div>
             <div className="carousel-item">
-                <img className="d-block w-100" src="/images/sunset.jpg" alt="Fourth slide" />
+                <img className="d-block w-100" src="/images/thumbs/sunset.jpg" alt="Fourth slide" />
                     <div className="gradient"></div>
                     <div className="carousel-caption">
                         <h1>от зори до здрач!</h1>
